@@ -1,5 +1,3 @@
-
-
 import dao.connectionPool.ConnectionPool;
 import dao.jdbc.ClientsDAOJDBC;
 import models.Clients;
