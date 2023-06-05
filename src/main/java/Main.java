@@ -3,10 +3,6 @@ import dao.jdbc.ClientsDAOJDBC;
 import models.Clients;
 import services.ClientService;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
-
 public class Main {
     public static void main(String[] args) {
 
