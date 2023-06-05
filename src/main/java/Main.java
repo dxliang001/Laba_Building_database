@@ -3,7 +3,10 @@ import dao.jdbc.ClientsDAOJDBC;
 import models.Clients;
 import services.ClientService;
 
+import java.util.List;
+
 public class Main {
+
     public static void main(String[] args) {
 
         ConnectionPool connectionPool = new ConnectionPool();
@@ -13,7 +16,11 @@ public class Main {
         ClientService clientService = new ClientService(clientsDAO);
 
         // Fetch a client by ID
-        Clients client = clientService.getClientById(1);
-        System.out.println("Client: " + client);
+        List<Clients> allClients = clientService.getAllClients();
+        for (Clients client : allClients) {
+            System.out.println("Client: " + client);
+        }
+
+        ConnectionPool.shutdown();
     }
 }
