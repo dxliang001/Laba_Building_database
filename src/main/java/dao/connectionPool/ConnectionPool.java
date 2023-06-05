@@ -14,12 +14,12 @@ public class ConnectionPool {
         // make sure to replace with your DB details
         dataSource.setUrl("jdbc:mysql://localhost:3306/laba_test");
         dataSource.setUsername("root");
-        dataSource.setPassword("password");
+        dataSource.setPassword("password"); //must change password to local Mysql pw
 
-        dataSource.setMinIdle(5); // the minimum number of connections to create and maintain
-        dataSource.setMaxIdle(20); // the maximum number of idle connections that can be kept in the pool
-        dataSource.setMaxTotal(50); // the maximum number of active connections that can be allocated at the same time
-        dataSource.setMaxWaitMillis(30000); // the maximum number of milliseconds that the pool will wait for a connection to be returned before throwing an exception
+        dataSource.setMinIdle(5);
+        dataSource.setMaxIdle(20);
+        dataSource.setMaxTotal(50);
+        dataSource.setMaxWaitMillis(30000); 
     }
 
     public static BasicDataSource getDataSource() {
@@ -33,5 +33,23 @@ public class ConnectionPool {
             throw new RuntimeException("Error getting database connection", e);
         }
     }
+    public static void closeConnection(Connection connection) {
+        if (connection != null) {
+            try {
+                connection.close();
+            } catch (SQLException e) {
+                System.out.println("Error closing database connection");
+                e.printStackTrace();
+            }
+        }
+    }
 
+    public static void shutdown() {
+        try {
+            dataSource.close();
+        } catch (SQLException e) {
+            System.out.println("Error shutting down connection pool");
+            e.printStackTrace();
+        }
+    }
 }
