@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="company">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="employees">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="employee" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="emp_id" type="xs:int"/>
+                                        <xs:element name="first_name" type="xs:string"/>
+                                        <xs:element name="last_name" type="xs:string"/>
+                                        <xs:element name="role_id" type="xs:int"/>
+                                        <xs:element name="department_id" type="xs:int"/>
+                                        <xs:element name="hire_date" type="xs:date"/>
+                                        <xs:element name="email" type="xs:string"/>
+                                        <xs:element name="phone_number" type="xs:string"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:element name="roles">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="role" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="role_id" type="xs:int"/>
+                                        <xs:element name="role_name" type="xs:string"/>
+                                        <xs:element name="role_description" type="xs:string"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:element name="departments">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="department" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="department_id" type="xs:int"/>
+                                        <xs:element name="department_name" type="xs:string"/>
+                                        <xs:element name="department_description" type="xs:string"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:element name="projects">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="project" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="project_id" type="xs:int"/>
+                                        <xs:element name="project_name" type="xs:string"/>
+                                        <xs:element name="start_date" type="xs:date"/>
+                                        <xs:element name="end_date" type="xs:date"/>
+                                        <xs:element name="client_id" type="xs:int"/>
+                                        <xs:element name="project_status" type="xs:string"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:element name="clients">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="client" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="client_id" type="xs:int"/>
+                                        <xs:element name="client_name" type="xs:string"/>
+                                        <xs:element name="contact_name" type="xs:string"/>
+                                        <xs:element name="client_address" type="xs:string"/>
+                                        <xs:element name="client_email" type="xs:string"/>
+                                        <xs:element name="client_phone" type="xs:string"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

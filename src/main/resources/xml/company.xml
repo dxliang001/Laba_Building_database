@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<company>
+    <employees>
+        <employee>
+            <emp_id>1</emp_id>
+            <first_name>John</first_name>
+            <last_name>Doe</last_name>
+            <role_id>1</role_id>
+            <department_id>1</department_id>
+            <hire_date>2022-12-01</hire_date>
+            <email>john.doe@example.com</email>
+            <phone_number>1234567890</phone_number>
+        </employee>
+        <!-- More employees here -->
+    </employees>
+    <roles>
+        <role>
+            <role_id>1</role_id>
+            <role_name>Manager</role_name>
+            <role_description>Manages a team.</role_description>
+        </role>
+        <!-- More roles here -->
+    </roles>
+    <departments>
+        <department>
+            <department_id>1</department_id>
+            <department_name>HR</department_name>
+            <department_description>Human resources department.</department_description>
+        </department>
+        <!-- More departments here -->
+    </departments>
+    <projects>
+        <project>
+            <project_id>1</project_id>
+            <project_name>Project X</project_name>
+            <start_date>2022-01-01</start_date>
+            <end_date>2022-12-31</end_date>
+            <client_id>1</client_id>
+            <project_status>Completed</project_status>
+        </project>
+        <!-- More projects here -->
+    </projects>
+    <clients>
+        <client>
+            <client_id>1</client_id>
+            <client_name>Client X</client_name>
+            <contact_name>Contact X</contact_name>
+            <client_address>Address X</client_address>
+            <client_email>client.x@example.com</client_email>
+            <client_phone>0987654321</client_phone>
+        </client>
+        <!-- More clients here -->
+    </clients>
+</company>
