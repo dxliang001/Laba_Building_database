@@ -4,3 +4,7 @@
 2023-06-08 10:54:44.301 [main] INFO  Main - Client: Client{clientId=4, clientName='Beta Corp', contactName='Robert Brown', clientAddress='456 Park Ave', clientEmail='betacorp@example.com', clientPhone='777-888-9999'}
 2023-06-08 10:54:44.301 [main] INFO  Main - Client: Client{clientId=5, clientName='Gamma Inc', contactName='Patricia Davis', clientAddress='567 King St', clientEmail='gammainc@example.com', clientPhone='000-111-2222'}
 2023-06-08 10:54:44.301 [main] INFO  Main - Client: Client{clientId=6, clientName='Delta Plc', contactName='James Wilson', clientAddress='678 Queen St', clientEmail='deltaplc@example.com', clientPhone='333-444-5555'}
+2023-06-09 01:18:29.844 [main] INFO  Main - Employee ID: 1
+2023-06-09 01:18:29.847 [main] INFO  Main - Employee First Name: John
+2023-06-09 01:18:29.847 [main] INFO  Main - Employee Last Name: Doe
+2023-06-09 01:18:29.847 [main] INFO  Main - Employee Email: john.doe@example.com

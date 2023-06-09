@@ -25,6 +25,9 @@ public class XMLReaderDOM {
                 if (employeeNode.getNodeType() == Node.ELEMENT_NODE) {
                     Element employeeElement = (Element) employeeNode;
                     logger.info("Employee ID: " + employeeElement.getElementsByTagName("emp_id").item(0).getTextContent());
+                    logger.info("Employee First Name: " + employeeElement.getElementsByTagName("first_name").item(0).getTextContent());
+                    logger.info("Employee Last Name: " + employeeElement.getElementsByTagName("last_name").item(0).getTextContent());
+                    logger.info("Employee Email: " + employeeElement.getElementsByTagName("email").item(0).getTextContent());
 
                 }
             }
