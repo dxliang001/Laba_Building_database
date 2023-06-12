@@ -1,5 +1,6 @@
 models\Roles.class
 models\Projects.class
+XMLReaderDOM.class
 dao\interfaces\InventoryDAO.class
 services\MaterialService.class
 dao\interfaces\RolesDAO.class

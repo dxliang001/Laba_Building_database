@@ -1,7 +1,6 @@
 package models;
 
 import java.util.Objects;
-
 public class Clients {
 
     private int clientId;
