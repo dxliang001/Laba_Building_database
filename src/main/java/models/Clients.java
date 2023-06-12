@@ -1,14 +1,31 @@
 package models;
 
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
 import java.util.Objects;
+
+@XmlRootElement(name = "Clients")
+@XmlAccessorType(XmlAccessType.FIELD)
 public class Clients {
 
+    @XmlElement(name = "clientId")
     private int clientId;
+
+    @XmlElement(name = "clientName")
     private String clientName;
+    @XmlElement(name = "contactName")
     private String contactName;
+    @XmlElement(name = "clientAddress")
     private String clientAddress;
+    @XmlElement(name = "clientEmail")
     private String clientEmail;
+    @XmlElement(name = "clientPhone")
     private String clientPhone;
+
+    public Clients() {
+    }
 
     public Clients(int clientId, String clientName, String contactName, String clientAddress, String clientEmail, String clientPhone) {
         this.clientId = clientId;

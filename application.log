@@ -8,3 +8,5 @@
 2023-06-09 01:18:29.847 [main] INFO  Main - Employee First Name: John
 2023-06-09 01:18:29.847 [main] INFO  Main - Employee Last Name: Doe
 2023-06-09 01:18:29.847 [main] INFO  Main - Employee Email: john.doe@example.com
+2023-06-12 12:09:56.677 [main] INFO  Main - ClientsList{clients=[Client{clientId=1, clientName='Example Company 1', contactName='John Doe', clientAddress='123 Main St, Example City, EX 12345', clientEmail='example1@example.com', clientPhone='+1 234-567-8901'}, Client{clientId=2, clientName='Example Company 2', contactName='Jane Doe', clientAddress='456 Broadway St, Example City, EX 67890', clientEmail='example2@example.com', clientPhone='+1 098-765-4321'}]}
+2023-06-12 12:10:38.623 [main] INFO  Main - ClientsList{clients=[Client{clientId=1, clientName='Example Company 1', contactName='John Doe', clientAddress='123 Main St, Example City, EX 12345', clientEmail='example1@example.com', clientPhone='+1 234-567-8901'}, Client{clientId=2, clientName='Example Company 2', contactName='Jane Doe', clientAddress='456 Broadway St, Example City, EX 67890', clientEmail='example2@example.com', clientPhone='+1 098-765-4321'}]'}

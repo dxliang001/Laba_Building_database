@@ -1,13 +1,24 @@
 package models;
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
 import java.sql.Date;
 import java.util.Objects;
-
+@XmlRootElement(name = "Projects")
+@XmlAccessorType(XmlAccessType.FIELD)
 public class Projects {
+    @XmlElement(name = "projectId")
     private int projectId;
+    @XmlElement(name = "projectName")
     private String projectName;
+    @XmlElement(name = "startDate")
     private Date startDate;
+    @XmlElement(name = "endDate")
     private Date endDate;
+    @XmlElement(name = "clientId")
     private Clients clientId;
+    @XmlElement(name = "projectStatus")
     private String projectStatus;
 
     public Projects(int projectId, String projectName, Date startDate, Date endDate, Clients clientId, String projectStatus) {

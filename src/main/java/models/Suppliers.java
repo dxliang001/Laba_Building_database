@@ -1,13 +1,22 @@
 package models;
 
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
 import java.util.Objects;
-
+@XmlRootElement(name = "Suppliers")
+@XmlAccessorType(XmlAccessType.FIELD)
 public class Suppliers {
-
+    @XmlElement(name = "supplierId")
     private int supplierId;
+    @XmlElement(name = "supplierName")
     private String supplierName;
+    @XmlElement(name = "supplierAddress")
     private String supplierAddress;
+    @XmlElement(name = "supplierEmail")
     private String supplierEmail;
+    @XmlElement(name = "supplierPhone")
     private String supplierPhone;
 
     public Suppliers(int supplierId, String supplierName, String supplierAddress, String supplierEmail, String supplierPhone) {
