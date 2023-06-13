@@ -1,9 +1,16 @@
 package models;
 
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
 import java.util.Objects;
-
+@XmlRootElement(name = "ProjectEmployees")
+@XmlAccessorType(XmlAccessType.FIELD)
 public class ProjectEmployees {
+    @XmlElement(name = "projectId")
     private Projects projectId;
+    @XmlElement(name = "empId")
     private Employees empId;
 
     public ProjectEmployees(Projects projectId, Employees empId) {

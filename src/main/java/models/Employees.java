@@ -1,16 +1,38 @@
 package models;
 
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
 import java.sql.Date;
 import java.util.Objects;
 
+
+@XmlRootElement(name = "Employees")
+@XmlAccessorType(XmlAccessType.FIELD)
 public class Employees {
+    @XmlElement(name = "empId")
     private int empId;
+
+    @XmlElement(name = "firstName")
     private String firstName;
+
+    @XmlElement(name = "lastName")
     private String lastName;
+
+    @XmlElement(name = "role")
     private Roles role;
+
+    @XmlElement(name = "department")
     private Departments department;
+
+    @XmlElement(name = "hireDate")
     private Date hireDate;
+
+    @XmlElement(name = "email")
     private String email;
+
+    @XmlElement(name = "phoneNumber")
     private String phoneNumber;
     public Employees(int empId, String firstName, String lastName, Roles role,
                      Departments departmentId, Date hireDate, String email, String phoneNumber) {
