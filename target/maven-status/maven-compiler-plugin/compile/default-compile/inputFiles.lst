@@ -1,13 +1,16 @@
 C:\Users\a5636\OneDrive\Documents\GitHub\Laba_Building_database\src\main\java\dao\jdbc\ProjectEmployeeDAOJDBC.java
 C:\Users\a5636\OneDrive\Documents\GitHub\Laba_Building_database\src\main\java\services\InventoryService.java
 C:\Users\a5636\OneDrive\Documents\GitHub\Laba_Building_database\src\main\java\dao\jdbc\DepartmentsDAOJDBC.java
+C:\Users\a5636\OneDrive\Documents\GitHub\Laba_Building_database\src\main\java\BuildingCostCalculatorApp.java
 C:\Users\a5636\OneDrive\Documents\GitHub\Laba_Building_database\src\main\java\dao\jdbc\EmployeesDAOJDBC.java
 C:\Users\a5636\OneDrive\Documents\GitHub\Laba_Building_database\src\main\java\models\Suppliers.java
 C:\Users\a5636\OneDrive\Documents\GitHub\Laba_Building_database\src\main\java\dao\jdbc\InventoryDAOJDBC.java
+C:\Users\a5636\OneDrive\Documents\GitHub\Laba_Building_database\src\main\java\BuildingCostCalculator.java
 C:\Users\a5636\OneDrive\Documents\GitHub\Laba_Building_database\src\main\java\dao\interfaces\ProjectEmployeeDAO.java
 C:\Users\a5636\OneDrive\Documents\GitHub\Laba_Building_database\src\main\java\dao\interfaces\InventoryDAO.java
 C:\Users\a5636\OneDrive\Documents\GitHub\Laba_Building_database\src\main\java\models\Roles.java
 C:\Users\a5636\OneDrive\Documents\GitHub\Laba_Building_database\src\main\java\dao\interfaces\InvoicesDAO.java
+C:\Users\a5636\OneDrive\Documents\GitHub\Laba_Building_database\src\main\java\models\ClientsList.java
 C:\Users\a5636\OneDrive\Documents\GitHub\Laba_Building_database\src\main\java\services\DepartmentsService.java
 C:\Users\a5636\OneDrive\Documents\GitHub\Laba_Building_database\src\main\java\dao\interfaces\ProjectsDAO.java
 C:\Users\a5636\OneDrive\Documents\GitHub\Laba_Building_database\src\main\java\models\Departments.java
@@ -19,6 +22,7 @@ C:\Users\a5636\OneDrive\Documents\GitHub\Laba_Building_database\src\main\java\se
 C:\Users\a5636\OneDrive\Documents\GitHub\Laba_Building_database\src\main\java\dao\interfaces\EmployeesDAO.java
 C:\Users\a5636\OneDrive\Documents\GitHub\Laba_Building_database\src\main\java\dao\jdbc\InvoicesDAOJDBC.java
 C:\Users\a5636\OneDrive\Documents\GitHub\Laba_Building_database\src\main\java\dao\jdbc\ProjectMaterialDAOJDBC.java
+C:\Users\a5636\OneDrive\Documents\GitHub\Laba_Building_database\src\main\java\JaxbExample.java
 C:\Users\a5636\OneDrive\Documents\GitHub\Laba_Building_database\src\main\java\dao\interfaces\ExpensesDAO.java
 C:\Users\a5636\OneDrive\Documents\GitHub\Laba_Building_database\src\main\java\models\Projects.java
 C:\Users\a5636\OneDrive\Documents\GitHub\Laba_Building_database\src\main\java\dao\interfaces\SuppliersDAO.java
