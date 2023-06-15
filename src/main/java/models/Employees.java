@@ -3,26 +3,42 @@ package models;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonFormat;
 
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
+
 import java.sql.Date;
 import java.util.Objects;
 
+
+@XmlRootElement(name = "Employees")
+@XmlAccessorType(XmlAccessType.FIELD)
 public class Employees {
+    @XmlElement(name = "empId")
     @JsonProperty("emp_id")
     private int empId;
     @JsonProperty("first_name")
+    @XmlElement(name = "firstName")
     private String firstName;
     @JsonProperty("last_name")
+    @XmlElement(name = "lastName")
     private String lastName;
     @JsonProperty("role")
+    @XmlElement(name = "role")
     private Roles role;
     @JsonProperty("department")
+    @XmlElement(name = "department")
     private Departments department;
     @JsonProperty("hire_date")
+    @XmlElement(name = "hireDate")
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
     private Date hireDate;
     @JsonProperty("email")
+    @XmlElement(name = "email")
     private String email;
     @JsonProperty("phone_number")
+    @XmlElement(name = "phoneNumber")
     private String phoneNumber;
 
     public Employees() { }

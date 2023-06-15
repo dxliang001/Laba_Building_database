@@ -11,6 +11,7 @@ models\Clients.class
 services\InventoryService.class
 services\ProjectEmployeeService.class
 dao\interfaces\MaterialsDAO.class
+BuildingCostCalculatorApp.class
 models\Suppliers.class
 models\Employees.class
 dao\jdbc\DepartmentsDAOJDBC.class
@@ -21,6 +22,7 @@ dao\connectionPool\ConnectionPool.class
 dao\jdbc\ProjectEmployeeDAOJDBC.class
 services\ClientService.class
 dao\jdbc\ProjectMaterialDAOJDBC.class
+models\ClientsList.class
 dao\interfaces\ProjectMaterialDAO.class
 services\DepartmentsService.class
 dao\jdbc\InventoryDAOJDBC.class
@@ -46,6 +48,7 @@ dao\interfaces\PaymentsDAO.class
 dao\jdbc\ClientsDAOJDBC.class
 dao\jdbc\ProjectsDAOJDBC.class
 dao\jdbc\InvoicesDAOJDBC.class
+BuildingCostCalculator.class
 dao\jdbc\RolesDAOJDBC.class
 models\Payments.class
 models\ProjectMaterials.class
@@ -54,3 +57,4 @@ dao\jdbc\PaymentsDAOJDBC.class
 models\Expenses.class
 models\Departments.class
 dao\interfaces\ExpensesDAO.class
+JaxbExample.class

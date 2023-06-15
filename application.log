@@ -19,7 +19,7 @@
 2023-06-12 13:01:04.549 [main] INFO  Main - |    3. Industrial Building           |
 2023-06-12 13:01:04.549 [main] INFO  Main - |    4. Exit                          |
 2023-06-12 13:01:04.549 [main] INFO  Main - ======================================
-2023-06-12 13:01:04.549 [main] INFO  Main - Enter the building type (1-4):
+2023-06-12 13:01:04.549 [main] INFO  Main - Enter the building type (1-4): 
 2023-06-12 13:01:08.538 [main] INFO  Main - Exiting Building Cost Calculator. Goodbye!
 2023-06-12 13:01:51.447 [main] ERROR Main - An error occurred.
 java.lang.RuntimeException: Error getting database connection
@@ -63,12 +63,4 @@ Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (usi
 2023-06-12 13:02:07.178 [main] INFO  Main - |    3. Industrial Building           |
 2023-06-12 13:02:07.178 [main] INFO  Main - |    4. Exit                          |
 2023-06-12 13:02:07.178 [main] INFO  Main - ======================================
-2023-06-12 13:02:07.178 [main] INFO  Main - Enter the building type (1-4):
-2023-06-15 10:47:04.105 [main] INFO  Main - John
-2023-06-15 10:47:04.107 [main] INFO  Main - Manager
-2023-06-15 10:47:04.107 [main] INFO  Main - John Doe
-2023-06-15 10:47:04.107 [main] INFO  Main - John Doe
-2023-06-15 10:47:04.108 [main] INFO  Main - Project Name: Project A
-2023-06-15 10:47:04.108 [main] INFO  Main - Start Date: 2021-12-31
-2023-06-15 10:47:04.108 [main] INFO  Main - End Date: 2022-06-29
-2023-06-15 10:47:04.108 [main] INFO  Main - ------------------
+2023-06-12 13:02:07.178 [main] INFO  Main - Enter the building type (1-4): 

@@ -2,14 +2,26 @@ package models;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
+
 import java.util.Objects;
 
+
+@XmlRootElement(name = "Departments")
+@XmlAccessorType(XmlAccessType.FIELD)
 public class Departments {
+    @XmlElement(name = "departmentId")
     @JsonProperty("department_id")
     private int departmentId;
     @JsonProperty("department_name")
+    @XmlElement(name = "departmentName")
     private String departmentName;
     @JsonProperty("department_description")
+    @XmlElement(name = "departmentDescription")
     private String departmentDescription;
     public Departments() {}
     public Departments(int departmentId, String departmentName, String departmentDescription) {
