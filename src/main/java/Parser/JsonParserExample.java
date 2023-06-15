@@ -1,3 +1,5 @@
+package Parser;
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import models.*;
