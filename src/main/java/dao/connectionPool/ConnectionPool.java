@@ -1,7 +1,6 @@
 package dao.connectionPool;
 
 import org.apache.commons.dbcp2.BasicDataSource;
-
 import java.sql.Connection;
 import java.sql.SQLException;
 
@@ -11,15 +10,16 @@ public class ConnectionPool {
 
     static {
         dataSource = new BasicDataSource();
-        // make sure to replace with your DB details
-        dataSource.setUrl(System.getenv("DB_URL"));
-        dataSource.setUsername(System.getenv("DB_USERNAME"));
-        dataSource.setPassword(System.getenv("DB_PASSWORD"));
+
+        // Connect to remote database
+        dataSource.setUrl("jdbc:mysql://18.197.182.199:3306/Alex_building_laba");
+        dataSource.setUsername("root");
+        dataSource.setPassword("devintern");
 
         dataSource.setMinIdle(5);
         dataSource.setMaxIdle(20);
         dataSource.setMaxTotal(50);
-        dataSource.setMaxWaitMillis(30000); 
+        dataSource.setMaxWaitMillis(30000);
     }
 
     public static BasicDataSource getDataSource() {
@@ -33,6 +33,7 @@ public class ConnectionPool {
             throw new RuntimeException("Error getting database connection", e);
         }
     }
+
     public static void closeConnection(Connection connection) {
         if (connection != null) {
             try {

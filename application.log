@@ -106,3 +106,88 @@ Caused by: java.sql.SQLException: No suitable driver
 	at org.apache.commons.dbcp2.BasicDataSource.getConnection(BasicDataSource.java:734) ~[commons-dbcp2-2.8.0.jar:2.8.0]
 	at dao.connectionPool.ConnectionPool.getConnection(ConnectionPool.java:31) ~[classes/:?]
 	... 3 more
+2023-06-15 16:37:07.598 [main] ERROR Main - An error occurred.
+java.lang.RuntimeException: Error getting database connection
+	at dao.connectionPool.ConnectionPool.getConnection(ConnectionPool.java:33) ~[classes/:?]
+	at dao.jdbc.ClientsDAOJDBC.getAllClients(ClientsDAOJDBC.java:24) ~[classes/:?]
+	at services.ClientService.getAllClients(ClientService.java:20) ~[classes/:?]
+	at Main.main(Main.java:25) [classes/:?]
+Caused by: java.sql.SQLException: Cannot create JDBC driver of class '' for connect URL 'null'
+	at org.apache.commons.dbcp2.DriverFactory.createDriver(DriverFactory.java:75) ~[commons-dbcp2-2.8.0.jar:2.8.0]
+	at org.apache.commons.dbcp2.BasicDataSource.createConnectionFactory(BasicDataSource.java:462) ~[commons-dbcp2-2.8.0.jar:2.8.0]
+	at org.apache.commons.dbcp2.BasicDataSource.createDataSource(BasicDataSource.java:528) ~[commons-dbcp2-2.8.0.jar:2.8.0]
+	at org.apache.commons.dbcp2.BasicDataSource.getConnection(BasicDataSource.java:734) ~[commons-dbcp2-2.8.0.jar:2.8.0]
+	at dao.connectionPool.ConnectionPool.getConnection(ConnectionPool.java:31) ~[classes/:?]
+	... 3 more
+Caused by: java.sql.SQLException: No suitable driver
+	at java.sql.DriverManager.getDriver(DriverManager.java:300) ~[java.sql:?]
+	at org.apache.commons.dbcp2.DriverFactory.createDriver(DriverFactory.java:60) ~[commons-dbcp2-2.8.0.jar:2.8.0]
+	at org.apache.commons.dbcp2.BasicDataSource.createConnectionFactory(BasicDataSource.java:462) ~[commons-dbcp2-2.8.0.jar:2.8.0]
+	at org.apache.commons.dbcp2.BasicDataSource.createDataSource(BasicDataSource.java:528) ~[commons-dbcp2-2.8.0.jar:2.8.0]
+	at org.apache.commons.dbcp2.BasicDataSource.getConnection(BasicDataSource.java:734) ~[commons-dbcp2-2.8.0.jar:2.8.0]
+	at dao.connectionPool.ConnectionPool.getConnection(ConnectionPool.java:31) ~[classes/:?]
+	... 3 more
+2023-06-15 16:37:21.433 [main] ERROR Main - An error occurred.
+java.lang.RuntimeException: Error getting database connection
+	at dao.connectionPool.ConnectionPool.getConnection(ConnectionPool.java:33) ~[classes/:?]
+	at dao.jdbc.ClientsDAOJDBC.getAllClients(ClientsDAOJDBC.java:24) ~[classes/:?]
+	at services.ClientService.getAllClients(ClientService.java:20) ~[classes/:?]
+	at Main.main(Main.java:25) [classes/:?]
+Caused by: java.sql.SQLException: Cannot create JDBC driver of class '' for connect URL 'null'
+	at org.apache.commons.dbcp2.DriverFactory.createDriver(DriverFactory.java:75) ~[commons-dbcp2-2.8.0.jar:2.8.0]
+	at org.apache.commons.dbcp2.BasicDataSource.createConnectionFactory(BasicDataSource.java:462) ~[commons-dbcp2-2.8.0.jar:2.8.0]
+	at org.apache.commons.dbcp2.BasicDataSource.createDataSource(BasicDataSource.java:528) ~[commons-dbcp2-2.8.0.jar:2.8.0]
+	at org.apache.commons.dbcp2.BasicDataSource.getConnection(BasicDataSource.java:734) ~[commons-dbcp2-2.8.0.jar:2.8.0]
+	at dao.connectionPool.ConnectionPool.getConnection(ConnectionPool.java:31) ~[classes/:?]
+	... 3 more
+Caused by: java.sql.SQLException: No suitable driver
+	at java.sql.DriverManager.getDriver(DriverManager.java:300) ~[java.sql:?]
+	at org.apache.commons.dbcp2.DriverFactory.createDriver(DriverFactory.java:60) ~[commons-dbcp2-2.8.0.jar:2.8.0]
+	at org.apache.commons.dbcp2.BasicDataSource.createConnectionFactory(BasicDataSource.java:462) ~[commons-dbcp2-2.8.0.jar:2.8.0]
+	at org.apache.commons.dbcp2.BasicDataSource.createDataSource(BasicDataSource.java:528) ~[commons-dbcp2-2.8.0.jar:2.8.0]
+	at org.apache.commons.dbcp2.BasicDataSource.getConnection(BasicDataSource.java:734) ~[commons-dbcp2-2.8.0.jar:2.8.0]
+	at dao.connectionPool.ConnectionPool.getConnection(ConnectionPool.java:31) ~[classes/:?]
+	... 3 more
+2023-06-15 16:37:53.448 [main] ERROR Main - An error occurred.
+java.lang.RuntimeException: Error getting database connection
+	at dao.connectionPool.ConnectionPool.getConnection(ConnectionPool.java:33) ~[classes/:?]
+	at dao.jdbc.ClientsDAOJDBC.getAllClients(ClientsDAOJDBC.java:24) ~[classes/:?]
+	at services.ClientService.getAllClients(ClientService.java:20) ~[classes/:?]
+	at Main.main(Main.java:24) [classes/:?]
+Caused by: java.sql.SQLException: Cannot create JDBC driver of class '' for connect URL 'null'
+	at org.apache.commons.dbcp2.DriverFactory.createDriver(DriverFactory.java:75) ~[commons-dbcp2-2.8.0.jar:2.8.0]
+	at org.apache.commons.dbcp2.BasicDataSource.createConnectionFactory(BasicDataSource.java:462) ~[commons-dbcp2-2.8.0.jar:2.8.0]
+	at org.apache.commons.dbcp2.BasicDataSource.createDataSource(BasicDataSource.java:528) ~[commons-dbcp2-2.8.0.jar:2.8.0]
+	at org.apache.commons.dbcp2.BasicDataSource.getConnection(BasicDataSource.java:734) ~[commons-dbcp2-2.8.0.jar:2.8.0]
+	at dao.connectionPool.ConnectionPool.getConnection(ConnectionPool.java:31) ~[classes/:?]
+	... 3 more
+Caused by: java.sql.SQLException: No suitable driver
+	at java.sql.DriverManager.getDriver(DriverManager.java:300) ~[java.sql:?]
+	at org.apache.commons.dbcp2.DriverFactory.createDriver(DriverFactory.java:60) ~[commons-dbcp2-2.8.0.jar:2.8.0]
+	at org.apache.commons.dbcp2.BasicDataSource.createConnectionFactory(BasicDataSource.java:462) ~[commons-dbcp2-2.8.0.jar:2.8.0]
+	at org.apache.commons.dbcp2.BasicDataSource.createDataSource(BasicDataSource.java:528) ~[commons-dbcp2-2.8.0.jar:2.8.0]
+	at org.apache.commons.dbcp2.BasicDataSource.getConnection(BasicDataSource.java:734) ~[commons-dbcp2-2.8.0.jar:2.8.0]
+	at dao.connectionPool.ConnectionPool.getConnection(ConnectionPool.java:31) ~[classes/:?]
+	... 3 more
+2023-06-15 16:38:26.895 [main] INFO  Main - Client: Client{clientId=1, clientName='Client Company', contactName='Jane Smith', clientAddress='123 Main St', clientEmail='client@example.com', clientPhone='098-765-4321'}
+2023-06-15 16:38:26.896 [main] INFO  Main - Client: Client{clientId=2, clientName='Client Co', contactName='Tom Lee', clientAddress='234 Main St', clientEmail='clientco@example.com', clientPhone='111-222-3333'}
+2023-06-15 16:38:26.897 [main] INFO  Main - Client: Client{clientId=3, clientName='Alpha Ltd', contactName='Susan Miller', clientAddress='345 High St', clientEmail='alphaltd@example.com', clientPhone='444-555-6666'}
+2023-06-15 16:38:26.897 [main] INFO  Main - Client: Client{clientId=4, clientName='Beta Corp', contactName='Robert Brown', clientAddress='456 Park Ave', clientEmail='betacorp@example.com', clientPhone='777-888-9999'}
+2023-06-15 16:38:26.897 [main] INFO  Main - Client: Client{clientId=5, clientName='Gamma Inc', contactName='Patricia Davis', clientAddress='567 King St', clientEmail='gammainc@example.com', clientPhone='000-111-2222'}
+2023-06-15 16:38:26.897 [main] INFO  Main - Client: Client{clientId=6, clientName='Delta Plc', contactName='James Wilson', clientAddress='678 Queen St', clientEmail='deltaplc@example.com', clientPhone='333-444-5555'}
+2023-06-15 16:39:44.954 [main] INFO  Main - Client: Client{clientId=1, clientName='Client Company', contactName='Jane Smith', clientAddress='123 Main St', clientEmail='client@example.com', clientPhone='098-765-4321'}
+2023-06-15 16:39:44.956 [main] INFO  Main - Client: Client{clientId=2, clientName='Client Co', contactName='Tom Lee', clientAddress='234 Main St', clientEmail='clientco@example.com', clientPhone='111-222-3333'}
+2023-06-15 16:39:44.956 [main] INFO  Main - Client: Client{clientId=3, clientName='Alpha Ltd', contactName='Susan Miller', clientAddress='345 High St', clientEmail='alphaltd@example.com', clientPhone='444-555-6666'}
+2023-06-15 16:39:44.956 [main] INFO  Main - Client: Client{clientId=4, clientName='Beta Corp', contactName='Robert Brown', clientAddress='456 Park Ave', clientEmail='betacorp@example.com', clientPhone='777-888-9999'}
+2023-06-15 16:39:44.956 [main] INFO  Main - Client: Client{clientId=5, clientName='Gamma Inc', contactName='Patricia Davis', clientAddress='567 King St', clientEmail='gammainc@example.com', clientPhone='000-111-2222'}
+2023-06-15 16:39:44.956 [main] INFO  Main - Client: Client{clientId=6, clientName='Delta Plc', contactName='James Wilson', clientAddress='678 Queen St', clientEmail='deltaplc@example.com', clientPhone='333-444-5555'}
+2023-06-15 16:39:44.961 [main] INFO  com.sun.tools.javac.Main - ======================================
+2023-06-15 16:39:44.961 [main] INFO  com.sun.tools.javac.Main - |         Building Cost Calculator     |
+2023-06-15 16:39:44.961 [main] INFO  com.sun.tools.javac.Main - ======================================
+2023-06-15 16:39:44.961 [main] INFO  com.sun.tools.javac.Main - | Options:                           |
+2023-06-15 16:39:44.961 [main] INFO  com.sun.tools.javac.Main - |    1. Residential Building          |
+2023-06-15 16:39:44.961 [main] INFO  com.sun.tools.javac.Main - |    2. Commercial Building           |
+2023-06-15 16:39:44.961 [main] INFO  com.sun.tools.javac.Main - |    3. Industrial Building           |
+2023-06-15 16:39:44.961 [main] INFO  com.sun.tools.javac.Main - |    4. Exit                          |
+2023-06-15 16:39:44.961 [main] INFO  com.sun.tools.javac.Main - ======================================
+2023-06-15 16:39:44.961 [main] INFO  com.sun.tools.javac.Main - Enter the building type (1-4): 
