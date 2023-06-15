@@ -64,3 +64,45 @@ Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (usi
 2023-06-12 13:02:07.178 [main] INFO  Main - |    4. Exit                          |
 2023-06-12 13:02:07.178 [main] INFO  Main - ======================================
 2023-06-12 13:02:07.178 [main] INFO  Main - Enter the building type (1-4): 
+2023-06-15 16:12:32.299 [main] ERROR Main - An error occurred.
+java.lang.RuntimeException: Error getting database connection
+	at dao.connectionPool.ConnectionPool.getConnection(ConnectionPool.java:33) ~[classes/:?]
+	at dao.jdbc.ClientsDAOJDBC.getAllClients(ClientsDAOJDBC.java:24) ~[classes/:?]
+	at services.ClientService.getAllClients(ClientService.java:20) ~[classes/:?]
+	at Main.main(Main.java:25) [classes/:?]
+Caused by: java.sql.SQLException: Cannot create JDBC driver of class '' for connect URL 'null'
+	at org.apache.commons.dbcp2.DriverFactory.createDriver(DriverFactory.java:75) ~[commons-dbcp2-2.8.0.jar:2.8.0]
+	at org.apache.commons.dbcp2.BasicDataSource.createConnectionFactory(BasicDataSource.java:462) ~[commons-dbcp2-2.8.0.jar:2.8.0]
+	at org.apache.commons.dbcp2.BasicDataSource.createDataSource(BasicDataSource.java:528) ~[commons-dbcp2-2.8.0.jar:2.8.0]
+	at org.apache.commons.dbcp2.BasicDataSource.getConnection(BasicDataSource.java:734) ~[commons-dbcp2-2.8.0.jar:2.8.0]
+	at dao.connectionPool.ConnectionPool.getConnection(ConnectionPool.java:31) ~[classes/:?]
+	... 3 more
+Caused by: java.sql.SQLException: No suitable driver
+	at java.sql.DriverManager.getDriver(DriverManager.java:300) ~[java.sql:?]
+	at org.apache.commons.dbcp2.DriverFactory.createDriver(DriverFactory.java:60) ~[commons-dbcp2-2.8.0.jar:2.8.0]
+	at org.apache.commons.dbcp2.BasicDataSource.createConnectionFactory(BasicDataSource.java:462) ~[commons-dbcp2-2.8.0.jar:2.8.0]
+	at org.apache.commons.dbcp2.BasicDataSource.createDataSource(BasicDataSource.java:528) ~[commons-dbcp2-2.8.0.jar:2.8.0]
+	at org.apache.commons.dbcp2.BasicDataSource.getConnection(BasicDataSource.java:734) ~[commons-dbcp2-2.8.0.jar:2.8.0]
+	at dao.connectionPool.ConnectionPool.getConnection(ConnectionPool.java:31) ~[classes/:?]
+	... 3 more
+2023-06-15 16:14:47.871 [main] ERROR Main - An error occurred.
+java.lang.RuntimeException: Error getting database connection
+	at dao.connectionPool.ConnectionPool.getConnection(ConnectionPool.java:33) ~[classes/:?]
+	at dao.jdbc.ClientsDAOJDBC.getAllClients(ClientsDAOJDBC.java:24) ~[classes/:?]
+	at services.ClientService.getAllClients(ClientService.java:20) ~[classes/:?]
+	at Main.main(Main.java:25) [classes/:?]
+Caused by: java.sql.SQLException: Cannot create JDBC driver of class '' for connect URL 'null'
+	at org.apache.commons.dbcp2.DriverFactory.createDriver(DriverFactory.java:75) ~[commons-dbcp2-2.8.0.jar:2.8.0]
+	at org.apache.commons.dbcp2.BasicDataSource.createConnectionFactory(BasicDataSource.java:462) ~[commons-dbcp2-2.8.0.jar:2.8.0]
+	at org.apache.commons.dbcp2.BasicDataSource.createDataSource(BasicDataSource.java:528) ~[commons-dbcp2-2.8.0.jar:2.8.0]
+	at org.apache.commons.dbcp2.BasicDataSource.getConnection(BasicDataSource.java:734) ~[commons-dbcp2-2.8.0.jar:2.8.0]
+	at dao.connectionPool.ConnectionPool.getConnection(ConnectionPool.java:31) ~[classes/:?]
+	... 3 more
+Caused by: java.sql.SQLException: No suitable driver
+	at java.sql.DriverManager.getDriver(DriverManager.java:300) ~[java.sql:?]
+	at org.apache.commons.dbcp2.DriverFactory.createDriver(DriverFactory.java:60) ~[commons-dbcp2-2.8.0.jar:2.8.0]
+	at org.apache.commons.dbcp2.BasicDataSource.createConnectionFactory(BasicDataSource.java:462) ~[commons-dbcp2-2.8.0.jar:2.8.0]
+	at org.apache.commons.dbcp2.BasicDataSource.createDataSource(BasicDataSource.java:528) ~[commons-dbcp2-2.8.0.jar:2.8.0]
+	at org.apache.commons.dbcp2.BasicDataSource.getConnection(BasicDataSource.java:734) ~[commons-dbcp2-2.8.0.jar:2.8.0]
+	at dao.connectionPool.ConnectionPool.getConnection(ConnectionPool.java:31) ~[classes/:?]
+	... 3 more

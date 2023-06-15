@@ -1,4 +1,3 @@
-import Menu.BuildingCostCalculatorApp;
 import dao.connectionPool.ConnectionPool;
 import dao.jdbc.ClientsDAOJDBC;
 import models.Clients;
@@ -29,7 +28,7 @@ public class Main {
             }
 
             // Run the Building Cost Calculator App
-            BuildingCostCalculatorApp.run();
+            //BuildingCostCalculatorApp.run();
 
 
         } catch (Exception e) {
