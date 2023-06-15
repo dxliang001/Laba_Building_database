@@ -31,6 +31,7 @@ public class Clients {
     @XmlElement(name = "clientPhone")
     private String clientPhone;
 
+    public Clients() {}
 
     public Clients(int clientId, String clientName, String contactName, String clientAddress, String clientEmail, String clientPhone) {
         this.clientId = clientId;

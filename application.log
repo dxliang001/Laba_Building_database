@@ -191,3 +191,10 @@ Caused by: java.sql.SQLException: No suitable driver
 2023-06-15 16:39:44.961 [main] INFO  com.sun.tools.javac.Main - |    4. Exit                          |
 2023-06-15 16:39:44.961 [main] INFO  com.sun.tools.javac.Main - ======================================
 2023-06-15 16:39:44.961 [main] INFO  com.sun.tools.javac.Main - Enter the building type (1-4): 
+2023-06-15 16:41:53.444 [main] INFO  com.sun.tools.javac.Main - John
+2023-06-15 16:41:53.446 [main] INFO  com.sun.tools.javac.Main - Manager
+2023-06-15 16:41:53.447 [main] INFO  com.sun.tools.javac.Main - John Doe
+2023-06-15 16:41:53.447 [main] INFO  com.sun.tools.javac.Main - John Doe
+2023-06-15 16:41:53.447 [main] INFO  com.sun.tools.javac.Main - Project Name: Project A
+2023-06-15 16:41:53.447 [main] INFO  com.sun.tools.javac.Main - Start Date: 2021-12-31
+2023-06-15 16:41:53.447 [main] INFO  com.sun.tools.javac.Main - End Date: 2022-06-29
