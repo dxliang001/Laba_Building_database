@@ -21,7 +21,7 @@
 5. -- Add JAXB annotations to the hierarchy. Date, List, and complex objects should be covered.
    --Parse XML using JAXB.
    
-6.--Connect to a remote database and transfer all data to it
+6. --Connect to a remote database and transfer all data to it
    -- Review one of your colleagues homework
    --Create one Json file for at least 5 classes from the hierarchy.
    --Add Jackson’s annotation to the hierarchy. Date, List, and complex objects should be covered.
