@@ -26,7 +26,7 @@ public class ExpensesDAOJDBC implements ExpensesDAO {
     public List<Expenses> getAllExpenses() {
         List<Expenses> expenses = new ArrayList<>();
         try (Connection connection = connectionPool.getConnection()) {
-            PreparedStatement ps = connection.prepareStatement("SELECT * FROM Expenses");
+            PreparedStatement ps = connection.prepareStatement("SELECT * FROM expenses");
             ResultSet rs = ps.executeQuery();
             while (rs.next()) {
                 Projects project = projectsDAOJDBC.getProjectById(rs.getInt("project_id"));
@@ -46,7 +46,7 @@ public class ExpensesDAOJDBC implements ExpensesDAO {
     public Expenses getExpenseById(int id) {
         Expenses expense = null;
         try (Connection connection = connectionPool.getConnection()) {
-            PreparedStatement ps = connection.prepareStatement("SELECT * FROM Expenses WHERE expense_id = ?");
+            PreparedStatement ps = connection.prepareStatement("SELECT * FROM expenses WHERE expense_id = ?");
             ps.setInt(1, id);
             ResultSet rs = ps.executeQuery();
             if (rs.next()) {
@@ -66,7 +66,7 @@ public class ExpensesDAOJDBC implements ExpensesDAO {
     @Override
     public void save(Expenses expense) {
         try (Connection connection = connectionPool.getConnection()) {
-            PreparedStatement ps = connection.prepareStatement("INSERT INTO Expenses (expense_id, project_id, amount_spent, description, expense_date) VALUES (?, ?, ?, ?, ?)");
+            PreparedStatement ps = connection.prepareStatement("INSERT INTO expenses (expense_id, project_id, amount_spent, description, expense_date) VALUES (?, ?, ?, ?, ?)");
             ps.setInt(1, expense.getExpenseId());
             ps.setInt(2, expense.getProjectId().getProjectId());
             ps.setDouble(3, expense.getAmount());
@@ -81,7 +81,7 @@ public class ExpensesDAOJDBC implements ExpensesDAO {
     @Override
     public void update(Expenses expense) {
         try (Connection connection = connectionPool.getConnection()) {
-            PreparedStatement ps = connection.prepareStatement("UPDATE Expenses SET project_id = ?, amount_spent = ?, description = ?, expense_date = ? WHERE expense_id = ?");
+            PreparedStatement ps = connection.prepareStatement("UPDATE expenses SET project_id = ?, amount_spent = ?, description = ?, expense_date = ? WHERE expense_id = ?");
             ps.setInt(1, expense.getProjectId().getProjectId());
             ps.setDouble(2, expense.getAmount());
             ps.setString(3, expense.getDescription());
@@ -96,7 +96,7 @@ public class ExpensesDAOJDBC implements ExpensesDAO {
     @Override
     public void delete(Expenses expense) {
         try (Connection connection = connectionPool.getConnection()) {
-            PreparedStatement ps = connection.prepareStatement("DELETE FROM Expenses WHERE expense_id = ?");
+            PreparedStatement ps = connection.prepareStatement("DELETE FROM expenses WHERE expense_id = ?");
             ps.setInt(1, expense.getExpenseId());
             ps.executeUpdate();
         } catch (SQLException e) {

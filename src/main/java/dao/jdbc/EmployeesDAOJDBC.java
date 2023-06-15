@@ -21,7 +21,7 @@ public class EmployeesDAOJDBC implements EmployeesDAO {
     public List<Employees> getAllEmployee() {
         List<Employees> employees = new ArrayList<>();
         try (Connection connection = connectionPool.getConnection()) {
-            PreparedStatement ps = connection.prepareStatement("SELECT * FROM Employees WHERE emp_id = ?");
+            PreparedStatement ps = connection.prepareStatement("SELECT * FROM employees WHERE emp_id = ?");
             ResultSet rs = ps.executeQuery();
             while(rs.next()) {
                 Roles role = new Roles(rs.getInt("role_id"), rs.getString("role_name"), rs.getString("role_description"));
@@ -37,7 +37,7 @@ public class EmployeesDAOJDBC implements EmployeesDAO {
     @Override
     public Employees getEmployeeById(int id) {
         try (Connection connection = connectionPool.getConnection()) {
-            PreparedStatement ps = connection.prepareStatement("SELECT * FROM Employees WHERE emp_id = ?");
+            PreparedStatement ps = connection.prepareStatement("SELECT * FROM employees WHERE emp_id = ?");
             ps.setInt(1, id);
             ResultSet rs = ps.executeQuery();
             if (rs.next()) {
@@ -53,7 +53,7 @@ public class EmployeesDAOJDBC implements EmployeesDAO {
     @Override
     public void save(Employees employee) {
         try (Connection connection = connectionPool.getConnection()) {
-            PreparedStatement ps = connection.prepareStatement("INSERT INTO Employees (emp_id, first_name, last_name, role_id, department_id, hire_date, email, phone_number) VALUES (?, ?, ?, ?, ?, ?, ?, ?)");
+            PreparedStatement ps = connection.prepareStatement("INSERT INTO employees (emp_id, first_name, last_name, role_id, department_id, hire_date, email, phone_number) VALUES (?, ?, ?, ?, ?, ?, ?, ?)");
             ps.setInt(1, employee.getEmpId());
             ps.setString(2, employee.getFirstName());
             ps.setString(3, employee.getLastName());
@@ -71,7 +71,7 @@ public class EmployeesDAOJDBC implements EmployeesDAO {
     @Override
     public void update(Employees employee) {
         try (Connection connection = connectionPool.getConnection()) {
-            PreparedStatement ps = connection.prepareStatement("UPDATE Employees SET first_name = ?, last_name = ?, role_id = ?, department_id = ?, hire_date = ?, email = ?, phone_number = ? WHERE emp_id = ?");
+            PreparedStatement ps = connection.prepareStatement("UPDATE employees SET first_name = ?, last_name = ?, role_id = ?, department_id = ?, hire_date = ?, email = ?, phone_number = ? WHERE emp_id = ?");
             ps.setString(1, employee.getFirstName());
             ps.setString(2, employee.getLastName());
             ps.setInt(3, employee.getRole().getRoleId());
@@ -89,7 +89,7 @@ public class EmployeesDAOJDBC implements EmployeesDAO {
     @Override
     public void delete(Employees employee) {
         try (Connection connection = connectionPool.getConnection()) {
-            PreparedStatement ps = connection.prepareStatement("DELETE FROM Employees WHERE emp_id = ?");
+            PreparedStatement ps = connection.prepareStatement("DELETE FROM employees WHERE emp_id = ?");
             ps.setInt(1, employee.getEmpId());
             ps.executeUpdate();
         } catch (SQLException e) {

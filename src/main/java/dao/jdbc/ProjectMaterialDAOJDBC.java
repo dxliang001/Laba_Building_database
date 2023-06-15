@@ -28,7 +28,7 @@ public class ProjectMaterialDAOJDBC implements ProjectMaterialDAO {
     public List<ProjectMaterials> getAllProjectMaterials() {
         List<ProjectMaterials> projectMaterials = new ArrayList<>();
         try (Connection connection = connectionPool.getConnection()) {
-            PreparedStatement ps = connection.prepareStatement("SELECT * FROM ProjectMaterials");
+            PreparedStatement ps = connection.prepareStatement("SELECT * FROM projectmaterials");
             ResultSet rs = ps.executeQuery();
             while (rs.next()) {
                 Projects project = projectsDAOJDBC.getProjectById(rs.getInt("project_id"));
@@ -46,7 +46,7 @@ public class ProjectMaterialDAOJDBC implements ProjectMaterialDAO {
     @Override
     public void save(ProjectMaterials projectMaterial) {
         try (Connection connection = connectionPool.getConnection()) {
-            PreparedStatement ps = connection.prepareStatement("INSERT INTO ProjectMaterials (project_id, material_id, quantity_required) VALUES (?, ?, ?)");
+            PreparedStatement ps = connection.prepareStatement("INSERT INTO projectmaterials (project_id, material_id, quantity_required) VALUES (?, ?, ?)");
             ps.setInt(1, projectMaterial.getProjectId().getProjectId());
             ps.setInt(2, projectMaterial.getMaterialId().getMaterialId());
             ps.setInt(3, projectMaterial.getQuantityRequired());
@@ -59,7 +59,7 @@ public class ProjectMaterialDAOJDBC implements ProjectMaterialDAO {
     @Override
     public void update(ProjectMaterials projectMaterial) {
         try (Connection connection = connectionPool.getConnection()) {
-            PreparedStatement ps = connection.prepareStatement("UPDATE ProjectMaterials SET quantity_required = ? WHERE project_id = ? AND material_id = ?");
+            PreparedStatement ps = connection.prepareStatement("UPDATE projectmaterials SET quantity_required = ? WHERE project_id = ? AND material_id = ?");
             ps.setInt(1, projectMaterial.getQuantityRequired());
             ps.setInt(2, projectMaterial.getProjectId().getProjectId());
             ps.setInt(3, projectMaterial.getMaterialId().getMaterialId());
@@ -72,7 +72,7 @@ public class ProjectMaterialDAOJDBC implements ProjectMaterialDAO {
     @Override
     public void delete(ProjectMaterials projectMaterial) {
         try (Connection connection = connectionPool.getConnection()) {
-            PreparedStatement ps = connection.prepareStatement("DELETE FROM ProjectMaterials WHERE project_id = ? AND material_id = ?");
+            PreparedStatement ps = connection.prepareStatement("DELETE FROM projectmaterials WHERE project_id = ? AND material_id = ?");
             ps.setInt(1, projectMaterial.getProjectId().getProjectId());
             ps.setInt(2, projectMaterial.getMaterialId().getMaterialId());
             ps.executeUpdate();
