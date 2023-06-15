@@ -14,15 +14,15 @@
 --7 statements with aggregate functions and group by and with having.
 
 3. --Build hierarchy for Schema from the below course.
---Create DAO classes with necessary interfaces, abstract classes, and Generics.  DAO should be scalable and flexible to support another framework and another database as well. All CRUD operations should be supported using JDBC. Use connection pool from the below block.
---Implement Service layer with necessary abstraction to be able to switch between databases and frameworks.
+   --Create DAO classes with necessary interfaces, abstract classes, and Generics.  DAO should be scalable and flexible to support another framework and another database      as  well. All CRUD operations should be supported using JDBC. Use connection pool from the below block.
+   --Implement Service layer with necessary abstraction to be able to switch between databases and frameworks.
 
-4. Everyone needs to add business logic to your project (It is written next to the topic).
+4. --Everyone needs to add business logic to your project (It is written next to the topic).
 5. -- Add JAXB annotations to the hierarchy. Date, List, and complex objects should be covered.
    --Parse XML using JAXB.
    
-6.Connect to a remote database and transfer all data to it
--- Review one of your colleagues homework
---Create one Json file for at least 5 classes from the hierarchy.
---Add Jackson’s annotation to the hierarchy. Date, List, and complex objects should be covered.
---Parse JSON using Jackson.
+6.--Connect to a remote database and transfer all data to it
+   -- Review one of your colleagues homework
+   --Create one Json file for at least 5 classes from the hierarchy.
+   --Add Jackson’s annotation to the hierarchy. Date, List, and complex objects should be covered.
+   --Parse JSON using Jackson.
