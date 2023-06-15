@@ -22,7 +22,7 @@ public class ClientsDAOJDBC implements ClientsDAO {
     public List<Clients> getAllClients() {
         List<Clients> clients = new ArrayList<>();
         try (Connection connection = connectionPool.getConnection()) {
-            PreparedStatement ps = connection.prepareStatement("SELECT * FROM clients");
+            PreparedStatement ps = connection.prepareStatement("SELECT * FROM Clients");
             ResultSet rs = ps.executeQuery();
             while (rs.next()) {
                 clients.add(new Clients(rs.getInt("client_id"), rs.getString("client_name"), rs.getString("contact_name"),
@@ -38,7 +38,7 @@ public class ClientsDAOJDBC implements ClientsDAO {
     public Clients getClientById(int id) {
         Clients client = null;
         try (Connection connection = connectionPool.getConnection()) {
-            PreparedStatement ps = connection.prepareStatement("SELECT * FROM clients WHERE client_id = ?");
+            PreparedStatement ps = connection.prepareStatement("SELECT * FROM Clients WHERE client_id = ?");
             ps.setInt(1, id);
             ResultSet rs = ps.executeQuery();
             if (rs.next()) {
@@ -54,7 +54,7 @@ public class ClientsDAOJDBC implements ClientsDAO {
     @Override
     public void save(Clients client) {
         try (Connection connection = connectionPool.getConnection()) {
-            PreparedStatement ps = connection.prepareStatement("INSERT INTO clients (client_id, client_name, contact_name, client_address, client_email, client_phone) VALUES (?, ?, ?, ?, ?, ?)");
+            PreparedStatement ps = connection.prepareStatement("INSERT INTO Clients (client_id, client_name, contact_name, client_address, client_email, client_phone) VALUES (?, ?, ?, ?, ?, ?)");
             ps.setInt(1, client.getClientId());
             ps.setString(2, client.getClientName());
             ps.setString(3, client.getContactName());
@@ -70,7 +70,7 @@ public class ClientsDAOJDBC implements ClientsDAO {
     @Override
     public void update(Clients client) {
         try (Connection connection = connectionPool.getConnection()) {
-            PreparedStatement ps = connection.prepareStatement("UPDATE clients SET client_name = ?, contact_name = ?, client_address = ?, client_email = ?, client_phone = ? WHERE client_id = ?");
+            PreparedStatement ps = connection.prepareStatement("UPDATE Clients SET client_name = ?, contact_name = ?, client_address = ?, client_email = ?, client_phone = ? WHERE client_id = ?");
             ps.setString(1, client.getClientName());
             ps.setString(2, client.getContactName());
             ps.setString(3, client.getClientAddress());
@@ -86,7 +86,7 @@ public class ClientsDAOJDBC implements ClientsDAO {
     @Override
     public void delete(Clients client) {
         try (Connection connection = connectionPool.getConnection()) {
-            PreparedStatement ps = connection.prepareStatement("DELETE FROM clients WHERE client_id = ?");
+            PreparedStatement ps = connection.prepareStatement("DELETE FROM Clients WHERE client_id = ?");
             ps.setInt(1, client.getClientId());
             ps.executeUpdate();
         } catch (SQLException e) {

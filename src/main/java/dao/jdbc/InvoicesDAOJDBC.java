@@ -33,7 +33,7 @@ public class InvoicesDAOJDBC implements InvoicesDAO {
     public List<Invoices> getAllInvoices() {
         List<Invoices> invoices = new ArrayList<>();
         try (Connection connection = connectionPool.getConnection()) {
-            PreparedStatement ps = connection.prepareStatement("SELECT * FROM invoices");
+            PreparedStatement ps = connection.prepareStatement("SELECT * FROM Invoices");
             ResultSet rs = ps.executeQuery();
             while (rs.next()) {
                 Clients client = clientsDAOJDBC.getClientById(rs.getInt("client_id"));
@@ -57,7 +57,7 @@ public class InvoicesDAOJDBC implements InvoicesDAO {
     public Invoices getInvoiceById(int id) {
         Invoices invoice = null;
         try (Connection connection = connectionPool.getConnection()) {
-            PreparedStatement ps = connection.prepareStatement("SELECT * FROM invoices WHERE invoice_id = ?");
+            PreparedStatement ps = connection.prepareStatement("SELECT * FROM Invoices WHERE invoice_id = ?");
             ps.setInt(1, id);
             ResultSet rs = ps.executeQuery();
             if (rs.next()) {
@@ -81,7 +81,7 @@ public class InvoicesDAOJDBC implements InvoicesDAO {
     @Override
     public void save(Invoices invoice) {
         try (Connection connection = connectionPool.getConnection()) {
-            PreparedStatement ps = connection.prepareStatement("INSERT INTO invoices (invoice_id, client_id, project_id, issue_date, due_date, total_amount, payment_id) VALUES (?, ?, ?, ?, ?, ?, ?)");
+            PreparedStatement ps = connection.prepareStatement("INSERT INTO Invoices (invoice_id, client_id, project_id, issue_date, due_date, total_amount, payment_id) VALUES (?, ?, ?, ?, ?, ?, ?)");
             ps.setInt(1, invoice.getInvoiceId());
             ps.setInt(2, invoice.getClientId().getClientId());
             ps.setInt(3, invoice.getProjectId().getProjectId());
@@ -98,7 +98,7 @@ public class InvoicesDAOJDBC implements InvoicesDAO {
     @Override
     public void update(Invoices invoice) {
         try (Connection connection = connectionPool.getConnection()) {
-            PreparedStatement ps = connection.prepareStatement("UPDATE invoices SET client_id = ?, project_id = ?, issue_date = ?, due_date = ?, total_amount = ?, payment_id = ? WHERE invoice_id = ?");
+            PreparedStatement ps = connection.prepareStatement("UPDATE Invoices SET client_id = ?, project_id = ?, issue_date = ?, due_date = ?, total_amount = ?, payment_id = ? WHERE invoice_id = ?");
             ps.setInt(1, invoice.getClientId().getClientId());
             ps.setInt(2, invoice.getProjectId().getProjectId());
             ps.setDate(3, invoice.getIssueDate());
@@ -115,7 +115,7 @@ public class InvoicesDAOJDBC implements InvoicesDAO {
     @Override
     public void delete(Invoices invoice) {
         try (Connection connection = connectionPool.getConnection()) {
-            PreparedStatement ps = connection.prepareStatement("DELETE FROM invoices WHERE invoice_id = ?");
+            PreparedStatement ps = connection.prepareStatement("DELETE FROM Invoices WHERE invoice_id = ?");
             ps.setInt(1, invoice.getInvoiceId());
             ps.executeUpdate();
         } catch (SQLException e) {

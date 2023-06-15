@@ -1,17 +1,16 @@
 package dao.jdbc;
 
 
-import dao.connectionPool.ConnectionPool;
 import dao.interfaces.MaterialsDAO;
+import dao.connectionPool.ConnectionPool;
 import models.Materials;
-import models.Suppliers;
-
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
+import models.Suppliers;
 public class MaterialsDAOJDBC implements MaterialsDAO {
 
     private ConnectionPool connectionPool;
@@ -27,7 +26,7 @@ public class MaterialsDAOJDBC implements MaterialsDAO {
     public List<Materials> getAllMaterials() {
         List<Materials> materials = new ArrayList<>();
         try (Connection connection = connectionPool.getConnection()) {
-            PreparedStatement ps = connection.prepareStatement("SELECT * FROM materials");
+            PreparedStatement ps = connection.prepareStatement("SELECT * FROM Materials");
             ResultSet rs = ps.executeQuery();
             while (rs.next()) {
                 Suppliers suppliers = suppliersDAOJDBC.getSupplierById(rs.getInt("supplier_id"));
@@ -46,7 +45,7 @@ public class MaterialsDAOJDBC implements MaterialsDAO {
     public Materials getMaterialById(int id) {
         Materials material = null;
         try (Connection connection = connectionPool.getConnection()) {
-            PreparedStatement ps = connection.prepareStatement("SELECT * FROM materials WHERE material_id = ?");
+            PreparedStatement ps = connection.prepareStatement("SELECT * FROM Materials WHERE material_id = ?");
             ps.setInt(1, id);
             ResultSet rs = ps.executeQuery();
             if (rs.next()) {
@@ -65,7 +64,7 @@ public class MaterialsDAOJDBC implements MaterialsDAO {
     @Override
     public void save(Materials material) {
         try (Connection connection = connectionPool.getConnection()) {
-            PreparedStatement ps = connection.prepareStatement("INSERT INTO materials (material_id, material_name, description, supplier_id) VALUES (?, ?, ?, ?)");
+            PreparedStatement ps = connection.prepareStatement("INSERT INTO Materials (material_id, material_name, description, supplier_id) VALUES (?, ?, ?, ?)");
             ps.setInt(1, material.getMaterialId());
             ps.setString(2, material.getMaterialName());
             ps.setString(3, material.getMaterialDescription());
@@ -79,7 +78,7 @@ public class MaterialsDAOJDBC implements MaterialsDAO {
     @Override
     public void update(Materials material) {
         try (Connection connection = connectionPool.getConnection()) {
-            PreparedStatement ps = connection.prepareStatement("UPDATE materials SET material_name = ?, description = ?, supplier_id = ? WHERE material_id = ?");
+            PreparedStatement ps = connection.prepareStatement("UPDATE Materials SET material_name = ?, description = ?, supplier_id = ? WHERE material_id = ?");
             ps.setString(1, material.getMaterialName());
             ps.setString(2, material.getMaterialDescription());
             ps.setInt(3, material.getSupplierId().getSupplierId());
@@ -93,7 +92,7 @@ public class MaterialsDAOJDBC implements MaterialsDAO {
     @Override
     public void delete(Materials material) {
         try (Connection connection = connectionPool.getConnection()) {
-            PreparedStatement ps = connection.prepareStatement("DELETE FROM materials WHERE material_id = ?");
+            PreparedStatement ps = connection.prepareStatement("DELETE FROM Materials WHERE material_id = ?");
             ps.setInt(1, material.getMaterialId());
             ps.executeUpdate();
         } catch (SQLException e) {

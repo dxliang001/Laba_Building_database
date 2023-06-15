@@ -26,7 +26,7 @@ public class ProjectsDAOJDBC implements ProjectsDAO {
     public List<Projects> getAllProjects() {
         List<Projects> projects = new ArrayList<>();
         try (Connection connection = connectionPool.getConnection()) {
-            PreparedStatement ps = connection.prepareStatement("SELECT * FROM projects");
+            PreparedStatement ps = connection.prepareStatement("SELECT * FROM Projects");
             ResultSet rs = ps.executeQuery();
             while (rs.next()) {
                 Clients client = clientsDAOJDBC.getClientById(rs.getInt("client_id"));
@@ -42,7 +42,7 @@ public class ProjectsDAOJDBC implements ProjectsDAO {
     public Projects getProjectById(int id) {
         Projects project = null;
         try (Connection connection = connectionPool.getConnection()) {
-            PreparedStatement ps = connection.prepareStatement("SELECT * FROM projects WHERE project_id = ?");
+            PreparedStatement ps = connection.prepareStatement("SELECT * FROM Projects WHERE project_id = ?");
             ps.setInt(1, id);
             ResultSet rs = ps.executeQuery();
             if (rs.next()) {
@@ -58,7 +58,7 @@ public class ProjectsDAOJDBC implements ProjectsDAO {
     @Override
     public void save(Projects project) {
         try (Connection connection = connectionPool.getConnection()) {
-            PreparedStatement ps = connection.prepareStatement("INSERT INTO projects (project_id, project_name, start_date, end_date, client_id, project_status) VALUES (?, ?, ?, ?, ?, ?)");
+            PreparedStatement ps = connection.prepareStatement("INSERT INTO Projects (project_id, project_name, start_date, end_date, client_id, project_status) VALUES (?, ?, ?, ?, ?, ?)");
             ps.setInt(1, project.getProjectId());
             ps.setString(2, project.getProjectName());
             ps.setDate(3, project.getStartDate());
@@ -74,7 +74,7 @@ public class ProjectsDAOJDBC implements ProjectsDAO {
     @Override
     public void update(Projects project) {
         try (Connection connection = connectionPool.getConnection()) {
-            PreparedStatement ps = connection.prepareStatement("UPDATE projects SET project_name = ?, start_date = ?, end_date = ?, client_id = ?, project_status = ? WHERE project_id = ?");
+            PreparedStatement ps = connection.prepareStatement("UPDATE Projects SET project_name = ?, start_date = ?, end_date = ?, client_id = ?, project_status = ? WHERE project_id = ?");
             ps.setString(1, project.getProjectName());
             ps.setDate(2, project.getStartDate());
             ps.setDate(3, project.getEndDate());
@@ -90,7 +90,7 @@ public class ProjectsDAOJDBC implements ProjectsDAO {
     @Override
     public void delete(Projects project) {
         try (Connection connection = connectionPool.getConnection()) {
-            PreparedStatement ps = connection.prepareStatement("DELETE FROM projects WHERE project_id = ?");
+            PreparedStatement ps = connection.prepareStatement("DELETE FROM Projects WHERE project_id = ?");
             ps.setInt(1, project.getProjectId());
             ps.executeUpdate();
         } catch (SQLException e) {
