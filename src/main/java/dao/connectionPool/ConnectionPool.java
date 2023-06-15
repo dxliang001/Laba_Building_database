@@ -12,9 +12,10 @@ public class ConnectionPool {
     static {
         dataSource = new BasicDataSource();
         // make sure to replace with your DB details
-        dataSource.setUrl("jdbc:mysql://localhost:3306/laba_test");
+        dataSource.setUrl("jdbc:mysql://18.197.182.199:3306/Alex_building_laba");
         dataSource.setUsername("root");
-        dataSource.setPassword("password"); //must change password to local Mysql pw
+        dataSource.setPassword("devintern");
+
 
         dataSource.setMinIdle(5);
         dataSource.setMaxIdle(20);

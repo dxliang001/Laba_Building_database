@@ -29,7 +29,7 @@ public class PaymentsDAOJDBC implements PaymentsDAO {
     public List<Payments> getAllPayments() {
         List<Payments> payments = new ArrayList<>();
         try (Connection connection = connectionPool.getConnection()) {
-            PreparedStatement ps = connection.prepareStatement("SELECT * FROM Payments");
+            PreparedStatement ps = connection.prepareStatement("SELECT * FROM payments");
             ResultSet rs = ps.executeQuery();
             while (rs.next()) {
                 Clients client = clientsDAOJDBC.getClientById(rs.getInt("client_id"));
@@ -46,7 +46,7 @@ public class PaymentsDAOJDBC implements PaymentsDAO {
     public Payments getPaymentById(int id) {
         Payments payment = null;
         try (Connection connection = connectionPool.getConnection()) {
-            PreparedStatement ps = connection.prepareStatement("SELECT * FROM Payments WHERE payment_id = ?");
+            PreparedStatement ps = connection.prepareStatement("SELECT * FROM payments WHERE payment_id = ?");
             ps.setInt(1, id);
             ResultSet rs = ps.executeQuery();
             if (rs.next()) {
@@ -68,7 +68,7 @@ public class PaymentsDAOJDBC implements PaymentsDAO {
     @Override
     public void save(Payments payment) {
         try (Connection connection = connectionPool.getConnection()) {
-            PreparedStatement ps = connection.prepareStatement("INSERT INTO Payments (payment_id, client_id, project_id, amount, payment_date, payment_method) VALUES (?, ?, ?, ?, ?, ?)");
+            PreparedStatement ps = connection.prepareStatement("INSERT INTO payments (payment_id, client_id, project_id, amount, payment_date, payment_method) VALUES (?, ?, ?, ?, ?, ?)");
             ps.setInt(1, payment.getPaymentId());
             ps.setInt(2, payment.getClientId().getClientId());
             ps.setInt(3, payment.getProjectId().getProjectId());
@@ -84,7 +84,7 @@ public class PaymentsDAOJDBC implements PaymentsDAO {
     @Override
     public void update(Payments payment) {
         try (Connection connection = connectionPool.getConnection()) {
-            PreparedStatement ps = connection.prepareStatement("UPDATE Payments SET client_id = ?, project_id = ?, amount = ?, payment_date = ?, payment_method = ? WHERE payment_id = ?");
+            PreparedStatement ps = connection.prepareStatement("UPDATE payments SET client_id = ?, project_id = ?, amount = ?, payment_date = ?, payment_method = ? WHERE payment_id = ?");
             ps.setInt(1, payment.getClientId().getClientId());
             ps.setInt(2, payment.getProjectId().getProjectId());
             ps.setDouble(3, payment.getAmount());
@@ -100,7 +100,7 @@ public class PaymentsDAOJDBC implements PaymentsDAO {
     @Override
     public void delete(Payments payment) {
         try (Connection connection = connectionPool.getConnection()) {
-            PreparedStatement ps = connection.prepareStatement("DELETE FROM Payments WHERE payment_id = ?");
+            PreparedStatement ps = connection.prepareStatement("DELETE FROM payments WHERE payment_id = ?");
             ps.setInt(1, payment.getPaymentId());
             ps.executeUpdate();
         } catch (SQLException e) {

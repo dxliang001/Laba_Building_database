@@ -31,7 +31,7 @@ public class ProjectEmployeeDAOJDBC implements ProjectEmployeeDAO {
     public List<ProjectEmployees> getAllProjectEmployees() {
         List<ProjectEmployees> projectEmployees = new ArrayList<>();
         try (Connection connection = connectionPool.getConnection()) {
-            PreparedStatement ps = connection.prepareStatement("SELECT * FROM ProjectEmployees");
+            PreparedStatement ps = connection.prepareStatement("SELECT * FROM projectemployees");
             ResultSet rs = ps.executeQuery();
             while (rs.next()) {
                 Employees employee = employeesDAOJDBC.getEmployeeById(rs.getInt("emp_id"));
@@ -49,7 +49,7 @@ public class ProjectEmployeeDAOJDBC implements ProjectEmployeeDAO {
     @Override
     public void save(ProjectEmployees projectEmployee) {
         try (Connection connection = connectionPool.getConnection()) {
-            PreparedStatement ps = connection.prepareStatement("INSERT INTO ProjectEmployees (project_id, emp_id) VALUES (?, ?)");
+            PreparedStatement ps = connection.prepareStatement("INSERT INTO projectemployees (project_id, emp_id) VALUES (?, ?)");
             ps.setInt(1, projectEmployee.getProjectId().getProjectId());
             ps.setInt(2, projectEmployee.getEmpId().getEmpId());
             ps.executeUpdate();
@@ -63,7 +63,7 @@ public class ProjectEmployeeDAOJDBC implements ProjectEmployeeDAO {
     @Override
     public void delete(ProjectEmployees projectEmployee) {
         try (Connection connection = connectionPool.getConnection()) {
-            PreparedStatement ps = connection.prepareStatement("DELETE FROM ProjectEmployees WHERE project_id = ? AND emp_id = ?");
+            PreparedStatement ps = connection.prepareStatement("DELETE FROM projectemployees WHERE project_id = ? AND emp_id = ?");
             ps.setInt(1, projectEmployee.getProjectId().getProjectId());
             ps.setInt(2, projectEmployee.getEmpId().getEmpId());
             ps.executeUpdate();

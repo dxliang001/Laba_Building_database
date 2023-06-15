@@ -23,7 +23,7 @@ public class SuppliersDAOJDBC implements SuppliersDAO {
     public List<Suppliers> getAllSuppliers() {
         List<Suppliers> suppliers = new ArrayList<>();
         try (Connection connection = connectionPool.getConnection()) {
-            PreparedStatement ps = connection.prepareStatement("SELECT * FROM Suppliers");
+            PreparedStatement ps = connection.prepareStatement("SELECT * FROM suppliers");
             ResultSet rs = ps.executeQuery();
             while (rs.next()) {
                 suppliers.add(new Suppliers(rs.getInt("supplier_id"), rs.getString("supplier_name"), rs.getString("supplier_address"), rs.getString("supplier_email"), rs.getString("supplier_phone")));
@@ -38,7 +38,7 @@ public class SuppliersDAOJDBC implements SuppliersDAO {
     public Suppliers getSupplierById(int id) {
         Suppliers supplier = null;
         try (Connection connection = connectionPool.getConnection()) {
-            PreparedStatement ps = connection.prepareStatement("SELECT * FROM Suppliers WHERE supplier_id = ?");
+            PreparedStatement ps = connection.prepareStatement("SELECT * FROM suppliers WHERE supplier_id = ?");
             ps.setInt(1, id);
             ResultSet rs = ps.executeQuery();
             if (rs.next()) {
@@ -53,7 +53,7 @@ public class SuppliersDAOJDBC implements SuppliersDAO {
     @Override
     public void save(Suppliers supplier) {
         try (Connection connection = connectionPool.getConnection()) {
-            PreparedStatement ps = connection.prepareStatement("INSERT INTO Suppliers (supplier_id, supplier_name, supplier_address, supplier_email, supplier_phone) VALUES (?, ?, ?, ?, ?)");
+            PreparedStatement ps = connection.prepareStatement("INSERT INTO suppliers (supplier_id, supplier_name, supplier_address, supplier_email, supplier_phone) VALUES (?, ?, ?, ?, ?)");
             ps.setInt(1, supplier.getSupplierId());
             ps.setString(2, supplier.getSupplierName());
             ps.setString(3, supplier.getSupplierAddress());
@@ -68,7 +68,7 @@ public class SuppliersDAOJDBC implements SuppliersDAO {
     @Override
     public void update(Suppliers supplier) {
         try (Connection connection = connectionPool.getConnection()) {
-            PreparedStatement ps = connection.prepareStatement("UPDATE Suppliers SET supplier_name = ?, supplier_address = ?, supplier_email = ?, supplier_phone = ? WHERE supplier_id = ?");
+            PreparedStatement ps = connection.prepareStatement("UPDATE suppliers SET supplier_name = ?, supplier_address = ?, supplier_email = ?, supplier_phone = ? WHERE supplier_id = ?");
             ps.setString(1, supplier.getSupplierName());
             ps.setString(2, supplier.getSupplierAddress());
             ps.setString(3, supplier.getSupplierEmail());
@@ -83,7 +83,7 @@ public class SuppliersDAOJDBC implements SuppliersDAO {
     @Override
     public void delete(Suppliers supplier) {
         try (Connection connection = connectionPool.getConnection()) {
-            PreparedStatement ps = connection.prepareStatement("DELETE FROM Suppliers WHERE supplier_id = ?");
+            PreparedStatement ps = connection.prepareStatement("DELETE FROM suppliers WHERE supplier_id = ?");
             ps.setInt(1, supplier.getSupplierId());
             ps.executeUpdate();
         } catch (SQLException e) {
