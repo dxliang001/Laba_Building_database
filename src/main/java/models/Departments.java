@@ -1,12 +1,17 @@
 package models;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import java.util.Objects;
 
 public class Departments {
+    @JsonProperty("department_id")
     private int departmentId;
+    @JsonProperty("department_name")
     private String departmentName;
+    @JsonProperty("department_description")
     private String departmentDescription;
-
+    public Departments() {}
     public Departments(int departmentId, String departmentName, String departmentDescription) {
         this.departmentId = departmentId;
         this.departmentName = departmentName;

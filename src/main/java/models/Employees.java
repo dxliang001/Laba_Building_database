@@ -13,11 +13,10 @@ public class Employees {
     private String firstName;
     @JsonProperty("last_name")
     private String lastName;
-    @JsonProperty("role_id")
+    @JsonProperty("role")
     private Roles role;
-    @JsonProperty("department_id")
+    @JsonProperty("department")
     private Departments department;
-
     @JsonProperty("hire_date")
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
     private Date hireDate;
@@ -25,6 +24,8 @@ public class Employees {
     private String email;
     @JsonProperty("phone_number")
     private String phoneNumber;
+
+    public Employees() { }
     public Employees(int empId, String firstName, String lastName, Roles role,
                      Departments departmentId, Date hireDate, String email, String phoneNumber) {
         this.empId = empId;

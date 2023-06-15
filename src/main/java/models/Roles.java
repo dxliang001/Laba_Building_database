@@ -1,12 +1,18 @@
 package models;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import java.util.Objects;
 
 public class Roles {
+    @JsonProperty("role_id")
     private int roleId;
+    @JsonProperty("role_name")
     private String roleName;
+    @JsonProperty("role_description")
     private String roleDescription;
 
+    public Roles() {}
     public Roles(int roleId, String roleName, String roleDescription) {
         this.roleId = roleId;
         this.roleName = roleName;

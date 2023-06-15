@@ -1,14 +1,31 @@
 package models;
+
+import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import java.sql.Date;
 import java.util.Objects;
 
 public class Projects {
+    @JsonProperty("project_id")
     private int projectId;
+    @JsonProperty("project_name")
     private String projectName;
+
+    @JsonProperty("start_date")
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
     private Date startDate;
+    @JsonProperty("end_date")
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
     private Date endDate;
+
+    @JsonProperty("client")
     private Clients clientId;
+
+    @JsonProperty("project_status")
     private String projectStatus;
+
+    public Projects (){}
 
     public Projects(int projectId, String projectName, Date startDate, Date endDate, Clients clientId, String projectStatus) {
         this.projectId = projectId;

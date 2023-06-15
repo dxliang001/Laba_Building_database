@@ -1,17 +1,25 @@
 package models;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import java.util.Objects;
 
 public class Clients {
 
+    @JsonProperty("client_id")
     private int clientId;
-
+    @JsonProperty("client_name")
     private String clientName;
+    @JsonProperty("contact_name")
     private String contactName;
+    @JsonProperty("client_address")
     private String clientAddress;
+    @JsonProperty("client_email")
     private String clientEmail;
+    @JsonProperty("client_phone")
     private String clientPhone;
 
+    public Clients() {}
     public Clients(int clientId, String clientName, String contactName, String clientAddress, String clientEmail, String clientPhone) {
         this.clientId = clientId;
         this.clientName = clientName;
