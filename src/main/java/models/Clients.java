@@ -5,6 +5,7 @@ import java.util.Objects;
 public class Clients {
 
     private int clientId;
+
     private String clientName;
     private String contactName;
     private String clientAddress;

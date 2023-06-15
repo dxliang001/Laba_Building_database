@@ -1,16 +1,29 @@
 package models;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 import java.sql.Date;
 import java.util.Objects;
 
 public class Employees {
+    @JsonProperty("emp_id")
     private int empId;
+    @JsonProperty("first_name")
     private String firstName;
+    @JsonProperty("last_name")
     private String lastName;
+    @JsonProperty("role_id")
     private Roles role;
+    @JsonProperty("department_id")
     private Departments department;
+
+    @JsonProperty("hire_date")
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
     private Date hireDate;
+    @JsonProperty("email")
     private String email;
+    @JsonProperty("phone_number")
     private String phoneNumber;
     public Employees(int empId, String firstName, String lastName, Roles role,
                      Departments departmentId, Date hireDate, String email, String phoneNumber) {
