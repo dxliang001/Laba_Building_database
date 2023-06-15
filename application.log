@@ -1,0 +1,66 @@
+2023-06-08 10:54:44.296 [main] INFO  Main - Client: Client{clientId=1, clientName='Client Company', contactName='Jane Smith', clientAddress='123 Main St', clientEmail='client@example.com', clientPhone='098-765-4321'}
+2023-06-08 10:54:44.300 [main] INFO  Main - Client: Client{clientId=2, clientName='Client Co', contactName='Tom Lee', clientAddress='234 Main St', clientEmail='clientco@example.com', clientPhone='111-222-3333'}
+2023-06-08 10:54:44.301 [main] INFO  Main - Client: Client{clientId=3, clientName='Alpha Ltd', contactName='Susan Miller', clientAddress='345 High St', clientEmail='alphaltd@example.com', clientPhone='444-555-6666'}
+2023-06-08 10:54:44.301 [main] INFO  Main - Client: Client{clientId=4, clientName='Beta Corp', contactName='Robert Brown', clientAddress='456 Park Ave', clientEmail='betacorp@example.com', clientPhone='777-888-9999'}
+2023-06-08 10:54:44.301 [main] INFO  Main - Client: Client{clientId=5, clientName='Gamma Inc', contactName='Patricia Davis', clientAddress='567 King St', clientEmail='gammainc@example.com', clientPhone='000-111-2222'}
+2023-06-08 10:54:44.301 [main] INFO  Main - Client: Client{clientId=6, clientName='Delta Plc', contactName='James Wilson', clientAddress='678 Queen St', clientEmail='deltaplc@example.com', clientPhone='333-444-5555'}
+2023-06-09 01:18:29.844 [main] INFO  Main - Employee ID: 1
+2023-06-09 01:18:29.847 [main] INFO  Main - Employee First Name: John
+2023-06-09 01:18:29.847 [main] INFO  Main - Employee Last Name: Doe
+2023-06-09 01:18:29.847 [main] INFO  Main - Employee Email: john.doe@example.com
+2023-06-12 12:09:56.677 [main] INFO  Main - ClientsList{clients=[Client{clientId=1, clientName='Example Company 1', contactName='John Doe', clientAddress='123 Main St, Example City, EX 12345', clientEmail='example1@example.com', clientPhone='+1 234-567-8901'}, Client{clientId=2, clientName='Example Company 2', contactName='Jane Doe', clientAddress='456 Broadway St, Example City, EX 67890', clientEmail='example2@example.com', clientPhone='+1 098-765-4321'}]}
+2023-06-12 12:10:38.623 [main] INFO  Main - ClientsList{clients=[Client{clientId=1, clientName='Example Company 1', contactName='John Doe', clientAddress='123 Main St, Example City, EX 12345', clientEmail='example1@example.com', clientPhone='+1 234-567-8901'}, Client{clientId=2, clientName='Example Company 2', contactName='Jane Doe', clientAddress='456 Broadway St, Example City, EX 67890', clientEmail='example2@example.com', clientPhone='+1 098-765-4321'}]'}
+2023-06-12 13:01:04.546 [main] INFO  Main - ======================================
+2023-06-12 13:01:04.548 [main] INFO  Main - |         Building Cost Calculator     |
+2023-06-12 13:01:04.548 [main] INFO  Main - ======================================
+2023-06-12 13:01:04.548 [main] INFO  Main - | Options:                           |
+2023-06-12 13:01:04.549 [main] INFO  Main - |    1. Residential Building          |
+2023-06-12 13:01:04.549 [main] INFO  Main - |    2. Commercial Building           |
+2023-06-12 13:01:04.549 [main] INFO  Main - |    3. Industrial Building           |
+2023-06-12 13:01:04.549 [main] INFO  Main - |    4. Exit                          |
+2023-06-12 13:01:04.549 [main] INFO  Main - ======================================
+2023-06-12 13:01:04.549 [main] INFO  Main - Enter the building type (1-4):
+2023-06-12 13:01:08.538 [main] INFO  Main - Exiting Building Cost Calculator. Goodbye!
+2023-06-12 13:01:51.447 [main] ERROR Main - An error occurred.
+java.lang.RuntimeException: Error getting database connection
+	at dao.connectionPool.ConnectionPool.getConnection(ConnectionPool.java:33) ~[classes/:?]
+	at dao.jdbc.ClientsDAOJDBC.getAllClients(ClientsDAOJDBC.java:24) ~[classes/:?]
+	at services.ClientService.getAllClients(ClientService.java:20) ~[classes/:?]
+	at Main.main(Main.java:25) [classes/:?]
+Caused by: java.sql.SQLException: Cannot create PoolableConnectionFactory (Access denied for user 'root'@'localhost' (using password: YES))
+	at org.apache.commons.dbcp2.BasicDataSource.createPoolableConnectionFactory(BasicDataSource.java:656) ~[commons-dbcp2-2.8.0.jar:2.8.0]
+	at org.apache.commons.dbcp2.BasicDataSource.createDataSource(BasicDataSource.java:534) ~[commons-dbcp2-2.8.0.jar:2.8.0]
+	at org.apache.commons.dbcp2.BasicDataSource.getConnection(BasicDataSource.java:734) ~[commons-dbcp2-2.8.0.jar:2.8.0]
+	at dao.connectionPool.ConnectionPool.getConnection(ConnectionPool.java:31) ~[classes/:?]
+	... 3 more
+Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:130) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:825) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:446) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:239) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:188) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at org.apache.commons.dbcp2.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:52) ~[commons-dbcp2-2.8.0.jar:2.8.0]
+	at org.apache.commons.dbcp2.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:357) ~[commons-dbcp2-2.8.0.jar:2.8.0]
+	at org.apache.commons.dbcp2.BasicDataSource.validateConnectionFactory(BasicDataSource.java:103) ~[commons-dbcp2-2.8.0.jar:2.8.0]
+	at org.apache.commons.dbcp2.BasicDataSource.createPoolableConnectionFactory(BasicDataSource.java:652) ~[commons-dbcp2-2.8.0.jar:2.8.0]
+	at org.apache.commons.dbcp2.BasicDataSource.createDataSource(BasicDataSource.java:534) ~[commons-dbcp2-2.8.0.jar:2.8.0]
+	at org.apache.commons.dbcp2.BasicDataSource.getConnection(BasicDataSource.java:734) ~[commons-dbcp2-2.8.0.jar:2.8.0]
+	at dao.connectionPool.ConnectionPool.getConnection(ConnectionPool.java:31) ~[classes/:?]
+	... 3 more
+2023-06-12 13:02:07.170 [main] INFO  Main - Client: Client{clientId=1, clientName='Client Company', contactName='Jane Smith', clientAddress='123 Main St', clientEmail='client@example.com', clientPhone='098-765-4321'}
+2023-06-12 13:02:07.172 [main] INFO  Main - Client: Client{clientId=2, clientName='Client Co', contactName='Tom Lee', clientAddress='234 Main St', clientEmail='clientco@example.com', clientPhone='111-222-3333'}
+2023-06-12 13:02:07.172 [main] INFO  Main - Client: Client{clientId=3, clientName='Alpha Ltd', contactName='Susan Miller', clientAddress='345 High St', clientEmail='alphaltd@example.com', clientPhone='444-555-6666'}
+2023-06-12 13:02:07.172 [main] INFO  Main - Client: Client{clientId=4, clientName='Beta Corp', contactName='Robert Brown', clientAddress='456 Park Ave', clientEmail='betacorp@example.com', clientPhone='777-888-9999'}
+2023-06-12 13:02:07.173 [main] INFO  Main - Client: Client{clientId=5, clientName='Gamma Inc', contactName='Patricia Davis', clientAddress='567 King St', clientEmail='gammainc@example.com', clientPhone='000-111-2222'}
+2023-06-12 13:02:07.173 [main] INFO  Main - Client: Client{clientId=6, clientName='Delta Plc', contactName='James Wilson', clientAddress='678 Queen St', clientEmail='deltaplc@example.com', clientPhone='333-444-5555'}
+2023-06-12 13:02:07.177 [main] INFO  Main - ======================================
+2023-06-12 13:02:07.177 [main] INFO  Main - |         Building Cost Calculator     |
+2023-06-12 13:02:07.177 [main] INFO  Main - ======================================
+2023-06-12 13:02:07.177 [main] INFO  Main - | Options:                           |
+2023-06-12 13:02:07.177 [main] INFO  Main - |    1. Residential Building          |
+2023-06-12 13:02:07.178 [main] INFO  Main - |    2. Commercial Building           |
+2023-06-12 13:02:07.178 [main] INFO  Main - |    3. Industrial Building           |
+2023-06-12 13:02:07.178 [main] INFO  Main - |    4. Exit                          |
+2023-06-12 13:02:07.178 [main] INFO  Main - ======================================
+2023-06-12 13:02:07.178 [main] INFO  Main - Enter the building type (1-4):
