@@ -1,0 +1,42 @@
+{
+  "employees": [
+    {
+      "emp_id": 1,
+      "first_name": "John",
+      "last_name": "Doe",
+      "role": {
+        "role_id": 1,
+        "role_name": "Manager",
+        "role_description": "Responsible for managing the team and projects"
+      },
+      "department": {
+        "department_id": 1,
+        "department_name": "Engineering",
+        "department_description": "Responsible for product development"
+      },
+      "hire_date": "2022-01-01",
+      "email": "john.doe@example.com",
+      "phone_number": "1234567890"
+    }
+
+  ],
+  "projects": [
+    {
+      "project_id": 1,
+      "project_name": "Project A",
+      "start_date": "2022-01-01",
+      "end_date": "2022-06-30",
+      "client": {
+        "client_id": 1,
+        "client_name": "ABC Company",
+        "contact_name": "John Smith",
+        "client_address": "123 Main St, City",
+        "client_email": "info@abc.com",
+        "client_phone": "1234567890"
+      },
+      "project_status": "In Progress"
+    }
+
+  ]
+
+}
