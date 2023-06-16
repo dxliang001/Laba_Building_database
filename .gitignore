@@ -1,0 +1,7 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+target/
+application.log
+src/main/resources/database.properties
+*.properties
