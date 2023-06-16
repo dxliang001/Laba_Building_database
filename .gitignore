@@ -3,5 +3,5 @@
 /workspace.xml
 target/
 application.log
-src/main/resources/database.properties
+database.properties
 *.properties
