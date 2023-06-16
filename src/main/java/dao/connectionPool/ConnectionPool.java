@@ -3,6 +3,9 @@ package dao.connectionPool;
 import org.apache.commons.dbcp2.BasicDataSource;
 import java.sql.Connection;
 import java.sql.SQLException;
+import java.io.InputStream;
+import java.io.IOException;
+import java.util.Properties;
 
 public class ConnectionPool {
 
@@ -11,15 +14,28 @@ public class ConnectionPool {
     static {
         dataSource = new BasicDataSource();
 
-        // Connect to remote database
-        dataSource.setUrl("jdbc:mysql://18.197.182.199:3306/Alex_building_laba");
-        dataSource.setUsername("root");
-        dataSource.setPassword("devintern");
+        // Load properties from the db.properties file
+        Properties dbProperties = new Properties();
+        try (InputStream input = ConnectionPool.class.getClassLoader().getResourceAsStream("database.properties")) {
+            if (input == null) {
+                System.out.println("Sorry, unable to find database.properties");
+            } else {
+                // load a properties file from class path
+                dbProperties.load(input);
 
-        dataSource.setMinIdle(5);
-        dataSource.setMaxIdle(20);
-        dataSource.setMaxTotal(50);
-        dataSource.setMaxWaitMillis(30000);
+                // Set DB details from properties
+                dataSource.setUrl(dbProperties.getProperty("DB_URL"));
+                dataSource.setUsername(dbProperties.getProperty("DB_USERNAME"));
+                dataSource.setPassword(dbProperties.getProperty("DB_PASSWORD"));
+
+                dataSource.setMinIdle(5);
+                dataSource.setMaxIdle(20);
+                dataSource.setMaxTotal(50);
+                dataSource.setMaxWaitMillis(30000);
+            }
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
     }
 
     public static BasicDataSource getDataSource() {
