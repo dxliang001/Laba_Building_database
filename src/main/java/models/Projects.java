@@ -1,25 +1,42 @@
 package models;
+import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
+
 import java.sql.Date;
 import java.util.Objects;
 @XmlRootElement(name = "Projects")
 @XmlAccessorType(XmlAccessType.FIELD)
 public class Projects {
+
+    @JsonProperty("project_id")
     @XmlElement(name = "projectId")
     private int projectId;
+    @JsonProperty("project_name")
     @XmlElement(name = "projectName")
     private String projectName;
+
+    @JsonProperty("start_date")
     @XmlElement(name = "startDate")
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
     private Date startDate;
+    @JsonProperty("end_date")
     @XmlElement(name = "endDate")
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
     private Date endDate;
+
+    @JsonProperty("client")
     @XmlElement(name = "clientId")
     private Clients clientId;
+
+    @JsonProperty("project_status")
     @XmlElement(name = "projectStatus")
     private String projectStatus;
+
+    public Projects (){}
 
     public Projects(int projectId, String projectName, Date startDate, Date endDate, Clients clientId, String projectStatus) {
         this.projectId = projectId;

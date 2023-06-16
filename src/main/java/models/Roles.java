@@ -1,20 +1,29 @@
 package models;
 
+
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
+
 import java.util.Objects;
 @XmlRootElement(name = "Roles")
 @XmlAccessorType(XmlAccessType.FIELD)
 public class Roles {
+    @JsonProperty("role_id")
     @XmlElement(name = "roleId")
     private int roleId;
+    @JsonProperty("role_name")
     @XmlElement(name = "roleName")
     private String roleName;
+    @JsonProperty("role_description")
     @XmlElement(name = "roleDescription")
     private String roleDescription;
 
+    public Roles() {}
     public Roles(int roleId, String roleName, String roleDescription) {
         this.roleId = roleId;
         this.roleName = roleName;

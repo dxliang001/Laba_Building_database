@@ -4,13 +4,14 @@ package dao.jdbc;
 import dao.connectionPool.ConnectionPool;
 import dao.interfaces.InventoryDAO;
 import models.Inventory;
+import models.Materials;
+
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
-import models.Materials;
 
 public class InventoryDAOJDBC implements InventoryDAO {
 
@@ -26,7 +27,7 @@ public class InventoryDAOJDBC implements InventoryDAO {
     public List<Inventory> getAllInventory() {
         List<Inventory> inventories = new ArrayList<>();
         try (Connection connection = connectionPool.getConnection()) {
-            PreparedStatement ps = connection.prepareStatement("SELECT * FROM Inventory");
+            PreparedStatement ps = connection.prepareStatement("SELECT * FROM inventory");
             ResultSet rs = ps.executeQuery();
             while (rs.next()) {
                 Materials materials = materialsDAOJDBC.getMaterialById(rs.getInt("material_id"));
@@ -44,7 +45,7 @@ public class InventoryDAOJDBC implements InventoryDAO {
     public Inventory getInventoryById(int id) {
         Inventory inventory = null;
         try (Connection connection = connectionPool.getConnection()) {
-            PreparedStatement ps = connection.prepareStatement("SELECT * FROM Inventory WHERE inventory_id = ?");
+            PreparedStatement ps = connection.prepareStatement("SELECT * FROM inventory WHERE inventory_id = ?");
             ps.setInt(1, id);
             ResultSet rs = ps.executeQuery();
             if (rs.next()) {
@@ -62,7 +63,7 @@ public class InventoryDAOJDBC implements InventoryDAO {
     @Override
     public void save(Inventory inventory) {
         try (Connection connection = connectionPool.getConnection()) {
-            PreparedStatement ps = connection.prepareStatement("INSERT INTO Inventory (inventory_id, material_id, quantity) VALUES (?, ?, ?)");
+            PreparedStatement ps = connection.prepareStatement("INSERT INTO inventory (inventory_id, material_id, quantity) VALUES (?, ?, ?)");
             ps.setInt(1, inventory.getInventoryId());
             ps.setInt(2, inventory.getMaterialId().getMaterialId());
             ps.setInt(3, inventory.getQuantityOnHand());
@@ -75,7 +76,7 @@ public class InventoryDAOJDBC implements InventoryDAO {
     @Override
     public void update(Inventory inventory) {
         try (Connection connection = connectionPool.getConnection()) {
-            PreparedStatement ps = connection.prepareStatement("UPDATE Inventory SET material_id = ?, quantity = ? WHERE inventory_id = ?");
+            PreparedStatement ps = connection.prepareStatement("UPDATE inventory SET material_id = ?, quantity = ? WHERE inventory_id = ?");
             ps.setInt(1, inventory.getMaterialId().getMaterialId());
             ps.setInt(2, inventory.getQuantityOnHand());
             ps.setInt(3, inventory.getInventoryId());
@@ -88,7 +89,7 @@ public class InventoryDAOJDBC implements InventoryDAO {
     @Override
     public void delete(Inventory inventory) {
         try (Connection connection = connectionPool.getConnection()) {
-            PreparedStatement ps = connection.prepareStatement("DELETE FROM Inventory WHERE inventory_id = ?");
+            PreparedStatement ps = connection.prepareStatement("DELETE FROM inventory WHERE inventory_id = ?");
             ps.setInt(1, inventory.getInventoryId());
             ps.executeUpdate();
         } catch (SQLException e) {

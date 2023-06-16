@@ -1,3 +1,4 @@
+import Menu.BuildingCostCalculatorApp;
 import dao.connectionPool.ConnectionPool;
 import dao.jdbc.ClientsDAOJDBC;
 import models.Clients;
@@ -15,7 +16,6 @@ public class Main {
         ConnectionPool connectionPool = null;
         try {
             connectionPool = new ConnectionPool();
-
 
             // Create the DAO and Service instances
             ClientsDAOJDBC clientsDAO = new ClientsDAOJDBC(connectionPool);
