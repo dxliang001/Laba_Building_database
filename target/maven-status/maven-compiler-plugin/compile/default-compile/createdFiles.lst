@@ -1,17 +1,17 @@
 models\Roles.class
 models\Projects.class
-XMLReaderDOM.class
 dao\interfaces\InventoryDAO.class
 services\MaterialService.class
 dao\interfaces\RolesDAO.class
+Parser\JsonParserExample.class
 models\Inventory.class
+Menu\BuildingCostCalculatorApp.class
 services\RolesService.class
 services\SupplierService.class
 models\Clients.class
 services\InventoryService.class
 services\ProjectEmployeeService.class
 dao\interfaces\MaterialsDAO.class
-BuildingCostCalculatorApp.class
 models\Suppliers.class
 models\Employees.class
 dao\jdbc\DepartmentsDAOJDBC.class
@@ -19,10 +19,12 @@ dao\jdbc\ExpensesDAOJDBC.class
 services\ProjectMaterialService.class
 services\PaymentService.class
 dao\connectionPool\ConnectionPool.class
+dao\interfaces\ClientsMapper.class
 dao\jdbc\ProjectEmployeeDAOJDBC.class
 services\ClientService.class
 dao\jdbc\ProjectMaterialDAOJDBC.class
 models\ClientsList.class
+Menu\BuildingCostCalculator.class
 dao\interfaces\ProjectMaterialDAO.class
 services\DepartmentsService.class
 dao\jdbc\InventoryDAOJDBC.class
@@ -37,6 +39,7 @@ services\InvoiceService.class
 dao\interfaces\ProjectEmployeeDAO.class
 dao\interfaces\InvoicesDAO.class
 models\Materials.class
+Parser\DataRoot.class
 dao\interfaces\ClientsDAO.class
 Main.class
 dao\interfaces\Dao.class
@@ -45,10 +48,10 @@ dao\jdbc\EmployeesDAOJDBC.class
 dao\interfaces\DepartmentsDAO.class
 services\ProjectsService.class
 dao\interfaces\PaymentsDAO.class
+Parser\XMLReaderDOM.class
 dao\jdbc\ClientsDAOJDBC.class
 dao\jdbc\ProjectsDAOJDBC.class
 dao\jdbc\InvoicesDAOJDBC.class
-BuildingCostCalculator.class
 dao\jdbc\RolesDAOJDBC.class
 models\Payments.class
 models\ProjectMaterials.class
@@ -57,4 +60,3 @@ dao\jdbc\PaymentsDAOJDBC.class
 models\Expenses.class
 models\Departments.class
 dao\interfaces\ExpensesDAO.class
-JaxbExample.class
