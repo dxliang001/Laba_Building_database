@@ -1,27 +1,52 @@
-import Menu.BuildingCostCalculatorApp;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import dao.interfaces.ClientsMapper;
+import models.Clients;
+import org.apache.ibatis.io.Resources;
+import org.apache.ibatis.session.SqlSession;
+import org.apache.ibatis.session.SqlSessionFactory;
+import org.apache.ibatis.session.SqlSessionFactoryBuilder;
+
+import java.io.IOException;
+import java.io.Reader;
 
 public class Main {
 
-    private static final Logger logger = LogManager.getLogger(Main.class);
-
     public static void main(String[] args) {
-        //ConnectionPool connectionPool = null;
+        SqlSession session = null;
         try {
-            //connectionPool = new ConnectionPool();
+            Reader reader = Resources.getResourceAsReader("mybatis-config.xml");
+            SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(reader);
+
+            session = sqlSessionFactory.openSession();
+            ClientsMapper mapper = session.getMapper(ClientsMapper.class);
+
+            /* Test insertClient
+            Clients newClient = new Clients();
+            newClient.setClientId(1);
+            newClient.setClientName("Client Name");
+            newClient.setContactName("Contact Name");
+            newClient.setClientAddress("Client Address");
+            newClient.setClientEmail("client@example.com");
+            newClient.setClientPhone("123-456-7890");
+            mapper.save(newClient);
+            session.commit();
+            */
+
+            // Test getClientById
+            Clients client = mapper.getClientById(2);
+            System.out.println("Client " + client.getClientName());
 
 
-            // Run the Building Cost Calculator App
-            BuildingCostCalculatorApp.run();
+            client = mapper.getClientById(5);
+            System.out.println("Client : " + client);
 
 
-        } catch (Exception e) {
-            logger.error("An error occurred.", e);
+        } catch (IOException e) {
+            e.printStackTrace();
         } finally {
-           // if (connectionPool != null) {
-            //    ConnectionPool.shutdown();
-           // }
+            if (session != null) {
+                session.close();
+            }
         }
     }
 }
+
