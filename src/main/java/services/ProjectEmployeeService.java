@@ -1,26 +1,30 @@
 package services;
 
-import dao.interfaces.ProjectEmployeeDAO;
+import dao.interfaces.ProjectEmployeesMapper;
 import models.ProjectEmployees;
 
 import java.util.List;
 
 public class ProjectEmployeeService {
-    private ProjectEmployeeDAO projectEmployeeDao;
+    private ProjectEmployeesMapper projectEmployeesMapper;
 
-    public ProjectEmployeeService(ProjectEmployeeDAO projectEmployeeDao) {
-        this.projectEmployeeDao = projectEmployeeDao;
+    public ProjectEmployeeService(ProjectEmployeesMapper projectEmployeesMapper) {
+        this.projectEmployeesMapper = projectEmployeesMapper;
+    }
+
+    public ProjectEmployees getProjectEmployeeById(int projectId, int empId) {
+        return projectEmployeesMapper.getProjectEmployeeById(projectId, empId);
     }
 
     public List<ProjectEmployees> getAllProjectEmployees() {
-        return projectEmployeeDao.getAllProjectEmployees();
+        return projectEmployeesMapper.getAllProjectEmployees();
     }
 
     public void saveProjectEmployee(ProjectEmployees projectEmployee) {
-        projectEmployeeDao.save(projectEmployee);
+        projectEmployeesMapper.save(projectEmployee);
     }
 
     public void deleteProjectEmployee(ProjectEmployees projectEmployee) {
-        projectEmployeeDao.delete(projectEmployee);
+        projectEmployeesMapper.delete(projectEmployee);
     }
 }
