@@ -43,12 +43,12 @@ public class Employees {
 
     public Employees() { }
     public Employees(int empId, String firstName, String lastName, Roles role,
-                     Departments departmentId, Date hireDate, String email, String phoneNumber) {
+                     Departments department, Date hireDate, String email, String phoneNumber) {
         this.empId = empId;
         this.firstName = firstName;
         this.lastName = lastName;
         this.role = role;
-        this.department = departmentId;
+        this.department = department;
         this.hireDate = hireDate;
         this.email = email;
         this.phoneNumber = phoneNumber;

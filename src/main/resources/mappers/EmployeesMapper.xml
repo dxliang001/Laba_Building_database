@@ -7,26 +7,45 @@
         <id property="empId" column="emp_id"/>
         <result property="firstName" column="first_name"/>
         <result property="lastName" column="last_name"/>
-        <result property="role" column="role_id"/>
-        <result property="department" column="department_id"/>
         <result property="hireDate" column="hire_date"/>
         <result property="email" column="email"/>
         <result property="phoneNumber" column="phone_number"/>
+        <association property="role" column="role_id" javaType="models.Roles" resultMap="RoleId"/>
+        <association property="department" column="department_id" javaType="models.Departments" resultMap="DepartmentId"/>
+    </resultMap>
+
+    <resultMap id="RoleId" type="models.Roles">
+        <id property="roleId" column="role_id"/>
+        <result property="roleName" column="role_name"/>
+        <result property="roleDescription" column="role_description"/>
+    </resultMap>
+
+    <resultMap id="DepartmentId" type="models.Departments">
+        <id property="departmentId" column="department_id"/>
+        <result property="departmentName" column="department_name"/>
+        <result property="departmentDescription" column="department_description"/>
     </resultMap>
 
     <select id="getAllEmployees" resultMap="EmployeeResult">
-        SELECT * FROM Alex_building_laba.employees
+        SELECT e.*, r.role_name, r.role_description, d.department_name, d.department_description
+        FROM Alex_building_laba.employees e
+        LEFT JOIN Alex_building_laba.roles r ON e.role_id = r.role_id
+        LEFT JOIN Alex_building_laba.departments d ON e.department_id = d.department_id
     </select>
 
     <select id="getEmployeeById" resultMap="EmployeeResult">
-        SELECT * FROM Alex_building_laba.employees WHERE emp_id = #{id}
+        SELECT e.*, r.role_name, r.role_description, d.department_name, d.department_description
+        FROM Alex_building_laba.employees e
+        LEFT JOIN Alex_building_laba.roles r ON e.role_id = r.role_id
+        LEFT JOIN Alex_building_laba.departments d ON e.department_id = d.department_id
+        WHERE e.emp_id = #{id}
     </select>
 
     <insert id="save" parameterType="models.Employees">
         INSERT INTO Alex_building_laba.employees
         (emp_id, first_name, last_name, role_id, department_id, hire_date, email, phone_number)
         VALUES
-        (#{empId}, #{firstName}, #{lastName}, #{role}, #{department}, #{hireDate}, #{email}, #{phoneNumber})
+        (#{empId}, #{firstName}, #{lastName}, #{roleId.roleId}, #{departmentId.departmentId}, #{hireDate}, #{email}, #{phoneNumber})
     </insert>
 
     <update id="update" parameterType="models.Employees">
@@ -34,8 +53,8 @@
         SET
         first_name = #{firstName},
         last_name = #{lastName},
-        role_id = #{role},
-        department_id = #{department},
+        role_id = #{roleId.roleId},
+        department_id = #{departmentId.departmentId},
         hire_date = #{hireDate},
         email = #{email},
         phone_number = #{phoneNumber}

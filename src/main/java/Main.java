@@ -1,12 +1,14 @@
 import dao.interfaces.ClientsMapper;
+import dao.interfaces.EmployeesMapper;
 import models.Clients;
+import models.Employees;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
-
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+
 import java.io.IOException;
 import java.io.Reader;
 import java.util.List;
@@ -22,6 +24,7 @@ public class Main {
 
             session = sqlSessionFactory.openSession();
             ClientsMapper mapper = session.getMapper(ClientsMapper.class);
+            EmployeesMapper employeesMapper = session.getMapper(EmployeesMapper.class);
 
             /* Test insertClient
             Clients newClient = new Clients();
@@ -53,6 +56,14 @@ public class Main {
                 logger.info("Client Phone: " + clients.getClientPhone());
                 logger.info("------------------------");
             }
+
+            List<Employees> employees = employeesMapper.getAllEmployees();
+            System.out.println("Employees:");
+            for (Employees employee : employees) {
+                logger.info(employee);
+            }
+
+
 
         } catch (IOException e) {
             e.printStackTrace();

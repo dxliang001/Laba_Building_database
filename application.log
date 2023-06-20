@@ -328,3 +328,606 @@ Caused by: java.sql.SQLException: No suitable driver
 2023-06-20 02:11:05.568 [main] INFO  Main - Client Email: client@example.com
 2023-06-20 02:11:05.569 [main] INFO  Main - Client Phone: 123-456-7890
 2023-06-20 02:11:05.569 [main] INFO  Main - ------------------------
+2023-06-20 09:53:13.711 [main] INFO  Main - Client Client Co
+2023-06-20 09:53:13.811 [main] INFO  Main - Client : Client{clientId=5, clientName='Gamma Inc', contactName='Patricia Davis', clientAddress='567 King St', clientEmail='gammainc@example.com', clientPhone='000-111-2222'}
+2023-06-20 09:53:13.904 [main] INFO  Main - Client ID: 1
+2023-06-20 09:53:13.904 [main] INFO  Main - Client Name: Client Company
+2023-06-20 09:53:13.904 [main] INFO  Main - Contact Name: Jane Smith
+2023-06-20 09:53:13.904 [main] INFO  Main - Client Address: 123 Main St
+2023-06-20 09:53:13.904 [main] INFO  Main - Client Email: client@example.com
+2023-06-20 09:53:13.904 [main] INFO  Main - Client Phone: 098-765-4321
+2023-06-20 09:53:13.904 [main] INFO  Main - ------------------------
+2023-06-20 09:53:13.904 [main] INFO  Main - Client ID: 2
+2023-06-20 09:53:13.904 [main] INFO  Main - Client Name: Client Co
+2023-06-20 09:53:13.904 [main] INFO  Main - Contact Name: Tom Lee
+2023-06-20 09:53:13.905 [main] INFO  Main - Client Address: 234 Main St
+2023-06-20 09:53:13.905 [main] INFO  Main - Client Email: clientco@example.com
+2023-06-20 09:53:13.905 [main] INFO  Main - Client Phone: 111-222-3333
+2023-06-20 09:53:13.905 [main] INFO  Main - ------------------------
+2023-06-20 09:53:13.905 [main] INFO  Main - Client ID: 3
+2023-06-20 09:53:13.905 [main] INFO  Main - Client Name: Alpha Ltd
+2023-06-20 09:53:13.905 [main] INFO  Main - Contact Name: Susan Miller
+2023-06-20 09:53:13.905 [main] INFO  Main - Client Address: 345 High St
+2023-06-20 09:53:13.905 [main] INFO  Main - Client Email: alphaltd@example.com
+2023-06-20 09:53:13.905 [main] INFO  Main - Client Phone: 444-555-6666
+2023-06-20 09:53:13.905 [main] INFO  Main - ------------------------
+2023-06-20 09:53:13.905 [main] INFO  Main - Client ID: 4
+2023-06-20 09:53:13.905 [main] INFO  Main - Client Name: Beta Corp
+2023-06-20 09:53:13.905 [main] INFO  Main - Contact Name: Robert Brown
+2023-06-20 09:53:13.905 [main] INFO  Main - Client Address: 456 Park Ave
+2023-06-20 09:53:13.905 [main] INFO  Main - Client Email: betacorp@example.com
+2023-06-20 09:53:13.906 [main] INFO  Main - Client Phone: 777-888-9999
+2023-06-20 09:53:13.906 [main] INFO  Main - ------------------------
+2023-06-20 09:53:13.906 [main] INFO  Main - Client ID: 5
+2023-06-20 09:53:13.906 [main] INFO  Main - Client Name: Gamma Inc
+2023-06-20 09:53:13.906 [main] INFO  Main - Contact Name: Patricia Davis
+2023-06-20 09:53:13.906 [main] INFO  Main - Client Address: 567 King St
+2023-06-20 09:53:13.906 [main] INFO  Main - Client Email: gammainc@example.com
+2023-06-20 09:53:13.906 [main] INFO  Main - Client Phone: 000-111-2222
+2023-06-20 09:53:13.906 [main] INFO  Main - ------------------------
+2023-06-20 09:53:13.906 [main] INFO  Main - Client ID: 6
+2023-06-20 09:53:13.906 [main] INFO  Main - Client Name: Delta Plc
+2023-06-20 09:53:13.906 [main] INFO  Main - Contact Name: James Wilson
+2023-06-20 09:53:13.906 [main] INFO  Main - Client Address: 678 Queen St
+2023-06-20 09:53:13.906 [main] INFO  Main - Client Email: deltaplc@example.com
+2023-06-20 09:53:13.907 [main] INFO  Main - Client Phone: 333-444-5555
+2023-06-20 09:53:13.907 [main] INFO  Main - ------------------------
+2023-06-20 09:53:13.907 [main] INFO  Main - Client ID: 7
+2023-06-20 09:53:13.907 [main] INFO  Main - Client Name: MISS J
+2023-06-20 09:53:13.907 [main] INFO  Main - Contact Name: J
+2023-06-20 09:53:13.907 [main] INFO  Main - Client Address: Client Address
+2023-06-20 09:53:13.907 [main] INFO  Main - Client Email: client@example.com
+2023-06-20 09:53:13.907 [main] INFO  Main - Client Phone: 123-456-7890
+2023-06-20 09:53:13.907 [main] INFO  Main - ------------------------
+2023-06-20 09:56:17.737 [main] INFO  Main - Client Client Co
+2023-06-20 09:56:17.838 [main] INFO  Main - Client : Client{clientId=5, clientName='Gamma Inc', contactName='Patricia Davis', clientAddress='567 King St', clientEmail='gammainc@example.com', clientPhone='000-111-2222'}
+2023-06-20 09:56:17.935 [main] INFO  Main - Client ID: 1
+2023-06-20 09:56:17.935 [main] INFO  Main - Client Name: Client Company
+2023-06-20 09:56:17.935 [main] INFO  Main - Contact Name: Jane Smith
+2023-06-20 09:56:17.936 [main] INFO  Main - Client Address: 123 Main St
+2023-06-20 09:56:17.936 [main] INFO  Main - Client Email: client@example.com
+2023-06-20 09:56:17.936 [main] INFO  Main - Client Phone: 098-765-4321
+2023-06-20 09:56:17.936 [main] INFO  Main - ------------------------
+2023-06-20 09:56:17.936 [main] INFO  Main - Client ID: 2
+2023-06-20 09:56:17.936 [main] INFO  Main - Client Name: Client Co
+2023-06-20 09:56:17.936 [main] INFO  Main - Contact Name: Tom Lee
+2023-06-20 09:56:17.936 [main] INFO  Main - Client Address: 234 Main St
+2023-06-20 09:56:17.936 [main] INFO  Main - Client Email: clientco@example.com
+2023-06-20 09:56:17.936 [main] INFO  Main - Client Phone: 111-222-3333
+2023-06-20 09:56:17.936 [main] INFO  Main - ------------------------
+2023-06-20 09:56:17.937 [main] INFO  Main - Client ID: 3
+2023-06-20 09:56:17.937 [main] INFO  Main - Client Name: Alpha Ltd
+2023-06-20 09:56:17.937 [main] INFO  Main - Contact Name: Susan Miller
+2023-06-20 09:56:17.937 [main] INFO  Main - Client Address: 345 High St
+2023-06-20 09:56:17.937 [main] INFO  Main - Client Email: alphaltd@example.com
+2023-06-20 09:56:17.937 [main] INFO  Main - Client Phone: 444-555-6666
+2023-06-20 09:56:17.937 [main] INFO  Main - ------------------------
+2023-06-20 09:56:17.937 [main] INFO  Main - Client ID: 4
+2023-06-20 09:56:17.937 [main] INFO  Main - Client Name: Beta Corp
+2023-06-20 09:56:17.937 [main] INFO  Main - Contact Name: Robert Brown
+2023-06-20 09:56:17.937 [main] INFO  Main - Client Address: 456 Park Ave
+2023-06-20 09:56:17.937 [main] INFO  Main - Client Email: betacorp@example.com
+2023-06-20 09:56:17.937 [main] INFO  Main - Client Phone: 777-888-9999
+2023-06-20 09:56:17.937 [main] INFO  Main - ------------------------
+2023-06-20 09:56:17.937 [main] INFO  Main - Client ID: 5
+2023-06-20 09:56:17.938 [main] INFO  Main - Client Name: Gamma Inc
+2023-06-20 09:56:17.938 [main] INFO  Main - Contact Name: Patricia Davis
+2023-06-20 09:56:17.938 [main] INFO  Main - Client Address: 567 King St
+2023-06-20 09:56:17.938 [main] INFO  Main - Client Email: gammainc@example.com
+2023-06-20 09:56:17.938 [main] INFO  Main - Client Phone: 000-111-2222
+2023-06-20 09:56:17.938 [main] INFO  Main - ------------------------
+2023-06-20 09:56:17.938 [main] INFO  Main - Client ID: 6
+2023-06-20 09:56:17.938 [main] INFO  Main - Client Name: Delta Plc
+2023-06-20 09:56:17.938 [main] INFO  Main - Contact Name: James Wilson
+2023-06-20 09:56:17.938 [main] INFO  Main - Client Address: 678 Queen St
+2023-06-20 09:56:17.938 [main] INFO  Main - Client Email: deltaplc@example.com
+2023-06-20 09:56:17.938 [main] INFO  Main - Client Phone: 333-444-5555
+2023-06-20 09:56:17.938 [main] INFO  Main - ------------------------
+2023-06-20 09:56:17.938 [main] INFO  Main - Client ID: 7
+2023-06-20 09:56:17.938 [main] INFO  Main - Client Name: MISS J
+2023-06-20 09:56:17.939 [main] INFO  Main - Contact Name: J
+2023-06-20 09:56:17.939 [main] INFO  Main - Client Address: Client Address
+2023-06-20 09:56:17.939 [main] INFO  Main - Client Email: client@example.com
+2023-06-20 09:56:17.939 [main] INFO  Main - Client Phone: 123-456-7890
+2023-06-20 09:56:17.939 [main] INFO  Main - ------------------------
+2023-06-20 09:56:52.870 [main] INFO  Main - Client Client Co
+2023-06-20 09:56:52.967 [main] INFO  Main - Client : Client{clientId=5, clientName='Gamma Inc', contactName='Patricia Davis', clientAddress='567 King St', clientEmail='gammainc@example.com', clientPhone='000-111-2222'}
+2023-06-20 09:56:53.059 [main] INFO  Main - Client ID: 1
+2023-06-20 09:56:53.059 [main] INFO  Main - Client Name: Client Company
+2023-06-20 09:56:53.059 [main] INFO  Main - Contact Name: Jane Smith
+2023-06-20 09:56:53.059 [main] INFO  Main - Client Address: 123 Main St
+2023-06-20 09:56:53.059 [main] INFO  Main - Client Email: client@example.com
+2023-06-20 09:56:53.059 [main] INFO  Main - Client Phone: 098-765-4321
+2023-06-20 09:56:53.059 [main] INFO  Main - ------------------------
+2023-06-20 09:56:53.059 [main] INFO  Main - Client ID: 2
+2023-06-20 09:56:53.060 [main] INFO  Main - Client Name: Client Co
+2023-06-20 09:56:53.060 [main] INFO  Main - Contact Name: Tom Lee
+2023-06-20 09:56:53.060 [main] INFO  Main - Client Address: 234 Main St
+2023-06-20 09:56:53.060 [main] INFO  Main - Client Email: clientco@example.com
+2023-06-20 09:56:53.060 [main] INFO  Main - Client Phone: 111-222-3333
+2023-06-20 09:56:53.060 [main] INFO  Main - ------------------------
+2023-06-20 09:56:53.060 [main] INFO  Main - Client ID: 3
+2023-06-20 09:56:53.060 [main] INFO  Main - Client Name: Alpha Ltd
+2023-06-20 09:56:53.060 [main] INFO  Main - Contact Name: Susan Miller
+2023-06-20 09:56:53.060 [main] INFO  Main - Client Address: 345 High St
+2023-06-20 09:56:53.060 [main] INFO  Main - Client Email: alphaltd@example.com
+2023-06-20 09:56:53.060 [main] INFO  Main - Client Phone: 444-555-6666
+2023-06-20 09:56:53.060 [main] INFO  Main - ------------------------
+2023-06-20 09:56:53.060 [main] INFO  Main - Client ID: 4
+2023-06-20 09:56:53.060 [main] INFO  Main - Client Name: Beta Corp
+2023-06-20 09:56:53.061 [main] INFO  Main - Contact Name: Robert Brown
+2023-06-20 09:56:53.061 [main] INFO  Main - Client Address: 456 Park Ave
+2023-06-20 09:56:53.061 [main] INFO  Main - Client Email: betacorp@example.com
+2023-06-20 09:56:53.061 [main] INFO  Main - Client Phone: 777-888-9999
+2023-06-20 09:56:53.061 [main] INFO  Main - ------------------------
+2023-06-20 09:56:53.061 [main] INFO  Main - Client ID: 5
+2023-06-20 09:56:53.061 [main] INFO  Main - Client Name: Gamma Inc
+2023-06-20 09:56:53.061 [main] INFO  Main - Contact Name: Patricia Davis
+2023-06-20 09:56:53.061 [main] INFO  Main - Client Address: 567 King St
+2023-06-20 09:56:53.061 [main] INFO  Main - Client Email: gammainc@example.com
+2023-06-20 09:56:53.061 [main] INFO  Main - Client Phone: 000-111-2222
+2023-06-20 09:56:53.061 [main] INFO  Main - ------------------------
+2023-06-20 09:56:53.061 [main] INFO  Main - Client ID: 6
+2023-06-20 09:56:53.061 [main] INFO  Main - Client Name: Delta Plc
+2023-06-20 09:56:53.061 [main] INFO  Main - Contact Name: James Wilson
+2023-06-20 09:56:53.061 [main] INFO  Main - Client Address: 678 Queen St
+2023-06-20 09:56:53.062 [main] INFO  Main - Client Email: deltaplc@example.com
+2023-06-20 09:56:53.062 [main] INFO  Main - Client Phone: 333-444-5555
+2023-06-20 09:56:53.062 [main] INFO  Main - ------------------------
+2023-06-20 09:56:53.062 [main] INFO  Main - Client ID: 7
+2023-06-20 09:56:53.062 [main] INFO  Main - Client Name: MISS J
+2023-06-20 09:56:53.062 [main] INFO  Main - Contact Name: J
+2023-06-20 09:56:53.062 [main] INFO  Main - Client Address: Client Address
+2023-06-20 09:56:53.062 [main] INFO  Main - Client Email: client@example.com
+2023-06-20 09:56:53.062 [main] INFO  Main - Client Phone: 123-456-7890
+2023-06-20 09:56:53.062 [main] INFO  Main - ------------------------
+2023-06-20 09:56:53.162 [main] INFO  Main - EmployeeDetails{empId=1, firstName='John', lastName='Doe', role=Role{roleId=1, roleName='null', roleDescription='null'}, department=Department{departmentId=1, departmentName='null', departmentDescription='null'}, hireDate=2022-01-01, email='john.doe@example.com', phoneNumber='123-456-7890'}
+2023-06-20 09:56:53.162 [main] INFO  Main - EmployeeDetails{empId=2, firstName='Jane', lastName='Smith', role=Role{roleId=2, roleName='null', roleDescription='null'}, department=Department{departmentId=2, departmentName='null', departmentDescription='null'}, hireDate=2023-02-01, email='jane.smith@example.com', phoneNumber='321-654-0987'}
+2023-06-20 09:56:53.162 [main] INFO  Main - EmployeeDetails{empId=3, firstName='Bob', lastName='Johnson', role=Role{roleId=3, roleName='null', roleDescription='null'}, department=Department{departmentId=3, departmentName='null', departmentDescription='null'}, hireDate=2023-03-01, email='bob.johnson@example.com', phoneNumber='789-012-3456'}
+2023-06-20 09:56:53.162 [main] INFO  Main - EmployeeDetails{empId=4, firstName='Alice', lastName='Williams', role=Role{roleId=4, roleName='null', roleDescription='null'}, department=Department{departmentId=1, departmentName='null', departmentDescription='null'}, hireDate=2023-04-01, email='alice.williams@example.com', phoneNumber='654-321-7890'}
+2023-06-20 09:56:53.162 [main] INFO  Main - EmployeeDetails{empId=5, firstName='Charlie', lastName='Brown', role=Role{roleId=5, roleName='null', roleDescription='null'}, department=Department{departmentId=1, departmentName='null', departmentDescription='null'}, hireDate=2023-05-01, email='charlie.brown@example.com', phoneNumber='210-654-3210'}
+2023-06-20 09:56:53.162 [main] INFO  Main - EmployeeDetails{empId=6, firstName='David', lastName='Jones', role=Role{roleId=6, roleName='null', roleDescription='null'}, department=Department{departmentId=4, departmentName='null', departmentDescription='null'}, hireDate=2023-06-01, email='david.jones@example.com', phoneNumber='876-543-2109'}
+2023-06-20 09:59:28.061 [main] INFO  Main - Client Client Co
+2023-06-20 09:59:28.168 [main] INFO  Main - Client : Client{clientId=5, clientName='Gamma Inc', contactName='Patricia Davis', clientAddress='567 King St', clientEmail='gammainc@example.com', clientPhone='000-111-2222'}
+2023-06-20 09:59:28.272 [main] INFO  Main - Client ID: 1
+2023-06-20 09:59:28.272 [main] INFO  Main - Client Name: Client Company
+2023-06-20 09:59:28.272 [main] INFO  Main - Contact Name: Jane Smith
+2023-06-20 09:59:28.273 [main] INFO  Main - Client Address: 123 Main St
+2023-06-20 09:59:28.273 [main] INFO  Main - Client Email: client@example.com
+2023-06-20 09:59:28.273 [main] INFO  Main - Client Phone: 098-765-4321
+2023-06-20 09:59:28.273 [main] INFO  Main - ------------------------
+2023-06-20 09:59:28.273 [main] INFO  Main - Client ID: 2
+2023-06-20 09:59:28.273 [main] INFO  Main - Client Name: Client Co
+2023-06-20 09:59:28.273 [main] INFO  Main - Contact Name: Tom Lee
+2023-06-20 09:59:28.273 [main] INFO  Main - Client Address: 234 Main St
+2023-06-20 09:59:28.273 [main] INFO  Main - Client Email: clientco@example.com
+2023-06-20 09:59:28.273 [main] INFO  Main - Client Phone: 111-222-3333
+2023-06-20 09:59:28.273 [main] INFO  Main - ------------------------
+2023-06-20 09:59:28.273 [main] INFO  Main - Client ID: 3
+2023-06-20 09:59:28.273 [main] INFO  Main - Client Name: Alpha Ltd
+2023-06-20 09:59:28.274 [main] INFO  Main - Contact Name: Susan Miller
+2023-06-20 09:59:28.274 [main] INFO  Main - Client Address: 345 High St
+2023-06-20 09:59:28.274 [main] INFO  Main - Client Email: alphaltd@example.com
+2023-06-20 09:59:28.274 [main] INFO  Main - Client Phone: 444-555-6666
+2023-06-20 09:59:28.274 [main] INFO  Main - ------------------------
+2023-06-20 09:59:28.274 [main] INFO  Main - Client ID: 4
+2023-06-20 09:59:28.274 [main] INFO  Main - Client Name: Beta Corp
+2023-06-20 09:59:28.274 [main] INFO  Main - Contact Name: Robert Brown
+2023-06-20 09:59:28.274 [main] INFO  Main - Client Address: 456 Park Ave
+2023-06-20 09:59:28.274 [main] INFO  Main - Client Email: betacorp@example.com
+2023-06-20 09:59:28.274 [main] INFO  Main - Client Phone: 777-888-9999
+2023-06-20 09:59:28.274 [main] INFO  Main - ------------------------
+2023-06-20 09:59:28.274 [main] INFO  Main - Client ID: 5
+2023-06-20 09:59:28.274 [main] INFO  Main - Client Name: Gamma Inc
+2023-06-20 09:59:28.274 [main] INFO  Main - Contact Name: Patricia Davis
+2023-06-20 09:59:28.274 [main] INFO  Main - Client Address: 567 King St
+2023-06-20 09:59:28.275 [main] INFO  Main - Client Email: gammainc@example.com
+2023-06-20 09:59:28.275 [main] INFO  Main - Client Phone: 000-111-2222
+2023-06-20 09:59:28.275 [main] INFO  Main - ------------------------
+2023-06-20 09:59:28.275 [main] INFO  Main - Client ID: 6
+2023-06-20 09:59:28.275 [main] INFO  Main - Client Name: Delta Plc
+2023-06-20 09:59:28.275 [main] INFO  Main - Contact Name: James Wilson
+2023-06-20 09:59:28.275 [main] INFO  Main - Client Address: 678 Queen St
+2023-06-20 09:59:28.275 [main] INFO  Main - Client Email: deltaplc@example.com
+2023-06-20 09:59:28.275 [main] INFO  Main - Client Phone: 333-444-5555
+2023-06-20 09:59:28.275 [main] INFO  Main - ------------------------
+2023-06-20 09:59:28.275 [main] INFO  Main - Client ID: 7
+2023-06-20 09:59:28.275 [main] INFO  Main - Client Name: MISS J
+2023-06-20 09:59:28.275 [main] INFO  Main - Contact Name: J
+2023-06-20 09:59:28.275 [main] INFO  Main - Client Address: Client Address
+2023-06-20 09:59:28.276 [main] INFO  Main - Client Email: client@example.com
+2023-06-20 09:59:28.276 [main] INFO  Main - Client Phone: 123-456-7890
+2023-06-20 09:59:28.276 [main] INFO  Main - ------------------------
+2023-06-20 09:59:59.446 [main] INFO  Main - Client Client Co
+2023-06-20 09:59:59.578 [main] INFO  Main - Client : Client{clientId=5, clientName='Gamma Inc', contactName='Patricia Davis', clientAddress='567 King St', clientEmail='gammainc@example.com', clientPhone='000-111-2222'}
+2023-06-20 09:59:59.675 [main] INFO  Main - Client ID: 1
+2023-06-20 09:59:59.675 [main] INFO  Main - Client Name: Client Company
+2023-06-20 09:59:59.675 [main] INFO  Main - Contact Name: Jane Smith
+2023-06-20 09:59:59.675 [main] INFO  Main - Client Address: 123 Main St
+2023-06-20 09:59:59.675 [main] INFO  Main - Client Email: client@example.com
+2023-06-20 09:59:59.675 [main] INFO  Main - Client Phone: 098-765-4321
+2023-06-20 09:59:59.675 [main] INFO  Main - ------------------------
+2023-06-20 09:59:59.675 [main] INFO  Main - Client ID: 2
+2023-06-20 09:59:59.675 [main] INFO  Main - Client Name: Client Co
+2023-06-20 09:59:59.675 [main] INFO  Main - Contact Name: Tom Lee
+2023-06-20 09:59:59.675 [main] INFO  Main - Client Address: 234 Main St
+2023-06-20 09:59:59.676 [main] INFO  Main - Client Email: clientco@example.com
+2023-06-20 09:59:59.676 [main] INFO  Main - Client Phone: 111-222-3333
+2023-06-20 09:59:59.676 [main] INFO  Main - ------------------------
+2023-06-20 09:59:59.676 [main] INFO  Main - Client ID: 3
+2023-06-20 09:59:59.676 [main] INFO  Main - Client Name: Alpha Ltd
+2023-06-20 09:59:59.676 [main] INFO  Main - Contact Name: Susan Miller
+2023-06-20 09:59:59.676 [main] INFO  Main - Client Address: 345 High St
+2023-06-20 09:59:59.676 [main] INFO  Main - Client Email: alphaltd@example.com
+2023-06-20 09:59:59.676 [main] INFO  Main - Client Phone: 444-555-6666
+2023-06-20 09:59:59.676 [main] INFO  Main - ------------------------
+2023-06-20 09:59:59.676 [main] INFO  Main - Client ID: 4
+2023-06-20 09:59:59.676 [main] INFO  Main - Client Name: Beta Corp
+2023-06-20 09:59:59.676 [main] INFO  Main - Contact Name: Robert Brown
+2023-06-20 09:59:59.676 [main] INFO  Main - Client Address: 456 Park Ave
+2023-06-20 09:59:59.677 [main] INFO  Main - Client Email: betacorp@example.com
+2023-06-20 09:59:59.677 [main] INFO  Main - Client Phone: 777-888-9999
+2023-06-20 09:59:59.677 [main] INFO  Main - ------------------------
+2023-06-20 09:59:59.677 [main] INFO  Main - Client ID: 5
+2023-06-20 09:59:59.677 [main] INFO  Main - Client Name: Gamma Inc
+2023-06-20 09:59:59.677 [main] INFO  Main - Contact Name: Patricia Davis
+2023-06-20 09:59:59.677 [main] INFO  Main - Client Address: 567 King St
+2023-06-20 09:59:59.677 [main] INFO  Main - Client Email: gammainc@example.com
+2023-06-20 09:59:59.677 [main] INFO  Main - Client Phone: 000-111-2222
+2023-06-20 09:59:59.677 [main] INFO  Main - ------------------------
+2023-06-20 09:59:59.677 [main] INFO  Main - Client ID: 6
+2023-06-20 09:59:59.677 [main] INFO  Main - Client Name: Delta Plc
+2023-06-20 09:59:59.677 [main] INFO  Main - Contact Name: James Wilson
+2023-06-20 09:59:59.677 [main] INFO  Main - Client Address: 678 Queen St
+2023-06-20 09:59:59.677 [main] INFO  Main - Client Email: deltaplc@example.com
+2023-06-20 09:59:59.677 [main] INFO  Main - Client Phone: 333-444-5555
+2023-06-20 09:59:59.678 [main] INFO  Main - ------------------------
+2023-06-20 09:59:59.678 [main] INFO  Main - Client ID: 7
+2023-06-20 09:59:59.678 [main] INFO  Main - Client Name: MISS J
+2023-06-20 09:59:59.678 [main] INFO  Main - Contact Name: J
+2023-06-20 09:59:59.678 [main] INFO  Main - Client Address: Client Address
+2023-06-20 09:59:59.678 [main] INFO  Main - Client Email: client@example.com
+2023-06-20 09:59:59.678 [main] INFO  Main - Client Phone: 123-456-7890
+2023-06-20 09:59:59.678 [main] INFO  Main - ------------------------
+2023-06-20 10:01:50.029 [main] INFO  Main - Client Client Co
+2023-06-20 10:01:50.135 [main] INFO  Main - Client : Client{clientId=5, clientName='Gamma Inc', contactName='Patricia Davis', clientAddress='567 King St', clientEmail='gammainc@example.com', clientPhone='000-111-2222'}
+2023-06-20 10:01:50.236 [main] INFO  Main - Client ID: 1
+2023-06-20 10:01:50.236 [main] INFO  Main - Client Name: Client Company
+2023-06-20 10:01:50.237 [main] INFO  Main - Contact Name: Jane Smith
+2023-06-20 10:01:50.237 [main] INFO  Main - Client Address: 123 Main St
+2023-06-20 10:01:50.237 [main] INFO  Main - Client Email: client@example.com
+2023-06-20 10:01:50.237 [main] INFO  Main - Client Phone: 098-765-4321
+2023-06-20 10:01:50.237 [main] INFO  Main - ------------------------
+2023-06-20 10:01:50.237 [main] INFO  Main - Client ID: 2
+2023-06-20 10:01:50.237 [main] INFO  Main - Client Name: Client Co
+2023-06-20 10:01:50.237 [main] INFO  Main - Contact Name: Tom Lee
+2023-06-20 10:01:50.237 [main] INFO  Main - Client Address: 234 Main St
+2023-06-20 10:01:50.238 [main] INFO  Main - Client Email: clientco@example.com
+2023-06-20 10:01:50.238 [main] INFO  Main - Client Phone: 111-222-3333
+2023-06-20 10:01:50.238 [main] INFO  Main - ------------------------
+2023-06-20 10:01:50.238 [main] INFO  Main - Client ID: 3
+2023-06-20 10:01:50.238 [main] INFO  Main - Client Name: Alpha Ltd
+2023-06-20 10:01:50.238 [main] INFO  Main - Contact Name: Susan Miller
+2023-06-20 10:01:50.238 [main] INFO  Main - Client Address: 345 High St
+2023-06-20 10:01:50.238 [main] INFO  Main - Client Email: alphaltd@example.com
+2023-06-20 10:01:50.238 [main] INFO  Main - Client Phone: 444-555-6666
+2023-06-20 10:01:50.238 [main] INFO  Main - ------------------------
+2023-06-20 10:01:50.238 [main] INFO  Main - Client ID: 4
+2023-06-20 10:01:50.238 [main] INFO  Main - Client Name: Beta Corp
+2023-06-20 10:01:50.238 [main] INFO  Main - Contact Name: Robert Brown
+2023-06-20 10:01:50.238 [main] INFO  Main - Client Address: 456 Park Ave
+2023-06-20 10:01:50.239 [main] INFO  Main - Client Email: betacorp@example.com
+2023-06-20 10:01:50.239 [main] INFO  Main - Client Phone: 777-888-9999
+2023-06-20 10:01:50.239 [main] INFO  Main - ------------------------
+2023-06-20 10:01:50.239 [main] INFO  Main - Client ID: 5
+2023-06-20 10:01:50.239 [main] INFO  Main - Client Name: Gamma Inc
+2023-06-20 10:01:50.239 [main] INFO  Main - Contact Name: Patricia Davis
+2023-06-20 10:01:50.239 [main] INFO  Main - Client Address: 567 King St
+2023-06-20 10:01:50.239 [main] INFO  Main - Client Email: gammainc@example.com
+2023-06-20 10:01:50.239 [main] INFO  Main - Client Phone: 000-111-2222
+2023-06-20 10:01:50.239 [main] INFO  Main - ------------------------
+2023-06-20 10:01:50.239 [main] INFO  Main - Client ID: 6
+2023-06-20 10:01:50.239 [main] INFO  Main - Client Name: Delta Plc
+2023-06-20 10:01:50.239 [main] INFO  Main - Contact Name: James Wilson
+2023-06-20 10:01:50.239 [main] INFO  Main - Client Address: 678 Queen St
+2023-06-20 10:01:50.239 [main] INFO  Main - Client Email: deltaplc@example.com
+2023-06-20 10:01:50.239 [main] INFO  Main - Client Phone: 333-444-5555
+2023-06-20 10:01:50.240 [main] INFO  Main - ------------------------
+2023-06-20 10:01:50.240 [main] INFO  Main - Client ID: 7
+2023-06-20 10:01:50.240 [main] INFO  Main - Client Name: MISS J
+2023-06-20 10:01:50.240 [main] INFO  Main - Contact Name: J
+2023-06-20 10:01:50.240 [main] INFO  Main - Client Address: Client Address
+2023-06-20 10:01:50.240 [main] INFO  Main - Client Email: client@example.com
+2023-06-20 10:01:50.240 [main] INFO  Main - Client Phone: 123-456-7890
+2023-06-20 10:01:50.240 [main] INFO  Main - ------------------------
+2023-06-20 10:01:50.348 [main] INFO  Main - EmployeeDetails{empId=1, firstName='John', lastName='Doe', role=Role{roleId=1, roleName='null', roleDescription='null'}, department=Department{departmentId=1, departmentName='null', departmentDescription='null'}, hireDate=2022-01-01, email='john.doe@example.com', phoneNumber='123-456-7890'}
+2023-06-20 10:01:50.348 [main] INFO  Main - EmployeeDetails{empId=2, firstName='Jane', lastName='Smith', role=Role{roleId=2, roleName='null', roleDescription='null'}, department=Department{departmentId=2, departmentName='null', departmentDescription='null'}, hireDate=2023-02-01, email='jane.smith@example.com', phoneNumber='321-654-0987'}
+2023-06-20 10:01:50.348 [main] INFO  Main - EmployeeDetails{empId=3, firstName='Bob', lastName='Johnson', role=Role{roleId=3, roleName='null', roleDescription='null'}, department=Department{departmentId=3, departmentName='null', departmentDescription='null'}, hireDate=2023-03-01, email='bob.johnson@example.com', phoneNumber='789-012-3456'}
+2023-06-20 10:01:50.348 [main] INFO  Main - EmployeeDetails{empId=4, firstName='Alice', lastName='Williams', role=Role{roleId=4, roleName='null', roleDescription='null'}, department=Department{departmentId=1, departmentName='null', departmentDescription='null'}, hireDate=2023-04-01, email='alice.williams@example.com', phoneNumber='654-321-7890'}
+2023-06-20 10:01:50.348 [main] INFO  Main - EmployeeDetails{empId=5, firstName='Charlie', lastName='Brown', role=Role{roleId=5, roleName='null', roleDescription='null'}, department=Department{departmentId=1, departmentName='null', departmentDescription='null'}, hireDate=2023-05-01, email='charlie.brown@example.com', phoneNumber='210-654-3210'}
+2023-06-20 10:01:50.348 [main] INFO  Main - EmployeeDetails{empId=6, firstName='David', lastName='Jones', role=Role{roleId=6, roleName='null', roleDescription='null'}, department=Department{departmentId=4, departmentName='null', departmentDescription='null'}, hireDate=2023-06-01, email='david.jones@example.com', phoneNumber='876-543-2109'}
+2023-06-20 10:02:44.370 [main] INFO  Main - Client Client Co
+2023-06-20 10:02:44.467 [main] INFO  Main - Client : Client{clientId=5, clientName='Gamma Inc', contactName='Patricia Davis', clientAddress='567 King St', clientEmail='gammainc@example.com', clientPhone='000-111-2222'}
+2023-06-20 10:02:44.562 [main] INFO  Main - Client ID: 1
+2023-06-20 10:02:44.562 [main] INFO  Main - Client Name: Client Company
+2023-06-20 10:02:44.562 [main] INFO  Main - Contact Name: Jane Smith
+2023-06-20 10:02:44.562 [main] INFO  Main - Client Address: 123 Main St
+2023-06-20 10:02:44.562 [main] INFO  Main - Client Email: client@example.com
+2023-06-20 10:02:44.562 [main] INFO  Main - Client Phone: 098-765-4321
+2023-06-20 10:02:44.562 [main] INFO  Main - ------------------------
+2023-06-20 10:02:44.562 [main] INFO  Main - Client ID: 2
+2023-06-20 10:02:44.562 [main] INFO  Main - Client Name: Client Co
+2023-06-20 10:02:44.562 [main] INFO  Main - Contact Name: Tom Lee
+2023-06-20 10:02:44.562 [main] INFO  Main - Client Address: 234 Main St
+2023-06-20 10:02:44.563 [main] INFO  Main - Client Email: clientco@example.com
+2023-06-20 10:02:44.563 [main] INFO  Main - Client Phone: 111-222-3333
+2023-06-20 10:02:44.563 [main] INFO  Main - ------------------------
+2023-06-20 10:02:44.563 [main] INFO  Main - Client ID: 3
+2023-06-20 10:02:44.563 [main] INFO  Main - Client Name: Alpha Ltd
+2023-06-20 10:02:44.563 [main] INFO  Main - Contact Name: Susan Miller
+2023-06-20 10:02:44.563 [main] INFO  Main - Client Address: 345 High St
+2023-06-20 10:02:44.563 [main] INFO  Main - Client Email: alphaltd@example.com
+2023-06-20 10:02:44.563 [main] INFO  Main - Client Phone: 444-555-6666
+2023-06-20 10:02:44.563 [main] INFO  Main - ------------------------
+2023-06-20 10:02:44.563 [main] INFO  Main - Client ID: 4
+2023-06-20 10:02:44.563 [main] INFO  Main - Client Name: Beta Corp
+2023-06-20 10:02:44.564 [main] INFO  Main - Contact Name: Robert Brown
+2023-06-20 10:02:44.564 [main] INFO  Main - Client Address: 456 Park Ave
+2023-06-20 10:02:44.564 [main] INFO  Main - Client Email: betacorp@example.com
+2023-06-20 10:02:44.564 [main] INFO  Main - Client Phone: 777-888-9999
+2023-06-20 10:02:44.564 [main] INFO  Main - ------------------------
+2023-06-20 10:02:44.564 [main] INFO  Main - Client ID: 5
+2023-06-20 10:02:44.564 [main] INFO  Main - Client Name: Gamma Inc
+2023-06-20 10:02:44.564 [main] INFO  Main - Contact Name: Patricia Davis
+2023-06-20 10:02:44.564 [main] INFO  Main - Client Address: 567 King St
+2023-06-20 10:02:44.564 [main] INFO  Main - Client Email: gammainc@example.com
+2023-06-20 10:02:44.564 [main] INFO  Main - Client Phone: 000-111-2222
+2023-06-20 10:02:44.564 [main] INFO  Main - ------------------------
+2023-06-20 10:02:44.564 [main] INFO  Main - Client ID: 6
+2023-06-20 10:02:44.565 [main] INFO  Main - Client Name: Delta Plc
+2023-06-20 10:02:44.565 [main] INFO  Main - Contact Name: James Wilson
+2023-06-20 10:02:44.565 [main] INFO  Main - Client Address: 678 Queen St
+2023-06-20 10:02:44.565 [main] INFO  Main - Client Email: deltaplc@example.com
+2023-06-20 10:02:44.565 [main] INFO  Main - Client Phone: 333-444-5555
+2023-06-20 10:02:44.565 [main] INFO  Main - ------------------------
+2023-06-20 10:02:44.565 [main] INFO  Main - Client ID: 7
+2023-06-20 10:02:44.565 [main] INFO  Main - Client Name: MISS J
+2023-06-20 10:02:44.565 [main] INFO  Main - Contact Name: J
+2023-06-20 10:02:44.565 [main] INFO  Main - Client Address: Client Address
+2023-06-20 10:02:44.566 [main] INFO  Main - Client Email: client@example.com
+2023-06-20 10:02:44.566 [main] INFO  Main - Client Phone: 123-456-7890
+2023-06-20 10:02:44.566 [main] INFO  Main - ------------------------
+2023-06-20 10:02:44.665 [main] INFO  Main - EmployeeDetails{empId=1, firstName='John', lastName='Doe', role=Role{roleId=1, roleName='null', roleDescription='null'}, department=Department{departmentId=1, departmentName='null', departmentDescription='null'}, hireDate=2022-01-01, email='john.doe@example.com', phoneNumber='123-456-7890'}
+2023-06-20 10:02:44.665 [main] INFO  Main - EmployeeDetails{empId=2, firstName='Jane', lastName='Smith', role=Role{roleId=2, roleName='null', roleDescription='null'}, department=Department{departmentId=2, departmentName='null', departmentDescription='null'}, hireDate=2023-02-01, email='jane.smith@example.com', phoneNumber='321-654-0987'}
+2023-06-20 10:02:44.666 [main] INFO  Main - EmployeeDetails{empId=3, firstName='Bob', lastName='Johnson', role=Role{roleId=3, roleName='null', roleDescription='null'}, department=Department{departmentId=3, departmentName='null', departmentDescription='null'}, hireDate=2023-03-01, email='bob.johnson@example.com', phoneNumber='789-012-3456'}
+2023-06-20 10:02:44.666 [main] INFO  Main - EmployeeDetails{empId=4, firstName='Alice', lastName='Williams', role=Role{roleId=4, roleName='null', roleDescription='null'}, department=Department{departmentId=1, departmentName='null', departmentDescription='null'}, hireDate=2023-04-01, email='alice.williams@example.com', phoneNumber='654-321-7890'}
+2023-06-20 10:02:44.666 [main] INFO  Main - EmployeeDetails{empId=5, firstName='Charlie', lastName='Brown', role=Role{roleId=5, roleName='null', roleDescription='null'}, department=Department{departmentId=1, departmentName='null', departmentDescription='null'}, hireDate=2023-05-01, email='charlie.brown@example.com', phoneNumber='210-654-3210'}
+2023-06-20 10:02:44.666 [main] INFO  Main - EmployeeDetails{empId=6, firstName='David', lastName='Jones', role=Role{roleId=6, roleName='null', roleDescription='null'}, department=Department{departmentId=4, departmentName='null', departmentDescription='null'}, hireDate=2023-06-01, email='david.jones@example.com', phoneNumber='876-543-2109'}
+2023-06-20 10:06:51.799 [main] INFO  Main - Client Client Co
+2023-06-20 10:06:51.901 [main] INFO  Main - Client : Client{clientId=5, clientName='Gamma Inc', contactName='Patricia Davis', clientAddress='567 King St', clientEmail='gammainc@example.com', clientPhone='000-111-2222'}
+2023-06-20 10:06:52.001 [main] INFO  Main - Client ID: 1
+2023-06-20 10:06:52.001 [main] INFO  Main - Client Name: Client Company
+2023-06-20 10:06:52.001 [main] INFO  Main - Contact Name: Jane Smith
+2023-06-20 10:06:52.001 [main] INFO  Main - Client Address: 123 Main St
+2023-06-20 10:06:52.001 [main] INFO  Main - Client Email: client@example.com
+2023-06-20 10:06:52.001 [main] INFO  Main - Client Phone: 098-765-4321
+2023-06-20 10:06:52.001 [main] INFO  Main - ------------------------
+2023-06-20 10:06:52.002 [main] INFO  Main - Client ID: 2
+2023-06-20 10:06:52.002 [main] INFO  Main - Client Name: Client Co
+2023-06-20 10:06:52.002 [main] INFO  Main - Contact Name: Tom Lee
+2023-06-20 10:06:52.002 [main] INFO  Main - Client Address: 234 Main St
+2023-06-20 10:06:52.002 [main] INFO  Main - Client Email: clientco@example.com
+2023-06-20 10:06:52.002 [main] INFO  Main - Client Phone: 111-222-3333
+2023-06-20 10:06:52.002 [main] INFO  Main - ------------------------
+2023-06-20 10:06:52.002 [main] INFO  Main - Client ID: 3
+2023-06-20 10:06:52.002 [main] INFO  Main - Client Name: Alpha Ltd
+2023-06-20 10:06:52.002 [main] INFO  Main - Contact Name: Susan Miller
+2023-06-20 10:06:52.002 [main] INFO  Main - Client Address: 345 High St
+2023-06-20 10:06:52.003 [main] INFO  Main - Client Email: alphaltd@example.com
+2023-06-20 10:06:52.003 [main] INFO  Main - Client Phone: 444-555-6666
+2023-06-20 10:06:52.003 [main] INFO  Main - ------------------------
+2023-06-20 10:06:52.003 [main] INFO  Main - Client ID: 4
+2023-06-20 10:06:52.003 [main] INFO  Main - Client Name: Beta Corp
+2023-06-20 10:06:52.003 [main] INFO  Main - Contact Name: Robert Brown
+2023-06-20 10:06:52.003 [main] INFO  Main - Client Address: 456 Park Ave
+2023-06-20 10:06:52.003 [main] INFO  Main - Client Email: betacorp@example.com
+2023-06-20 10:06:52.003 [main] INFO  Main - Client Phone: 777-888-9999
+2023-06-20 10:06:52.003 [main] INFO  Main - ------------------------
+2023-06-20 10:06:52.004 [main] INFO  Main - Client ID: 5
+2023-06-20 10:06:52.004 [main] INFO  Main - Client Name: Gamma Inc
+2023-06-20 10:06:52.004 [main] INFO  Main - Contact Name: Patricia Davis
+2023-06-20 10:06:52.004 [main] INFO  Main - Client Address: 567 King St
+2023-06-20 10:06:52.004 [main] INFO  Main - Client Email: gammainc@example.com
+2023-06-20 10:06:52.004 [main] INFO  Main - Client Phone: 000-111-2222
+2023-06-20 10:06:52.004 [main] INFO  Main - ------------------------
+2023-06-20 10:06:52.004 [main] INFO  Main - Client ID: 6
+2023-06-20 10:06:52.004 [main] INFO  Main - Client Name: Delta Plc
+2023-06-20 10:06:52.004 [main] INFO  Main - Contact Name: James Wilson
+2023-06-20 10:06:52.005 [main] INFO  Main - Client Address: 678 Queen St
+2023-06-20 10:06:52.005 [main] INFO  Main - Client Email: deltaplc@example.com
+2023-06-20 10:06:52.005 [main] INFO  Main - Client Phone: 333-444-5555
+2023-06-20 10:06:52.005 [main] INFO  Main - ------------------------
+2023-06-20 10:06:52.005 [main] INFO  Main - Client ID: 7
+2023-06-20 10:06:52.005 [main] INFO  Main - Client Name: MISS J
+2023-06-20 10:06:52.005 [main] INFO  Main - Contact Name: J
+2023-06-20 10:06:52.005 [main] INFO  Main - Client Address: Client Address
+2023-06-20 10:06:52.005 [main] INFO  Main - Client Email: client@example.com
+2023-06-20 10:06:52.005 [main] INFO  Main - Client Phone: 123-456-7890
+2023-06-20 10:06:52.005 [main] INFO  Main - ------------------------
+2023-06-20 10:06:52.111 [main] INFO  Main - EmployeeDetails{empId=1, firstName='John', lastName='Doe', role=Role{roleId=1, roleName='null', roleDescription='null'}, department=Department{departmentId=1, departmentName='null', departmentDescription='null'}, hireDate=2022-01-01, email='john.doe@example.com', phoneNumber='123-456-7890'}
+2023-06-20 10:06:52.112 [main] INFO  Main - EmployeeDetails{empId=2, firstName='Jane', lastName='Smith', role=Role{roleId=2, roleName='null', roleDescription='null'}, department=Department{departmentId=2, departmentName='null', departmentDescription='null'}, hireDate=2023-02-01, email='jane.smith@example.com', phoneNumber='321-654-0987'}
+2023-06-20 10:06:52.112 [main] INFO  Main - EmployeeDetails{empId=3, firstName='Bob', lastName='Johnson', role=Role{roleId=3, roleName='null', roleDescription='null'}, department=Department{departmentId=3, departmentName='null', departmentDescription='null'}, hireDate=2023-03-01, email='bob.johnson@example.com', phoneNumber='789-012-3456'}
+2023-06-20 10:06:52.112 [main] INFO  Main - EmployeeDetails{empId=4, firstName='Alice', lastName='Williams', role=Role{roleId=4, roleName='null', roleDescription='null'}, department=Department{departmentId=1, departmentName='null', departmentDescription='null'}, hireDate=2023-04-01, email='alice.williams@example.com', phoneNumber='654-321-7890'}
+2023-06-20 10:06:52.112 [main] INFO  Main - EmployeeDetails{empId=5, firstName='Charlie', lastName='Brown', role=Role{roleId=5, roleName='null', roleDescription='null'}, department=Department{departmentId=1, departmentName='null', departmentDescription='null'}, hireDate=2023-05-01, email='charlie.brown@example.com', phoneNumber='210-654-3210'}
+2023-06-20 10:06:52.112 [main] INFO  Main - EmployeeDetails{empId=6, firstName='David', lastName='Jones', role=Role{roleId=6, roleName='null', roleDescription='null'}, department=Department{departmentId=4, departmentName='null', departmentDescription='null'}, hireDate=2023-06-01, email='david.jones@example.com', phoneNumber='876-543-2109'}
+2023-06-20 10:08:46.285 [main] INFO  Main - Client Client Co
+2023-06-20 10:08:46.381 [main] INFO  Main - Client : Client{clientId=5, clientName='Gamma Inc', contactName='Patricia Davis', clientAddress='567 King St', clientEmail='gammainc@example.com', clientPhone='000-111-2222'}
+2023-06-20 10:08:46.472 [main] INFO  Main - Client ID: 1
+2023-06-20 10:08:46.472 [main] INFO  Main - Client Name: Client Company
+2023-06-20 10:08:46.472 [main] INFO  Main - Contact Name: Jane Smith
+2023-06-20 10:08:46.472 [main] INFO  Main - Client Address: 123 Main St
+2023-06-20 10:08:46.472 [main] INFO  Main - Client Email: client@example.com
+2023-06-20 10:08:46.473 [main] INFO  Main - Client Phone: 098-765-4321
+2023-06-20 10:08:46.473 [main] INFO  Main - ------------------------
+2023-06-20 10:08:46.473 [main] INFO  Main - Client ID: 2
+2023-06-20 10:08:46.473 [main] INFO  Main - Client Name: Client Co
+2023-06-20 10:08:46.473 [main] INFO  Main - Contact Name: Tom Lee
+2023-06-20 10:08:46.473 [main] INFO  Main - Client Address: 234 Main St
+2023-06-20 10:08:46.473 [main] INFO  Main - Client Email: clientco@example.com
+2023-06-20 10:08:46.473 [main] INFO  Main - Client Phone: 111-222-3333
+2023-06-20 10:08:46.473 [main] INFO  Main - ------------------------
+2023-06-20 10:08:46.473 [main] INFO  Main - Client ID: 3
+2023-06-20 10:08:46.473 [main] INFO  Main - Client Name: Alpha Ltd
+2023-06-20 10:08:46.473 [main] INFO  Main - Contact Name: Susan Miller
+2023-06-20 10:08:46.473 [main] INFO  Main - Client Address: 345 High St
+2023-06-20 10:08:46.474 [main] INFO  Main - Client Email: alphaltd@example.com
+2023-06-20 10:08:46.474 [main] INFO  Main - Client Phone: 444-555-6666
+2023-06-20 10:08:46.474 [main] INFO  Main - ------------------------
+2023-06-20 10:08:46.474 [main] INFO  Main - Client ID: 4
+2023-06-20 10:08:46.474 [main] INFO  Main - Client Name: Beta Corp
+2023-06-20 10:08:46.474 [main] INFO  Main - Contact Name: Robert Brown
+2023-06-20 10:08:46.474 [main] INFO  Main - Client Address: 456 Park Ave
+2023-06-20 10:08:46.474 [main] INFO  Main - Client Email: betacorp@example.com
+2023-06-20 10:08:46.474 [main] INFO  Main - Client Phone: 777-888-9999
+2023-06-20 10:08:46.474 [main] INFO  Main - ------------------------
+2023-06-20 10:08:46.474 [main] INFO  Main - Client ID: 5
+2023-06-20 10:08:46.474 [main] INFO  Main - Client Name: Gamma Inc
+2023-06-20 10:08:46.474 [main] INFO  Main - Contact Name: Patricia Davis
+2023-06-20 10:08:46.474 [main] INFO  Main - Client Address: 567 King St
+2023-06-20 10:08:46.474 [main] INFO  Main - Client Email: gammainc@example.com
+2023-06-20 10:08:46.475 [main] INFO  Main - Client Phone: 000-111-2222
+2023-06-20 10:08:46.475 [main] INFO  Main - ------------------------
+2023-06-20 10:08:46.475 [main] INFO  Main - Client ID: 6
+2023-06-20 10:08:46.475 [main] INFO  Main - Client Name: Delta Plc
+2023-06-20 10:08:46.475 [main] INFO  Main - Contact Name: James Wilson
+2023-06-20 10:08:46.475 [main] INFO  Main - Client Address: 678 Queen St
+2023-06-20 10:08:46.475 [main] INFO  Main - Client Email: deltaplc@example.com
+2023-06-20 10:08:46.475 [main] INFO  Main - Client Phone: 333-444-5555
+2023-06-20 10:08:46.475 [main] INFO  Main - ------------------------
+2023-06-20 10:08:46.475 [main] INFO  Main - Client ID: 7
+2023-06-20 10:08:46.475 [main] INFO  Main - Client Name: MISS J
+2023-06-20 10:08:46.475 [main] INFO  Main - Contact Name: J
+2023-06-20 10:08:46.475 [main] INFO  Main - Client Address: Client Address
+2023-06-20 10:08:46.475 [main] INFO  Main - Client Email: client@example.com
+2023-06-20 10:08:46.475 [main] INFO  Main - Client Phone: 123-456-7890
+2023-06-20 10:08:46.475 [main] INFO  Main - ------------------------
+2023-06-20 10:08:46.574 [main] INFO  Main - EmployeeDetails{empId=1, firstName='John', lastName='Doe', role=Role{roleId=1, roleName='null', roleDescription='null'}, department=Department{departmentId=1, departmentName='null', departmentDescription='null'}, hireDate=2022-01-01, email='john.doe@example.com', phoneNumber='123-456-7890'}
+2023-06-20 10:08:46.574 [main] INFO  Main - EmployeeDetails{empId=2, firstName='Jane', lastName='Smith', role=Role{roleId=2, roleName='null', roleDescription='null'}, department=Department{departmentId=2, departmentName='null', departmentDescription='null'}, hireDate=2023-02-01, email='jane.smith@example.com', phoneNumber='321-654-0987'}
+2023-06-20 10:08:46.574 [main] INFO  Main - EmployeeDetails{empId=3, firstName='Bob', lastName='Johnson', role=Role{roleId=3, roleName='null', roleDescription='null'}, department=Department{departmentId=3, departmentName='null', departmentDescription='null'}, hireDate=2023-03-01, email='bob.johnson@example.com', phoneNumber='789-012-3456'}
+2023-06-20 10:08:46.574 [main] INFO  Main - EmployeeDetails{empId=4, firstName='Alice', lastName='Williams', role=Role{roleId=4, roleName='null', roleDescription='null'}, department=Department{departmentId=1, departmentName='null', departmentDescription='null'}, hireDate=2023-04-01, email='alice.williams@example.com', phoneNumber='654-321-7890'}
+2023-06-20 10:08:46.574 [main] INFO  Main - EmployeeDetails{empId=5, firstName='Charlie', lastName='Brown', role=Role{roleId=5, roleName='null', roleDescription='null'}, department=Department{departmentId=1, departmentName='null', departmentDescription='null'}, hireDate=2023-05-01, email='charlie.brown@example.com', phoneNumber='210-654-3210'}
+2023-06-20 10:08:46.574 [main] INFO  Main - EmployeeDetails{empId=6, firstName='David', lastName='Jones', role=Role{roleId=6, roleName='null', roleDescription='null'}, department=Department{departmentId=4, departmentName='null', departmentDescription='null'}, hireDate=2023-06-01, email='david.jones@example.com', phoneNumber='876-543-2109'}
+2023-06-20 10:14:34.895 [main] INFO  Main - Client Client Co
+2023-06-20 10:14:34.995 [main] INFO  Main - Client : Client{clientId=5, clientName='Gamma Inc', contactName='Patricia Davis', clientAddress='567 King St', clientEmail='gammainc@example.com', clientPhone='000-111-2222'}
+2023-06-20 10:14:35.091 [main] INFO  Main - Client ID: 1
+2023-06-20 10:14:35.091 [main] INFO  Main - Client Name: Client Company
+2023-06-20 10:14:35.091 [main] INFO  Main - Contact Name: Jane Smith
+2023-06-20 10:14:35.092 [main] INFO  Main - Client Address: 123 Main St
+2023-06-20 10:14:35.092 [main] INFO  Main - Client Email: client@example.com
+2023-06-20 10:14:35.092 [main] INFO  Main - Client Phone: 098-765-4321
+2023-06-20 10:14:35.092 [main] INFO  Main - ------------------------
+2023-06-20 10:14:35.092 [main] INFO  Main - Client ID: 2
+2023-06-20 10:14:35.092 [main] INFO  Main - Client Name: Client Co
+2023-06-20 10:14:35.092 [main] INFO  Main - Contact Name: Tom Lee
+2023-06-20 10:14:35.092 [main] INFO  Main - Client Address: 234 Main St
+2023-06-20 10:14:35.092 [main] INFO  Main - Client Email: clientco@example.com
+2023-06-20 10:14:35.092 [main] INFO  Main - Client Phone: 111-222-3333
+2023-06-20 10:14:35.092 [main] INFO  Main - ------------------------
+2023-06-20 10:14:35.092 [main] INFO  Main - Client ID: 3
+2023-06-20 10:14:35.093 [main] INFO  Main - Client Name: Alpha Ltd
+2023-06-20 10:14:35.093 [main] INFO  Main - Contact Name: Susan Miller
+2023-06-20 10:14:35.093 [main] INFO  Main - Client Address: 345 High St
+2023-06-20 10:14:35.093 [main] INFO  Main - Client Email: alphaltd@example.com
+2023-06-20 10:14:35.093 [main] INFO  Main - Client Phone: 444-555-6666
+2023-06-20 10:14:35.093 [main] INFO  Main - ------------------------
+2023-06-20 10:14:35.093 [main] INFO  Main - Client ID: 4
+2023-06-20 10:14:35.093 [main] INFO  Main - Client Name: Beta Corp
+2023-06-20 10:14:35.093 [main] INFO  Main - Contact Name: Robert Brown
+2023-06-20 10:14:35.093 [main] INFO  Main - Client Address: 456 Park Ave
+2023-06-20 10:14:35.093 [main] INFO  Main - Client Email: betacorp@example.com
+2023-06-20 10:14:35.093 [main] INFO  Main - Client Phone: 777-888-9999
+2023-06-20 10:14:35.093 [main] INFO  Main - ------------------------
+2023-06-20 10:14:35.093 [main] INFO  Main - Client ID: 5
+2023-06-20 10:14:35.093 [main] INFO  Main - Client Name: Gamma Inc
+2023-06-20 10:14:35.094 [main] INFO  Main - Contact Name: Patricia Davis
+2023-06-20 10:14:35.094 [main] INFO  Main - Client Address: 567 King St
+2023-06-20 10:14:35.094 [main] INFO  Main - Client Email: gammainc@example.com
+2023-06-20 10:14:35.094 [main] INFO  Main - Client Phone: 000-111-2222
+2023-06-20 10:14:35.094 [main] INFO  Main - ------------------------
+2023-06-20 10:14:35.094 [main] INFO  Main - Client ID: 6
+2023-06-20 10:14:35.094 [main] INFO  Main - Client Name: Delta Plc
+2023-06-20 10:14:35.094 [main] INFO  Main - Contact Name: James Wilson
+2023-06-20 10:14:35.094 [main] INFO  Main - Client Address: 678 Queen St
+2023-06-20 10:14:35.094 [main] INFO  Main - Client Email: deltaplc@example.com
+2023-06-20 10:14:35.094 [main] INFO  Main - Client Phone: 333-444-5555
+2023-06-20 10:14:35.094 [main] INFO  Main - ------------------------
+2023-06-20 10:14:35.094 [main] INFO  Main - Client ID: 7
+2023-06-20 10:14:35.094 [main] INFO  Main - Client Name: MISS J
+2023-06-20 10:14:35.094 [main] INFO  Main - Contact Name: J
+2023-06-20 10:14:35.094 [main] INFO  Main - Client Address: Client Address
+2023-06-20 10:14:35.094 [main] INFO  Main - Client Email: client@example.com
+2023-06-20 10:14:35.095 [main] INFO  Main - Client Phone: 123-456-7890
+2023-06-20 10:14:35.095 [main] INFO  Main - ------------------------
+2023-06-20 10:14:35.200 [main] INFO  Main - EmployeeDetails{empId=1, firstName='John', lastName='Doe', role=Role{roleId=1, roleName='Manager', roleDescription='Responsible for managing the team'}, department=Department{departmentId=1, departmentName='Construction', departmentDescription='Responsible for the actual construction work'}, hireDate=2022-01-01, email='john.doe@example.com', phoneNumber='123-456-7890'}
+2023-06-20 10:14:35.200 [main] INFO  Main - EmployeeDetails{empId=2, firstName='Jane', lastName='Smith', role=Role{roleId=2, roleName='Engineer', roleDescription='Responsible for engineering tasks'}, department=Department{departmentId=2, departmentName='Engineering', departmentDescription='Handles engineering tasks'}, hireDate=2023-02-01, email='jane.smith@example.com', phoneNumber='321-654-0987'}
+2023-06-20 10:14:35.200 [main] INFO  Main - EmployeeDetails{empId=3, firstName='Bob', lastName='Johnson', role=Role{roleId=3, roleName='Architect', roleDescription='Responsible for architectural designs'}, department=Department{departmentId=3, departmentName='Architecture', departmentDescription='Handles architectural design'}, hireDate=2023-03-01, email='bob.johnson@example.com', phoneNumber='789-012-3456'}
+2023-06-20 10:14:35.200 [main] INFO  Main - EmployeeDetails{empId=4, firstName='Alice', lastName='Williams', role=Role{roleId=4, roleName='Foreman', roleDescription='Oversees the construction site'}, department=Department{departmentId=1, departmentName='Construction', departmentDescription='Responsible for the actual construction work'}, hireDate=2023-04-01, email='alice.williams@example.com', phoneNumber='654-321-7890'}
+2023-06-20 10:14:35.200 [main] INFO  Main - EmployeeDetails{empId=5, firstName='Charlie', lastName='Brown', role=Role{roleId=5, roleName='Worker', roleDescription='Performs the construction work'}, department=Department{departmentId=1, departmentName='Construction', departmentDescription='Responsible for the actual construction work'}, hireDate=2023-05-01, email='charlie.brown@example.com', phoneNumber='210-654-3210'}
+2023-06-20 10:14:35.201 [main] INFO  Main - EmployeeDetails{empId=6, firstName='David', lastName='Jones', role=Role{roleId=6, roleName='Accountant', roleDescription='Handles company finances'}, department=Department{departmentId=4, departmentName='Accounting', departmentDescription='Manages financial affairs'}, hireDate=2023-06-01, email='david.jones@example.com', phoneNumber='876-543-2109'}
+2023-06-20 10:15:54.180 [main] INFO  Main - Client Client Co
+2023-06-20 10:15:54.281 [main] INFO  Main - Client : Client{clientId=5, clientName='Gamma Inc', contactName='Patricia Davis', clientAddress='567 King St', clientEmail='gammainc@example.com', clientPhone='000-111-2222'}
+2023-06-20 10:15:54.378 [main] INFO  Main - Client ID: 1
+2023-06-20 10:15:54.378 [main] INFO  Main - Client Name: Client Company
+2023-06-20 10:15:54.378 [main] INFO  Main - Contact Name: Jane Smith
+2023-06-20 10:15:54.378 [main] INFO  Main - Client Address: 123 Main St
+2023-06-20 10:15:54.378 [main] INFO  Main - Client Email: client@example.com
+2023-06-20 10:15:54.378 [main] INFO  Main - Client Phone: 098-765-4321
+2023-06-20 10:15:54.378 [main] INFO  Main - ------------------------
+2023-06-20 10:15:54.378 [main] INFO  Main - Client ID: 2
+2023-06-20 10:15:54.378 [main] INFO  Main - Client Name: Client Co
+2023-06-20 10:15:54.378 [main] INFO  Main - Contact Name: Tom Lee
+2023-06-20 10:15:54.379 [main] INFO  Main - Client Address: 234 Main St
+2023-06-20 10:15:54.379 [main] INFO  Main - Client Email: clientco@example.com
+2023-06-20 10:15:54.379 [main] INFO  Main - Client Phone: 111-222-3333
+2023-06-20 10:15:54.379 [main] INFO  Main - ------------------------
+2023-06-20 10:15:54.379 [main] INFO  Main - Client ID: 3
+2023-06-20 10:15:54.379 [main] INFO  Main - Client Name: Alpha Ltd
+2023-06-20 10:15:54.379 [main] INFO  Main - Contact Name: Susan Miller
+2023-06-20 10:15:54.379 [main] INFO  Main - Client Address: 345 High St
+2023-06-20 10:15:54.379 [main] INFO  Main - Client Email: alphaltd@example.com
+2023-06-20 10:15:54.379 [main] INFO  Main - Client Phone: 444-555-6666
+2023-06-20 10:15:54.379 [main] INFO  Main - ------------------------
+2023-06-20 10:15:54.379 [main] INFO  Main - Client ID: 4
+2023-06-20 10:15:54.379 [main] INFO  Main - Client Name: Beta Corp
+2023-06-20 10:15:54.379 [main] INFO  Main - Contact Name: Robert Brown
+2023-06-20 10:15:54.379 [main] INFO  Main - Client Address: 456 Park Ave
+2023-06-20 10:15:54.380 [main] INFO  Main - Client Email: betacorp@example.com
+2023-06-20 10:15:54.380 [main] INFO  Main - Client Phone: 777-888-9999
+2023-06-20 10:15:54.380 [main] INFO  Main - ------------------------
+2023-06-20 10:15:54.380 [main] INFO  Main - Client ID: 5
+2023-06-20 10:15:54.380 [main] INFO  Main - Client Name: Gamma Inc
+2023-06-20 10:15:54.380 [main] INFO  Main - Contact Name: Patricia Davis
+2023-06-20 10:15:54.380 [main] INFO  Main - Client Address: 567 King St
+2023-06-20 10:15:54.380 [main] INFO  Main - Client Email: gammainc@example.com
+2023-06-20 10:15:54.380 [main] INFO  Main - Client Phone: 000-111-2222
+2023-06-20 10:15:54.380 [main] INFO  Main - ------------------------
+2023-06-20 10:15:54.380 [main] INFO  Main - Client ID: 6
+2023-06-20 10:15:54.380 [main] INFO  Main - Client Name: Delta Plc
+2023-06-20 10:15:54.380 [main] INFO  Main - Contact Name: James Wilson
+2023-06-20 10:15:54.380 [main] INFO  Main - Client Address: 678 Queen St
+2023-06-20 10:15:54.380 [main] INFO  Main - Client Email: deltaplc@example.com
+2023-06-20 10:15:54.381 [main] INFO  Main - Client Phone: 333-444-5555
+2023-06-20 10:15:54.381 [main] INFO  Main - ------------------------
+2023-06-20 10:15:54.381 [main] INFO  Main - Client ID: 7
+2023-06-20 10:15:54.381 [main] INFO  Main - Client Name: MISS J
+2023-06-20 10:15:54.381 [main] INFO  Main - Contact Name: J
+2023-06-20 10:15:54.381 [main] INFO  Main - Client Address: Client Address
+2023-06-20 10:15:54.381 [main] INFO  Main - Client Email: client@example.com
+2023-06-20 10:15:54.381 [main] INFO  Main - Client Phone: 123-456-7890
+2023-06-20 10:15:54.381 [main] INFO  Main - ------------------------
+2023-06-20 10:15:54.490 [main] INFO  Main - EmployeeDetails{empId=1, firstName='John', lastName='Doe', role=Role{roleId=1, roleName='Manager', roleDescription='Responsible for managing the team'}, department=Department{departmentId=1, departmentName='Construction', departmentDescription='Responsible for the actual construction work'}, hireDate=2022-01-01, email='john.doe@example.com', phoneNumber='123-456-7890'}
+2023-06-20 10:15:54.491 [main] INFO  Main - EmployeeDetails{empId=2, firstName='Jane', lastName='Smith', role=Role{roleId=2, roleName='Engineer', roleDescription='Responsible for engineering tasks'}, department=Department{departmentId=2, departmentName='Engineering', departmentDescription='Handles engineering tasks'}, hireDate=2023-02-01, email='jane.smith@example.com', phoneNumber='321-654-0987'}
+2023-06-20 10:15:54.491 [main] INFO  Main - EmployeeDetails{empId=3, firstName='Bob', lastName='Johnson', role=Role{roleId=3, roleName='Architect', roleDescription='Responsible for architectural designs'}, department=Department{departmentId=3, departmentName='Architecture', departmentDescription='Handles architectural design'}, hireDate=2023-03-01, email='bob.johnson@example.com', phoneNumber='789-012-3456'}
+2023-06-20 10:15:54.491 [main] INFO  Main - EmployeeDetails{empId=4, firstName='Alice', lastName='Williams', role=Role{roleId=4, roleName='Foreman', roleDescription='Oversees the construction site'}, department=Department{departmentId=1, departmentName='Construction', departmentDescription='Responsible for the actual construction work'}, hireDate=2023-04-01, email='alice.williams@example.com', phoneNumber='654-321-7890'}
+2023-06-20 10:15:54.491 [main] INFO  Main - EmployeeDetails{empId=5, firstName='Charlie', lastName='Brown', role=Role{roleId=5, roleName='Worker', roleDescription='Performs the construction work'}, department=Department{departmentId=1, departmentName='Construction', departmentDescription='Responsible for the actual construction work'}, hireDate=2023-05-01, email='charlie.brown@example.com', phoneNumber='210-654-3210'}
+2023-06-20 10:15:54.491 [main] INFO  Main - EmployeeDetails{empId=6, firstName='David', lastName='Jones', role=Role{roleId=6, roleName='Accountant', roleDescription='Handles company finances'}, department=Department{departmentId=4, departmentName='Accounting', departmentDescription='Manages financial affairs'}, hireDate=2023-06-01, email='david.jones@example.com', phoneNumber='876-543-2109'}

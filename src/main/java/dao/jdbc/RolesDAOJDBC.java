@@ -34,7 +34,7 @@ public class RolesDAOJDBC implements RolesDAO {
     }
 
     @Override
-    public Roles getRoleById(int id) {
+    public Roles selectRoleById(int id) {
         Roles role = null;
         try (Connection connection = connectionPool.getConnection()) {
             PreparedStatement ps = connection.prepareStatement("SELECT * FROM roles WHERE role_id = ?");
