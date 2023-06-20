@@ -102,7 +102,7 @@ public class Projects {
                 ", projectName='" + projectName + '\'' +
                 ", startDate=" + startDate +
                 ", endDate=" + endDate +
-                ", clientId=" + clientId +
+                ", clientId=" + (clientId != null ? clientId.getClientId() : "null") +
                 ", projectStatus='" + projectStatus + '\'' +
                 '}';
     }

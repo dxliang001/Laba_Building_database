@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="dao.interfaces.InvoicesMapper">
+
+    <resultMap id="InvoiceResult" type="models.Invoices">
+        <id property="invoiceId" column="invoice_id" />
+        <result property="issueDate" column="issue_date" />
+        <result property="dueDate" column="due_date" />
+        <result property="totalAmount" column="total_amount" />
+        <association property="clientId" column="client_id" javaType="models.Clients" resultMap="ClientId" />
+        <association property="projectId" column="project_id" javaType="models.Projects" resultMap="ProjectId" />
+        <association property="paymentId" column="payment_id" javaType="models.Payments" resultMap="PaymentId" />
+    </resultMap>
+
+    <resultMap id="ClientId" type="models.Clients">
+        <id property="clientId" column="client_id" />
+    </resultMap>
+
+    <resultMap id="ProjectId" type="models.Projects">
+        <id property="projectId" column="project_id" />
+    </resultMap>
+
+    <resultMap id="PaymentId" type="models.Payments">
+        <id property="paymentId" column="payment_id" />
+    </resultMap>
+
+    <select id="getAllInvoices" resultMap="InvoiceResult">
+        SELECT i.*, c.client_id, p.project_id, pa.payment_id
+        FROM Alex_building_laba.invoices i
+        LEFT JOIN Alex_building_laba.clients c ON i.client_id = c.client_id
+        LEFT JOIN Alex_building_laba.projects p ON i.project_id = p.project_id
+        LEFT JOIN Alex_building_laba.payments pa ON i.payment_id = pa.payment_id
+    </select>
+
+    <select id="getInvoiceById" resultMap="InvoiceResult">
+        SELECT i.*, c.client_id, p.project_id, pa.payment_id
+        FROM Alex_building_laba.invoices i
+        LEFT JOIN Alex_building_laba.clients c ON i.client_id = c.client_id
+        LEFT JOIN Alex_building_laba.projects p ON i.project_id = p.project_id
+        LEFT JOIN Alex_building_laba.payments pa ON i.payment_id = pa.payment_id
+        WHERE i.invoice_id = #{id}
+    </select>
+
+    <insert id="save" parameterType="models.Invoices">
+        INSERT INTO Alex_building_laba.invoices
+        (invoice_id, client_id, project_id, issue_date, due_date, total_amount, payment_id)
+        VALUES
+        (#{invoiceId}, #{clientId.clientId}, #{projectId.projectId}, #{issueDate}, #{dueDate}, #{totalAmount}, #{paymentId.paymentId})
+    </insert>
+
+    <update id="update" parameterType="models.Invoices">
+        UPDATE Alex_building_laba.invoices
+        SET
+        client_id = #{clientId.clientId},
+        project_id = #{projectId.projectId},
+        issue_date = #{issueDate},
+        due_date = #{dueDate},
+        total_amount = #{totalAmount},
+        payment_id = #{paymentId.paymentId}
+        WHERE invoice_id = #{invoiceId}
+    </update>
+
+    <delete id="delete" parameterType="models.Invoices">
+        DELETE FROM Alex_building_laba.Invoices WHERE invoice_id = #{invoiceId}
+    </delete>
+
+
+</mapper>

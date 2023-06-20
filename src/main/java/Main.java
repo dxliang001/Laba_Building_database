@@ -1,7 +1,5 @@
-import dao.interfaces.ClientsMapper;
-import dao.interfaces.EmployeesMapper;
-import models.Clients;
-import models.Employees;
+import dao.interfaces.*;
+import models.*;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
@@ -25,27 +23,29 @@ public class Main {
             session = sqlSessionFactory.openSession();
             ClientsMapper mapper = session.getMapper(ClientsMapper.class);
             EmployeesMapper employeesMapper = session.getMapper(EmployeesMapper.class);
+            PaymentsMapper paymentsMapper = session.getMapper(PaymentsMapper.class);
+            InvoicesMapper invoicesMapper = session.getMapper(InvoicesMapper.class);
+            ProjectsMapper projectsMapper = session.getMapper(ProjectsMapper.class);
 
             /* Test insertClient
             Clients newClient = new Clients();
-            newClient.setClientId(1);
-            newClient.setClientName("Client Name");
-            newClient.setContactName("Contact Name");
-            newClient.setClientAddress("Client Address");
+            newClient.setClientId(8);
+            newClient.setClientName("New Client 8");
+            newClient.setContactName("JOHN");
+            newClient.setClientAddress("Some Address");
             newClient.setClientEmail("client@example.com");
             newClient.setClientPhone("123-456-7890");
             mapper.save(newClient);
             session.commit();
             */
 
-            // Test getClientById
-            Clients client = mapper.getClientById(2);
+            /* Test getClientById
+            Clients client = mapper.getClientById(8);
             logger.info("Client " + client.getClientName());
 
-
-            client = mapper.getClientById(5);
+            client = mapper.getClientById(8);
             logger.info("Client : " + client);
-
+            */
             List<Clients> allClients = mapper.getAllClients();
             for (Clients clients : allClients) {
                 logger.info("Client ID: " + clients.getClientId());
@@ -58,11 +58,16 @@ public class Main {
             }
 
             List<Employees> employees = employeesMapper.getAllEmployees();
-            System.out.println("Employees:");
+            logger.info("Employees:");
             for (Employees employee : employees) {
                 logger.info(employee);
             }
 
+            List<Projects> projects = projectsMapper.getAllProjects();
+            logger.info("Projects:");
+            for (Projects project : projects) {
+                logger.info(project);
+            }
 
 
         } catch (IOException e) {
