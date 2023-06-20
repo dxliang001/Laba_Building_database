@@ -18,6 +18,10 @@
         SELECT * FROM clients WHERE client_id = #{clientId}
     </select>
 
+    <select id="getAllClients" parameterType="int" resultMap="ClientResult">
+    SELECT * FROM clients W
+    </select>
+
     <!-- INSERT statement -->
     <insert id="insertClient" parameterType="Clients">
         INSERT INTO clients (client_id, client_name, contact_name, client_address, client_email, client_phone)

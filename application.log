@@ -277,3 +277,54 @@ Caused by: java.sql.SQLException: No suitable driver
 2023-06-16 10:34:03.256 [main] INFO  com.sun.tools.javac.Main - |    4. Exit                          |
 2023-06-16 10:34:03.257 [main] INFO  com.sun.tools.javac.Main - ======================================
 2023-06-16 10:34:03.257 [main] INFO  com.sun.tools.javac.Main - Enter the building type (1-4): 
+2023-06-20 02:11:05.368 [main] INFO  Main - Client Client Co
+2023-06-20 02:11:05.468 [main] INFO  Main - Client : Client{clientId=5, clientName='Gamma Inc', contactName='Patricia Davis', clientAddress='567 King St', clientEmail='gammainc@example.com', clientPhone='000-111-2222'}
+2023-06-20 02:11:05.565 [main] INFO  Main - Client ID: 1
+2023-06-20 02:11:05.565 [main] INFO  Main - Client Name: Client Company
+2023-06-20 02:11:05.565 [main] INFO  Main - Contact Name: Jane Smith
+2023-06-20 02:11:05.565 [main] INFO  Main - Client Address: 123 Main St
+2023-06-20 02:11:05.566 [main] INFO  Main - Client Email: client@example.com
+2023-06-20 02:11:05.566 [main] INFO  Main - Client Phone: 098-765-4321
+2023-06-20 02:11:05.566 [main] INFO  Main - ------------------------
+2023-06-20 02:11:05.566 [main] INFO  Main - Client ID: 2
+2023-06-20 02:11:05.566 [main] INFO  Main - Client Name: Client Co
+2023-06-20 02:11:05.566 [main] INFO  Main - Contact Name: Tom Lee
+2023-06-20 02:11:05.566 [main] INFO  Main - Client Address: 234 Main St
+2023-06-20 02:11:05.566 [main] INFO  Main - Client Email: clientco@example.com
+2023-06-20 02:11:05.566 [main] INFO  Main - Client Phone: 111-222-3333
+2023-06-20 02:11:05.566 [main] INFO  Main - ------------------------
+2023-06-20 02:11:05.566 [main] INFO  Main - Client ID: 3
+2023-06-20 02:11:05.566 [main] INFO  Main - Client Name: Alpha Ltd
+2023-06-20 02:11:05.566 [main] INFO  Main - Contact Name: Susan Miller
+2023-06-20 02:11:05.566 [main] INFO  Main - Client Address: 345 High St
+2023-06-20 02:11:05.566 [main] INFO  Main - Client Email: alphaltd@example.com
+2023-06-20 02:11:05.567 [main] INFO  Main - Client Phone: 444-555-6666
+2023-06-20 02:11:05.567 [main] INFO  Main - ------------------------
+2023-06-20 02:11:05.567 [main] INFO  Main - Client ID: 4
+2023-06-20 02:11:05.567 [main] INFO  Main - Client Name: Beta Corp
+2023-06-20 02:11:05.567 [main] INFO  Main - Contact Name: Robert Brown
+2023-06-20 02:11:05.567 [main] INFO  Main - Client Address: 456 Park Ave
+2023-06-20 02:11:05.567 [main] INFO  Main - Client Email: betacorp@example.com
+2023-06-20 02:11:05.567 [main] INFO  Main - Client Phone: 777-888-9999
+2023-06-20 02:11:05.567 [main] INFO  Main - ------------------------
+2023-06-20 02:11:05.567 [main] INFO  Main - Client ID: 5
+2023-06-20 02:11:05.567 [main] INFO  Main - Client Name: Gamma Inc
+2023-06-20 02:11:05.567 [main] INFO  Main - Contact Name: Patricia Davis
+2023-06-20 02:11:05.567 [main] INFO  Main - Client Address: 567 King St
+2023-06-20 02:11:05.567 [main] INFO  Main - Client Email: gammainc@example.com
+2023-06-20 02:11:05.567 [main] INFO  Main - Client Phone: 000-111-2222
+2023-06-20 02:11:05.568 [main] INFO  Main - ------------------------
+2023-06-20 02:11:05.568 [main] INFO  Main - Client ID: 6
+2023-06-20 02:11:05.568 [main] INFO  Main - Client Name: Delta Plc
+2023-06-20 02:11:05.568 [main] INFO  Main - Contact Name: James Wilson
+2023-06-20 02:11:05.568 [main] INFO  Main - Client Address: 678 Queen St
+2023-06-20 02:11:05.568 [main] INFO  Main - Client Email: deltaplc@example.com
+2023-06-20 02:11:05.568 [main] INFO  Main - Client Phone: 333-444-5555
+2023-06-20 02:11:05.568 [main] INFO  Main - ------------------------
+2023-06-20 02:11:05.568 [main] INFO  Main - Client ID: 7
+2023-06-20 02:11:05.568 [main] INFO  Main - Client Name: MISS J
+2023-06-20 02:11:05.568 [main] INFO  Main - Contact Name: J
+2023-06-20 02:11:05.568 [main] INFO  Main - Client Address: Client Address
+2023-06-20 02:11:05.568 [main] INFO  Main - Client Email: client@example.com
+2023-06-20 02:11:05.569 [main] INFO  Main - Client Phone: 123-456-7890
+2023-06-20 02:11:05.569 [main] INFO  Main - ------------------------
