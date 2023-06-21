@@ -1,5 +1,4 @@
 import dao.interfaces.*;
-import models.*;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
@@ -9,7 +8,6 @@ import org.apache.logging.log4j.Logger;
 
 import java.io.IOException;
 import java.io.Reader;
-import java.util.List;
 
 public class Main {
 
@@ -23,9 +21,10 @@ public class Main {
             session = sqlSessionFactory.openSession();
             ClientsMapper mapper = session.getMapper(ClientsMapper.class);
             EmployeesMapper employeesMapper = session.getMapper(EmployeesMapper.class);
-            PaymentsMapper paymentsMapper = session.getMapper(PaymentsMapper.class);
-            InvoicesMapper invoicesMapper = session.getMapper(InvoicesMapper.class);
             ProjectsMapper projectsMapper = session.getMapper(ProjectsMapper.class);
+            InvoicesMapper invoicesMapper = session.getMapper(InvoicesMapper.class);
+            PaymentsMapper paymentsMapper = session.getMapper(PaymentsMapper.class);
+            //BuildingCostCalculatorApp.run();
 
             /* Test insertClient
             Clients newClient = new Clients();
@@ -46,28 +45,40 @@ public class Main {
             client = mapper.getClientById(8);
             logger.info("Client : " + client);
             */
-            List<Clients> allClients = mapper.getAllClients();
-            for (Clients clients : allClients) {
-                logger.info("Client ID: " + clients.getClientId());
-                logger.info("Client Name: " + clients.getClientName());
-                logger.info("Contact Name: " + clients.getContactName());
-                logger.info("Client Address: " + clients.getClientAddress());
-                logger.info("Client Email: " + clients.getClientEmail());
-                logger.info("Client Phone: " + clients.getClientPhone());
-                logger.info("------------------------");
-            }
+//            List<Clients> allClients = mapper.getAllClients();
+//            for (Clients clients : allClients) {
+//                logger.info("Client ID: " + clients.getClientId());
+//                logger.info("Client Name: " + clients.getClientName());
+//                logger.info("Contact Name: " + clients.getContactName());
+//                logger.info("Client Address: " + clients.getClientAddress());
+//                logger.info("Client Email: " + clients.getClientEmail());
+//                logger.info("Client Phone: " + clients.getClientPhone());
+//                logger.info("------------------------");
+//            }
+//
+//            List<Employees> employees = employeesMapper.getAllEmployees();
+//            logger.info("Employees:");
+//            for (Employees employee : employees) {
+//                logger.info(employee);
+//            }
+//
+//            List<Projects> projects = projectsMapper.getAllProjects();
+//            logger.info("Projects:");
+//            for (Projects project : projects) {
+//                logger.info(project);
+//            }
 
-            List<Employees> employees = employeesMapper.getAllEmployees();
-            logger.info("Employees:");
-            for (Employees employee : employees) {
-                logger.info(employee);
-            }
+//            List<Invoices> invoices = invoicesMapper.getAllInvoices();
+//            logger.info("Invoices:");
+//            for (Invoices invoice : invoices) {
+//                logger.info(invoice);
+//            }
 
-            List<Projects> projects = projectsMapper.getAllProjects();
-            logger.info("Projects:");
-            for (Projects project : projects) {
-                logger.info(project);
-            }
+//            List<Payments> payments = paymentsMapper.getAllPayments();
+//            logger.info("Payments:");
+//            for (Payments payment : payments) {
+//                logger.info(payment);
+//            }
 
 
         } catch (IOException e) {

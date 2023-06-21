@@ -1423,3 +1423,87 @@ Caused by: java.sql.SQLException: No suitable driver
 2023-06-20 11:00:55.022 [main] INFO  Main - Project{projectId=4, projectName='Apartment Building', startDate=2023-09-01, endDate=2028-09-01, clientId=4, projectStatus='In Progress'}
 2023-06-20 11:00:55.022 [main] INFO  Main - Project{projectId=5, projectName='Parking Garage', startDate=2023-10-01, endDate=2024-07-30, clientId=5, projectStatus='Planned'}
 2023-06-20 11:00:55.023 [main] INFO  Main - Project{projectId=6, projectName='Townhouse Complex', startDate=2023-11-01, endDate=2028-11-01, clientId=6, projectStatus='In Progress'}
+2023-06-21 09:12:31.025 [main] INFO  Main - Client ID: 1
+2023-06-21 09:12:31.028 [main] INFO  Main - Client Name: Client Company
+2023-06-21 09:12:31.028 [main] INFO  Main - Contact Name: Jane Smith
+2023-06-21 09:12:31.028 [main] INFO  Main - Client Address: 123 Main St
+2023-06-21 09:12:31.028 [main] INFO  Main - Client Email: client@example.com
+2023-06-21 09:12:31.028 [main] INFO  Main - Client Phone: 098-765-4321
+2023-06-21 09:12:31.029 [main] INFO  Main - ------------------------
+2023-06-21 09:12:31.029 [main] INFO  Main - Client ID: 2
+2023-06-21 09:12:31.029 [main] INFO  Main - Client Name: Client Co
+2023-06-21 09:12:31.029 [main] INFO  Main - Contact Name: Tom Lee
+2023-06-21 09:12:31.029 [main] INFO  Main - Client Address: 234 Main St
+2023-06-21 09:12:31.029 [main] INFO  Main - Client Email: clientco@example.com
+2023-06-21 09:12:31.029 [main] INFO  Main - Client Phone: 111-222-3333
+2023-06-21 09:12:31.029 [main] INFO  Main - ------------------------
+2023-06-21 09:12:31.029 [main] INFO  Main - Client ID: 3
+2023-06-21 09:12:31.029 [main] INFO  Main - Client Name: Alpha Ltd
+2023-06-21 09:12:31.029 [main] INFO  Main - Contact Name: Susan Miller
+2023-06-21 09:12:31.029 [main] INFO  Main - Client Address: 345 High St
+2023-06-21 09:12:31.029 [main] INFO  Main - Client Email: alphaltd@example.com
+2023-06-21 09:12:31.029 [main] INFO  Main - Client Phone: 444-555-6666
+2023-06-21 09:12:31.029 [main] INFO  Main - ------------------------
+2023-06-21 09:12:31.030 [main] INFO  Main - Client ID: 4
+2023-06-21 09:12:31.030 [main] INFO  Main - Client Name: Beta Corp
+2023-06-21 09:12:31.030 [main] INFO  Main - Contact Name: Robert Brown
+2023-06-21 09:12:31.030 [main] INFO  Main - Client Address: 456 Park Ave
+2023-06-21 09:12:31.030 [main] INFO  Main - Client Email: betacorp@example.com
+2023-06-21 09:12:31.030 [main] INFO  Main - Client Phone: 777-888-9999
+2023-06-21 09:12:31.030 [main] INFO  Main - ------------------------
+2023-06-21 09:12:31.030 [main] INFO  Main - Client ID: 5
+2023-06-21 09:12:31.030 [main] INFO  Main - Client Name: Gamma Inc
+2023-06-21 09:12:31.030 [main] INFO  Main - Contact Name: Patricia Davis
+2023-06-21 09:12:31.030 [main] INFO  Main - Client Address: 567 King St
+2023-06-21 09:12:31.030 [main] INFO  Main - Client Email: gammainc@example.com
+2023-06-21 09:12:31.030 [main] INFO  Main - Client Phone: 000-111-2222
+2023-06-21 09:12:31.030 [main] INFO  Main - ------------------------
+2023-06-21 09:12:31.030 [main] INFO  Main - Client ID: 6
+2023-06-21 09:12:31.030 [main] INFO  Main - Client Name: Delta Plc
+2023-06-21 09:12:31.031 [main] INFO  Main - Contact Name: James Wilson
+2023-06-21 09:12:31.031 [main] INFO  Main - Client Address: 678 Queen St
+2023-06-21 09:12:31.031 [main] INFO  Main - Client Email: deltaplc@example.com
+2023-06-21 09:12:31.031 [main] INFO  Main - Client Phone: 333-444-5555
+2023-06-21 09:12:31.031 [main] INFO  Main - ------------------------
+2023-06-21 09:12:31.031 [main] INFO  Main - Client ID: 7
+2023-06-21 09:12:31.031 [main] INFO  Main - Client Name: MISS J
+2023-06-21 09:12:31.031 [main] INFO  Main - Contact Name: J
+2023-06-21 09:12:31.031 [main] INFO  Main - Client Address: Client Address
+2023-06-21 09:12:31.031 [main] INFO  Main - Client Email: client@example.com
+2023-06-21 09:12:31.031 [main] INFO  Main - Client Phone: 123-456-7890
+2023-06-21 09:12:31.031 [main] INFO  Main - ------------------------
+2023-06-21 09:12:31.137 [main] INFO  Main - Employees:
+2023-06-21 09:12:31.143 [main] INFO  Main - EmployeeDetails{empId=1, firstName='John', lastName='Doe', role=Role{roleId=1, roleName='Manager', roleDescription='Responsible for managing the team'}, department=Department{departmentId=1, departmentName='Construction', departmentDescription='Responsible for the actual construction work'}, hireDate=2022-01-01, email='john.doe@example.com', phoneNumber='123-456-7890'}
+2023-06-21 09:12:31.143 [main] INFO  Main - EmployeeDetails{empId=2, firstName='Jane', lastName='Smith', role=Role{roleId=2, roleName='Engineer', roleDescription='Responsible for engineering tasks'}, department=Department{departmentId=2, departmentName='Engineering', departmentDescription='Handles engineering tasks'}, hireDate=2023-02-01, email='jane.smith@example.com', phoneNumber='321-654-0987'}
+2023-06-21 09:12:31.143 [main] INFO  Main - EmployeeDetails{empId=3, firstName='Bob', lastName='Johnson', role=Role{roleId=3, roleName='Architect', roleDescription='Responsible for architectural designs'}, department=Department{departmentId=3, departmentName='Architecture', departmentDescription='Handles architectural design'}, hireDate=2023-03-01, email='bob.johnson@example.com', phoneNumber='789-012-3456'}
+2023-06-21 09:12:31.144 [main] INFO  Main - EmployeeDetails{empId=4, firstName='Alice', lastName='Williams', role=Role{roleId=4, roleName='Foreman', roleDescription='Oversees the construction site'}, department=Department{departmentId=1, departmentName='Construction', departmentDescription='Responsible for the actual construction work'}, hireDate=2023-04-01, email='alice.williams@example.com', phoneNumber='654-321-7890'}
+2023-06-21 09:12:31.144 [main] INFO  Main - EmployeeDetails{empId=5, firstName='Charlie', lastName='Brown', role=Role{roleId=5, roleName='Worker', roleDescription='Performs the construction work'}, department=Department{departmentId=1, departmentName='Construction', departmentDescription='Responsible for the actual construction work'}, hireDate=2023-05-01, email='charlie.brown@example.com', phoneNumber='210-654-3210'}
+2023-06-21 09:12:31.144 [main] INFO  Main - EmployeeDetails{empId=6, firstName='David', lastName='Jones', role=Role{roleId=6, roleName='Accountant', roleDescription='Handles company finances'}, department=Department{departmentId=4, departmentName='Accounting', departmentDescription='Manages financial affairs'}, hireDate=2023-06-01, email='david.jones@example.com', phoneNumber='876-543-2109'}
+2023-06-21 09:12:31.248 [main] INFO  Main - Projects:
+2023-06-21 09:12:31.250 [main] INFO  Main - Project{projectId=1, projectName='New Building', startDate=2022-02-01, endDate=2022-12-01, clientId=1, projectStatus='In Progress'}
+2023-06-21 09:12:31.250 [main] INFO  Main - Project{projectId=2, projectName='Office Block', startDate=2023-07-01, endDate=2024-06-30, clientId=2, projectStatus='Planned'}
+2023-06-21 09:12:31.251 [main] INFO  Main - Project{projectId=3, projectName='Shopping Mall', startDate=2023-08-01, endDate=2028-08-01, clientId=3, projectStatus='In Progress'}
+2023-06-21 09:12:31.251 [main] INFO  Main - Project{projectId=4, projectName='Apartment Building', startDate=2023-09-01, endDate=2028-09-01, clientId=4, projectStatus='In Progress'}
+2023-06-21 09:12:31.251 [main] INFO  Main - Project{projectId=5, projectName='Parking Garage', startDate=2023-10-01, endDate=2024-07-30, clientId=5, projectStatus='Planned'}
+2023-06-21 09:12:31.251 [main] INFO  Main - Project{projectId=6, projectName='Townhouse Complex', startDate=2023-11-01, endDate=2028-11-01, clientId=6, projectStatus='In Progress'}
+2023-06-21 09:35:11.400 [main] INFO  Main - Invoices:
+2023-06-21 09:35:11.406 [main] INFO  Main - Invoices{invoiceId=1, clientId=1, projectId=1, issueDate=2022-02-01, dueDate=2022-12-01, totalAmount=30000.0, paymentId=1}
+2023-06-21 09:35:11.406 [main] INFO  Main - Invoices{invoiceId=2, clientId=2, projectId=2, issueDate=2023-07-01, dueDate=2024-06-30, totalAmount=552000.0, paymentId=2}
+2023-06-21 09:35:11.406 [main] INFO  Main - Invoices{invoiceId=3, clientId=3, projectId=3, issueDate=2023-08-01, dueDate=2028-08-01, totalAmount=5493000.0, paymentId=3}
+2023-06-21 09:35:11.406 [main] INFO  Main - Invoices{invoiceId=4, clientId=4, projectId=4, issueDate=2023-09-01, dueDate=2028-09-01, totalAmount=4.5453E7, paymentId=4}
+2023-06-21 09:35:11.406 [main] INFO  Main - Invoices{invoiceId=5, clientId=5, projectId=5, issueDate=2023-10-01, dueDate=2024-07-30, totalAmount=3000.0, paymentId=5}
+2023-06-21 09:35:11.406 [main] INFO  Main - Invoices{invoiceId=6, clientId=6, projectId=6, issueDate=2023-11-01, dueDate=2028-11-01, totalAmount=4.6463E7, paymentId=6}
+2023-06-21 09:36:24.583 [main] INFO  Main - Payments:
+2023-06-21 09:36:24.591 [main] INFO  Main - Payments{paymentId=1, clientId=Client{clientId=1, clientName='null', contactName='null', clientAddress='null', clientEmail='null', clientPhone='null'}, projectId=Project{projectId=1, projectName='null', startDate=null, endDate=null, clientId=null, projectStatus='null'}, amount=30000.0, paymentDate=2022-02-01, paymentMethod='Credit Card'}
+2023-06-21 09:36:24.591 [main] INFO  Main - Payments{paymentId=2, clientId=Client{clientId=2, clientName='null', contactName='null', clientAddress='null', clientEmail='null', clientPhone='null'}, projectId=Project{projectId=2, projectName='null', startDate=null, endDate=null, clientId=null, projectStatus='null'}, amount=552000.0, paymentDate=2023-07-01, paymentMethod='Bank Transfer'}
+2023-06-21 09:36:24.591 [main] INFO  Main - Payments{paymentId=3, clientId=Client{clientId=3, clientName='null', contactName='null', clientAddress='null', clientEmail='null', clientPhone='null'}, projectId=Project{projectId=3, projectName='null', startDate=null, endDate=null, clientId=null, projectStatus='null'}, amount=5493000.0, paymentDate=2023-08-01, paymentMethod='Check'}
+2023-06-21 09:36:24.592 [main] INFO  Main - Payments{paymentId=4, clientId=Client{clientId=4, clientName='null', contactName='null', clientAddress='null', clientEmail='null', clientPhone='null'}, projectId=Project{projectId=4, projectName='null', startDate=null, endDate=null, clientId=null, projectStatus='null'}, amount=4.5453E7, paymentDate=2023-09-01, paymentMethod='Bank Transfer'}
+2023-06-21 09:36:24.592 [main] INFO  Main - Payments{paymentId=5, clientId=Client{clientId=5, clientName='null', contactName='null', clientAddress='null', clientEmail='null', clientPhone='null'}, projectId=Project{projectId=5, projectName='null', startDate=null, endDate=null, clientId=null, projectStatus='null'}, amount=3000.0, paymentDate=2023-10-01, paymentMethod='Check'}
+2023-06-21 09:36:24.592 [main] INFO  Main - Payments{paymentId=6, clientId=Client{clientId=6, clientName='null', contactName='null', clientAddress='null', clientEmail='null', clientPhone='null'}, projectId=Project{projectId=6, projectName='null', startDate=null, endDate=null, clientId=null, projectStatus='null'}, amount=4.6463E7, paymentDate=2023-11-01, paymentMethod='Bank Transfer'}
+2023-06-21 09:38:26.200 [main] INFO  Main - Payments:
+2023-06-21 09:38:26.205 [main] INFO  Main - Payments{paymentId=1, clientId=1, projectId=1, amount=30000.0, paymentDate=2022-02-01, paymentMethod='Credit Card'}
+2023-06-21 09:38:26.205 [main] INFO  Main - Payments{paymentId=2, clientId=2, projectId=2, amount=552000.0, paymentDate=2023-07-01, paymentMethod='Bank Transfer'}
+2023-06-21 09:38:26.205 [main] INFO  Main - Payments{paymentId=3, clientId=3, projectId=3, amount=5493000.0, paymentDate=2023-08-01, paymentMethod='Check'}
+2023-06-21 09:38:26.205 [main] INFO  Main - Payments{paymentId=4, clientId=4, projectId=4, amount=4.5453E7, paymentDate=2023-09-01, paymentMethod='Bank Transfer'}
+2023-06-21 09:38:26.206 [main] INFO  Main - Payments{paymentId=5, clientId=5, projectId=5, amount=3000.0, paymentDate=2023-10-01, paymentMethod='Check'}
+2023-06-21 09:38:26.206 [main] INFO  Main - Payments{paymentId=6, clientId=6, projectId=6, amount=4.6463E7, paymentDate=2023-11-01, paymentMethod='Bank Transfer'}

@@ -21,6 +21,8 @@ public class Expenses {
     @XmlElement(name = "description")
     private String description;
 
+    public Expenses() {}
+
     public Expenses(int expenseId, Projects projectId, double amount, Date expenseDate, String description) {
         this.expenseId = expenseId;
         this.projectId = projectId;

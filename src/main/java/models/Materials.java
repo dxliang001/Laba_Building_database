@@ -17,6 +17,7 @@ public class Materials {
     @XmlElement(name = "supplierId")
     private Suppliers supplierId;
 
+    public Materials() {}
     public Materials(int materialId, String materialName, String materialDescription, Suppliers supplierId) {
         this.materialId = materialId;
         this.materialName = materialName;
