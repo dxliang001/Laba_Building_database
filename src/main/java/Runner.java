@@ -26,17 +26,20 @@ public class Runner {
             PaymentsMapper paymentsMapper = session.getMapper(PaymentsMapper.class);
             //BuildingCostCalculatorApp.run();
 
-            /* Test insertClient
-            Clients newClient = new Clients();
-            newClient.setClientId(8);
-            newClient.setClientName("New Client 8");
-            newClient.setContactName("JOHN");
-            newClient.setClientAddress("Some Address");
-            newClient.setClientEmail("client@example.com");
-            newClient.setClientPhone("123-456-7890");
-            mapper.save(newClient);
-            session.commit();
-            */
+//
+//            Clients newClient = new Clients();
+//            newClient.setClientId(9);
+//            newClient.setClientName("New Client 8");
+//            newClient.setContactName("JOHN");
+//            newClient.setClientAddress("Some Address");
+//            newClient.setClientEmail("client@example.com");
+//            newClient.setClientPhone("123-456-7890");
+//            mapper.save(newClient);
+//            session.commit();
+
+//           Delete Client above base on newClient.setClientId(9);
+//            mapper.delete(newClient);
+//            session.commit();
 
             /* Test getClientById
             Clients client = mapper.getClientById(8);

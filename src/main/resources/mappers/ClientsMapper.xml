@@ -23,13 +23,13 @@
     </select>
 
     <!-- INSERT statement -->
-    <insert id="insertClient" parameterType="Clients">
+    <insert id="save" parameterType="Clients">
         INSERT INTO clients (client_id, client_name, contact_name, client_address, client_email, client_phone)
         VALUES (#{clientId}, #{clientName}, #{contactName}, #{clientAddress}, #{clientEmail}, #{clientPhone})
     </insert>
 
     <!-- UPDATE statement -->
-    <update id="updateClient" parameterType="Clients">
+    <update id="update" parameterType="Clients">
         UPDATE clients SET
         client_name = #{clientName},
         contact_name = #{contactName},
@@ -40,7 +40,7 @@
     </update>
 
     <!-- DELETE statement -->
-    <delete id="deleteClient" parameterType="int">
+    <delete id="delete" parameterType="int">
         DELETE FROM clients WHERE client_id = #{clientId}
     </delete>
 </mapper>
