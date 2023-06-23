@@ -1507,3 +1507,13 @@ Caused by: java.sql.SQLException: No suitable driver
 2023-06-21 09:38:26.205 [main] INFO  Main - Payments{paymentId=4, clientId=4, projectId=4, amount=4.5453E7, paymentDate=2023-09-01, paymentMethod='Bank Transfer'}
 2023-06-21 09:38:26.206 [main] INFO  Main - Payments{paymentId=5, clientId=5, projectId=5, amount=3000.0, paymentDate=2023-10-01, paymentMethod='Check'}
 2023-06-21 09:38:26.206 [main] INFO  Main - Payments{paymentId=6, clientId=6, projectId=6, amount=4.6463E7, paymentDate=2023-11-01, paymentMethod='Bank Transfer'}
+2023-06-23 08:50:33.793 [main] INFO  com.sun.tools.javac.Main - ======================================
+2023-06-23 08:50:33.796 [main] INFO  com.sun.tools.javac.Main - |         Building Cost Calculator     |
+2023-06-23 08:50:33.796 [main] INFO  com.sun.tools.javac.Main - ======================================
+2023-06-23 08:50:33.796 [main] INFO  com.sun.tools.javac.Main - | Options:                           |
+2023-06-23 08:50:33.796 [main] INFO  com.sun.tools.javac.Main - |    1. Residential Building          |
+2023-06-23 08:50:33.796 [main] INFO  com.sun.tools.javac.Main - |    2. Commercial Building           |
+2023-06-23 08:50:33.796 [main] INFO  com.sun.tools.javac.Main - |    3. Industrial Building           |
+2023-06-23 08:50:33.797 [main] INFO  com.sun.tools.javac.Main - |    4. Exit                          |
+2023-06-23 08:50:33.797 [main] INFO  com.sun.tools.javac.Main - ======================================
+2023-06-23 08:50:33.797 [main] INFO  com.sun.tools.javac.Main - Enter the building type (1-4): 
