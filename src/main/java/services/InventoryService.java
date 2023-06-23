@@ -1,34 +1,34 @@
 package services;
 
-import dao.interfaces.InventoryDAO;
+import dao.interfaces.InventoryMapper;
 import models.Inventory;
 
 import java.util.List;
 
 public class InventoryService {
-    private InventoryDAO inventoryDao;
+    private InventoryMapper inventoryMapper;
 
-    public InventoryService(InventoryDAO inventoryDao) {
-        this.inventoryDao = inventoryDao;
+    public InventoryService(InventoryMapper inventoryMapper) {
+        this.inventoryMapper = inventoryMapper;
     }
 
     public Inventory getInventoryById(int id) {
-        return inventoryDao.getInventoryById(id);
+        return inventoryMapper.getInventoryById(id);
     }
 
     public List<Inventory> getAllInventory() {
-        return inventoryDao.getAllInventory();
+        return inventoryMapper.getAllInventory();
     }
 
     public void saveInventory(Inventory inventory) {
-        inventoryDao.save(inventory);
+        inventoryMapper.save(inventory);
     }
 
-    public void updateDepartment(Inventory inventory) {
-        inventoryDao.update(inventory);
+    public void updateInventory(Inventory inventory) {
+        inventoryMapper.update(inventory);
     }
 
     public void deleteInventory(Inventory inventory) {
-        inventoryDao.delete(inventory);
+        inventoryMapper.delete(inventory);
     }
 }

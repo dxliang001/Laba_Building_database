@@ -1,30 +1,34 @@
 package services;
 
-import dao.interfaces.ProjectMaterialDAO;
+import dao.interfaces.ProjectMaterialsMapper;
 import models.ProjectMaterials;
 
 import java.util.List;
 
 public class ProjectMaterialService {
-    private ProjectMaterialDAO projectMaterialDao;
+    private ProjectMaterialsMapper projectMaterialsMapper;
 
-    public ProjectMaterialService(ProjectMaterialDAO projectMaterialDao) {
-        this.projectMaterialDao = projectMaterialDao;
+    public ProjectMaterialService(ProjectMaterialsMapper projectMaterialsMapper) {
+        this.projectMaterialsMapper = projectMaterialsMapper;
+    }
+
+    public ProjectMaterials getProjectMaterialById(int projectId, int materialId) {
+        return projectMaterialsMapper.getProjectMaterialById(projectId, materialId);
     }
 
     public List<ProjectMaterials> getAllProjectMaterials() {
-        return projectMaterialDao.getAllProjectMaterials();
+        return projectMaterialsMapper.getAllProjectMaterials();
     }
 
     public void saveProjectMaterial(ProjectMaterials projectMaterial) {
-        projectMaterialDao.save(projectMaterial);
+        projectMaterialsMapper.save(projectMaterial);
     }
 
     public void updateProjectMaterial(ProjectMaterials projectMaterial) {
-        projectMaterialDao.update(projectMaterial);
+        projectMaterialsMapper.update(projectMaterial);
     }
 
     public void deleteProjectMaterial(ProjectMaterials projectMaterial) {
-        projectMaterialDao.delete(projectMaterial);
+        projectMaterialsMapper.delete(projectMaterial);
     }
 }

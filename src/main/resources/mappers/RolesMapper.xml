@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="dao.interfaces.RolesMapper">
+    <resultMap id="RoleResult" type="models.Roles">
+        <id property="roleId" column="role_id"/>
+        <result property="roleName" column="role_name"/>
+        <result property="roleDescription" column="role_description"/>
+    </resultMap>
+
+    <select id="selectRoleById" parameterType="int" resultMap="RoleResult">
+        SELECT * FROM Alex_building_laba.roles WHERE role_id = #{roleId}
+    </select>
+
+    <select id="getAllRoles" resultMap="RoleResult">
+        SELECT * FROM Alex_building_laba.roles
+    </select>
+
+    <insert id="save" parameterType="models.Roles">
+        INSERT INTO Alex_building_laba.roles
+        (role_id, role_name, role_description)
+        VALUES
+        (#{roleId}, #{roleName}, #{roleDescription})
+    </insert>
+
+    <update id="update" parameterType="models.Roles">
+        UPDATE Alex_building_laba.roles
+        SET
+        role_name = #{roleName},
+        role_description = #{roleDescription}
+        WHERE role_id = #{roleId}
+    </update>
+
+    <delete id="delete" parameterType="models.Roles">
+        DELETE FROM Alex_building_laba.roles WHERE role_id = #{roleId}
+    </delete>
+</mapper>

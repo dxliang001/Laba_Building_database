@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <properties resource="database.properties"/>
+
+    <typeAliases>
+        <typeAlias type="models.Employees" alias="Employees"/>
+        <typeAlias type="models.Roles" alias="Roles"/>
+        <typeAlias type="models.Departments" alias="Departments"/>
+        <typeAlias type="models.Clients" alias="Clients"/>
+        <typeAlias type="models.Projects" alias="Projects"/>
+        <typeAlias type="models.Inventory" alias="Inventory"/>
+        <typeAlias type="models.Invoices" alias="Invoices"/>
+        <typeAlias type="models.Materials" alias="Materials"/>
+        <typeAlias type="models.Payments" alias="Payments"/>
+        <typeAlias type="models.Suppliers" alias="Suppliers"/>
+        <typeAlias type="models.ProjectMaterials" alias="ProjectMaterials"/>
+        <typeAlias type="models.ProjectEmployees" alias="ProjectEmployees"/>
+        <typeAlias type="models.Expenses" alias="Expenses"/>
+    </typeAliases>
+
+    <environments default="development">
+        <environment id="development">
+            <transactionManager type="JDBC"/>
+            <dataSource type="POOLED">
+                <property name="driver" value="${DB_DRIVER}"/>
+                <property name="url" value="${DB_URL}"/>
+                <property name="username" value="${DB_USERNAME}"/>
+                <property name="password" value="${DB_PASSWORD}"/>
+            </dataSource>
+        </environment>
+    </environments>
+
+    <mappers>
+        <mapper resource="mappers/DepartmentsMapper.xml"/>
+        <mapper resource="mappers/RolesMapper.xml"/>
+        <mapper resource="mappers/EmployeesMapper.xml"/>
+        <mapper resource="mappers/ClientsMapper.xml"/>
+        <mapper resource="mappers/ProjectsMapper.xml"/>
+        <mapper resource="mappers/InvoicesMapper.xml"/>
+        <mapper resource="mappers/PaymentsMapper.xml"/>
+    </mappers>
+</configuration>

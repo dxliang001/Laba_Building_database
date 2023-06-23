@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="dao.interfaces.InvoicesMapper">
+
+    <resultMap id="InvoiceResult" type="models.Invoices">
+        <id column="invoice_id" property="invoiceId"/>
+        <result column="client_id" property="clientId.clientId"/>
+        <result column="project_id" property="projectId.projectId"/>
+        <result column="issue_date" property="issueDate"/>
+        <result column="due_date" property="dueDate"/>
+        <result column="total_amount" property="totalAmount"/>
+        <result column="payment_id" property="paymentId.paymentId"/>
+    </resultMap>
+
+    <select id="getInvoiceById" resultMap="InvoiceResult">
+        SELECT * FROM Alex_building_laba.invoices WHERE invoice_id = #{id}
+    </select>
+
+    <select id="getAllInvoices" resultMap="InvoiceResult">
+        SELECT * FROM Alex_building_laba.invoices
+    </select>
+
+    <insert id="save" parameterType="models.Invoices">
+        INSERT INTO Alex_building_laba.invoices
+        (invoice_id, client_id, project_id, issue_date, due_date, total_amount, payment_id)
+        VALUES
+        (#{invoiceId}, #{clientId.clientId}, #{projectId.projectId}, #{issueDate}, #{dueDate}, #{totalAmount}, #{paymentId.paymentId})
+    </insert>
+
+    <update id="update" parameterType="models.Invoices">
+        UPDATE Alex_building_laba.invoices
+        SET
+        client_id = #{clientId.clientId},
+        project_id = #{projectId.projectId},
+        issue_date = #{issueDate},
+        due_date = #{dueDate},
+        total_amount = #{totalAmount},
+        payment_id = #{paymentId.paymentId}
+        WHERE invoice_id = #{invoiceId}
+    </update>
+
+    <delete id="delete" parameterType="models.Invoices">
+        DELETE FROM Alex_building_laba.Invoices WHERE invoice_id = #{invoiceId}
+    </delete>
+
+
+</mapper>

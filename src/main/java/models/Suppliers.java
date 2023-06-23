@@ -19,6 +19,7 @@ public class Suppliers {
     @XmlElement(name = "supplierPhone")
     private String supplierPhone;
 
+    public Suppliers() {}
     public Suppliers(int supplierId, String supplierName, String supplierAddress, String supplierEmail, String supplierPhone) {
         this.supplierId = supplierId;
         this.supplierName = supplierName;

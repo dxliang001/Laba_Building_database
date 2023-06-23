@@ -1,34 +1,34 @@
 package services;
 
-import dao.interfaces.EmployeesDAO;
+import dao.interfaces.EmployeesMapper;
 import models.Employees;
 
 import java.util.List;
 
 public class EmployeeService {
-    private EmployeesDAO employeeDao;
+    private EmployeesMapper employeesMapper;
 
-    public EmployeeService(EmployeesDAO employeeDao) {
-        this.employeeDao = employeeDao;
+    public EmployeeService(EmployeesMapper employeesMapper) {
+        this.employeesMapper = employeesMapper;
     }
 
     public Employees getEmployeeById(int id) {
-        return employeeDao.getEmployeeById(id);
+        return employeesMapper.getEmployeeById(id);
     }
 
     public List<Employees> getAllEmployees() {
-        return employeeDao.getAllEmployee();
+        return employeesMapper.getAllEmployees();
     }
 
     public void saveEmployee(Employees employee) {
-        employeeDao.save(employee);
+        employeesMapper.save(employee);
     }
 
     public void updateEmployee(Employees employee) {
-        employeeDao.update(employee);
+        employeesMapper.update(employee);
     }
 
     public void deleteEmployee(Employees employee) {
-        employeeDao.delete(employee);
+        employeesMapper.delete(employee);
     }
 }

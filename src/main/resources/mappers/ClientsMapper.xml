@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="dao.interfaces.ClientsMapper">
+
+    <resultMap id="ClientResult" type="Clients">
+        <id property="clientId" column="client_id"/>
+        <result property="clientName" column="client_name"/>
+        <result property="contactName" column="contact_name"/>
+        <result property="clientAddress" column="client_address"/>
+        <result property="clientEmail" column="client_email"/>
+        <result property="clientPhone" column="client_phone"/>
+    </resultMap>
+
+    <!-- SELECT statement -->
+    <select id="getClientById" parameterType="int" resultMap="ClientResult">
+        SELECT * FROM clients WHERE client_id = #{clientId}
+    </select>
+
+    <select id="getAllClients" parameterType="int" resultMap="ClientResult">
+    SELECT * FROM clients W
+    </select>
+
+    <!-- INSERT statement -->
+    <insert id="save" parameterType="Clients">
+        INSERT INTO clients (client_id, client_name, contact_name, client_address, client_email, client_phone)
+        VALUES (#{clientId}, #{clientName}, #{contactName}, #{clientAddress}, #{clientEmail}, #{clientPhone})
+    </insert>
+
+    <!-- UPDATE statement -->
+    <update id="update" parameterType="Clients">
+        UPDATE clients SET
+        client_name = #{clientName},
+        contact_name = #{contactName},
+        client_address = #{clientAddress},
+        client_email = #{clientEmail},
+        client_phone = #{clientPhone}
+        WHERE client_id = #{clientId}
+    </update>
+
+    <!-- DELETE statement -->
+    <delete id="delete" parameterType="int">
+        DELETE FROM clients WHERE client_id = #{clientId}
+    </delete>
+</mapper>

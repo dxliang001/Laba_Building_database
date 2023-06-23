@@ -22,6 +22,7 @@ public class Payments {
     @XmlElement(name = "paymentMethod")
     private String paymentMethod;
 
+    public Payments() {}
     public Payments(int paymentId, Clients clientId, Projects projectId, double amount, Date paymentDate, String paymentMethod) {
         this.paymentId = paymentId;
         this.clientId = clientId;
@@ -82,8 +83,8 @@ public class Payments {
     public String toString() {
         return "Payments{" +
                 "paymentId=" + paymentId +
-                ", clientId=" + clientId +
-                ", projectId=" + projectId +
+                ", clientId=" + (clientId != null ? clientId.getClientId() : "null") +
+                ", projectId=" + (projectId != null ? projectId.getProjectId() : "null") +
                 ", amount=" + amount +
                 ", paymentDate=" + paymentDate +
                 ", paymentMethod='" + paymentMethod + '\'' +

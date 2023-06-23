@@ -25,6 +25,8 @@ public class Invoices {
     @XmlElement(name = "paymentId")
     private Payments paymentId;
 
+    public Invoices() {}
+
     public Invoices(int invoiceId, Clients clientId, Projects projectId, Date issueDate, Date dueDate, double totalAmount, Payments paymentId) {
         this.invoiceId = invoiceId;
         this.clientId = clientId;
@@ -94,14 +96,15 @@ public class Invoices {
     public String toString() {
         return "Invoices{" +
                 "invoiceId=" + invoiceId +
-                ", clientId=" + clientId +
-                ", projectId=" + projectId +
+                ", clientId=" + (clientId != null ? clientId.getClientId() : "null") +
+                ", projectId=" + (projectId != null ? projectId.getProjectId() : "null") +
                 ", issueDate=" + issueDate +
                 ", dueDate=" + dueDate +
                 ", totalAmount=" + totalAmount +
-                ", paymentId=" + paymentId +
+                ", paymentId=" + (paymentId != null ? paymentId.getPaymentId() : "null") +
                 '}';
     }
+
 
     @Override
     public boolean equals(Object o) {

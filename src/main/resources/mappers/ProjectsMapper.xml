@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="dao.interfaces.ProjectsMapper">
+
+    <resultMap id="ProjectResult" type="models.Projects">
+        <id property="projectId" column="project_id" />
+        <result property="projectName" column="project_name" />
+        <result property="startDate" column="start_date" />
+        <result property="endDate" column="end_date" />
+        <result property="projectStatus" column="project_status" />
+        <association property="clientId" column="client_id" javaType="models.Clients" resultMap="ClientId" />
+    </resultMap>
+
+    <resultMap id="ClientId" type="models.Clients">
+        <id property="clientId" column="client_id" />
+    </resultMap>
+
+    <select id="getAllProjects" resultMap="ProjectResult">
+        SELECT p.*, c.client_id
+        FROM Alex_building_laba.projects p
+        LEFT JOIN Alex_building_laba.clients c ON p.client_id = c.client_id
+    </select>
+
+    <select id="getProjectById" resultMap="ProjectResult">
+        SELECT p.*, c.client_id
+        FROM Alex_building_laba.projects p
+        LEFT JOIN Alex_building_laba.clients c ON p.client_id = c.client_id
+        WHERE p.project_id = #{id}
+    </select>
+
+    <insert id="save" parameterType="models.Projects">
+        INSERT INTO Alex_building_laba.projects
+        (project_id, project_name, start_date, end_date, client_id, project_status)
+        VALUES
+        (#{projectId}, #{projectName}, #{startDate}, #{endDate}, #{clientId.clientId}, #{projectStatus})
+    </insert>
+
+    <update id="update" parameterType="models.Projects">
+        UPDATE Alex_building_laba.projects
+        SET
+        project_name = #{projectName},
+        start_date = #{startDate},
+        end_date = #{endDate},
+        client_id = #{clientId.clientId},
+        project_status = #{projectStatus}
+        WHERE project_id = #{projectId}
+    </update>
+
+    <delete id="delete" parameterType="models.Projects">
+        DELETE FROM Alex_building_laba.projects WHERE project_id = #{projectId}
+    </delete>
+
+</mapper>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="dao.interfaces.PaymentsMapper">
+
+    <resultMap id="PaymentResult" type="models.Payments">
+        <id property="paymentId" column="payment_id" />
+        <result property="amount" column="amount" />
+        <result property="paymentDate" column="payment_date" />
+        <result property="paymentMethod" column="payment_method" />
+        <association property="clientId" column="client_id" javaType="models.Clients" resultMap="ClientId" />
+        <association property="projectId" column="project_id" javaType="models.Projects" resultMap="ProjectId" />
+    </resultMap>
+
+    <resultMap id="ClientId" type="models.Clients">
+        <id property="clientId" column="client_id" />
+    </resultMap>
+
+    <resultMap id="ProjectId" type="models.Projects">
+        <id property="projectId" column="project_id" />
+    </resultMap>
+
+    <select id="getAllPayments" resultMap="PaymentResult">
+        SELECT p.*, c.client_id, pr.project_id
+        FROM Alex_building_laba.payments p
+        LEFT JOIN Alex_building_laba.clients c ON p.client_id = c.client_id
+        LEFT JOIN Alex_building_laba.projects pr ON p.project_id = pr.project_id
+    </select>
+
+    <select id="getPaymentById" resultMap="PaymentResult">
+        SELECT p.*, c.client_id, pr.project_id
+        FROM Alex_building_laba.payments p
+        LEFT JOIN Alex_building_laba.clients c ON p.client_id = c.client_id
+        LEFT JOIN Alex_building_laba.projects pr ON p.project_id = pr.project_id
+        WHERE p.payment_id = #{id}
+    </select>
+
+    <insert id="save" parameterType="models.Payments">
+        INSERT INTO Alex_building_laba.payments
+        (payment_id, client_id, project_id, amount, payment_date, payment_method)
+        VALUES
+        (#{paymentId}, #{clientId.clientId}, #{projectId.projectId}, #{amount}, #{paymentDate}, #{paymentMethod})
+    </insert>
+
+    <update id="update" parameterType="models.Payments">
+        UPDATE Alex_building_laba.payments
+        SET
+        client_id = #{clientId.clientId},
+        project_id = #{projectId.projectId},
+        amount = #{amount},
+        payment_date = #{paymentDate},
+        payment_method = #{paymentMethod}
+        WHERE payment_id = #{paymentId}
+    </update>
+
+    <delete id="delete" parameterType="int">
+        DELETE FROM Alex_building_laba.payments WHERE payment_id = #{id}
+    </delete>
+
+</mapper>

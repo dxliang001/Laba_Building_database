@@ -1,34 +1,34 @@
 package services;
 
-import dao.interfaces.MaterialsDAO;
+import dao.interfaces.MaterialsMapper;
 import models.Materials;
 
 import java.util.List;
 
 public class MaterialService {
-    private MaterialsDAO materialsDao;
+    private MaterialsMapper materialsMapper;
 
-    public MaterialService(MaterialsDAO materialsDao) {
-        this.materialsDao = materialsDao;
+    public MaterialService(MaterialsMapper materialsMapper) {
+        this.materialsMapper = materialsMapper;
     }
 
     public Materials getMaterialById(int id) {
-        return materialsDao.getMaterialById(id);
+        return materialsMapper.getMaterialById(id);
     }
 
     public List<Materials> getAllMaterials() {
-        return materialsDao.getAllMaterials();
+        return materialsMapper.getAllMaterials();
     }
 
     public void saveMaterial(Materials material) {
-        materialsDao.save(material);
+        materialsMapper.save(material);
     }
 
     public void updateMaterial(Materials material) {
-        materialsDao.update(material);
+        materialsMapper.update(material);
     }
 
     public void deleteMaterial(Materials material) {
-        materialsDao.delete(material);
+        materialsMapper.delete(material);
     }
 }

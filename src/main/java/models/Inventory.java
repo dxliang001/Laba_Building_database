@@ -12,6 +12,7 @@ public class Inventory {
     private Materials materialId;
     private int quantityOnHand;
 
+    public Inventory() {}
     public Inventory(int inventoryId, Materials materialId, int quantityOnHand) {
         this.inventoryId = inventoryId;
         this.materialId = materialId;

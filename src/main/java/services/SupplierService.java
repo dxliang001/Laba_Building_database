@@ -1,34 +1,34 @@
 package services;
 
-import dao.interfaces.SuppliersDAO;
+import dao.interfaces.SuppliersMapper;
 import models.Suppliers;
 
 import java.util.List;
 
 public class SupplierService {
-    private SuppliersDAO suppliersDao;
+    private SuppliersMapper suppliersMapper;
 
-    public SupplierService(SuppliersDAO suppliersDao) {
-        this.suppliersDao = suppliersDao;
+    public SupplierService(SuppliersMapper suppliersMapper) {
+        this.suppliersMapper = suppliersMapper;
     }
 
     public Suppliers getSupplierById(int id) {
-        return suppliersDao.getSupplierById(id);
+        return suppliersMapper.getSupplierById(id);
     }
 
     public List<Suppliers> getAllSuppliers() {
-        return suppliersDao.getAllSuppliers();
+        return suppliersMapper.getAllSuppliers();
     }
 
     public void saveSupplier(Suppliers supplier) {
-        suppliersDao.save(supplier);
+        suppliersMapper.save(supplier);
     }
 
     public void updateSupplier(Suppliers supplier) {
-        suppliersDao.update(supplier);
+        suppliersMapper.update(supplier);
     }
 
     public void deleteSupplier(Suppliers supplier) {
-        suppliersDao.delete(supplier);
+        suppliersMapper.delete(supplier);
     }
 }

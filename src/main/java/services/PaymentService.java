@@ -1,34 +1,34 @@
 package services;
 
-import dao.interfaces.PaymentsDAO;
+import dao.interfaces.PaymentsMapper;
 import models.Payments;
 
 import java.util.List;
 
 public class PaymentService {
-    private PaymentsDAO paymentsDao;
+    private PaymentsMapper paymentsMapper;
 
-    public PaymentService(PaymentsDAO paymentsDao) {
-        this.paymentsDao = paymentsDao;
+    public PaymentService(PaymentsMapper paymentsMapper) {
+        this.paymentsMapper = paymentsMapper;
     }
 
     public Payments getPaymentById(int id) {
-        return paymentsDao.getPaymentById(id);
+        return paymentsMapper.getPaymentById(id);
     }
 
     public List<Payments> getAllPayments() {
-        return paymentsDao.getAllPayments();
+        return paymentsMapper.getAllPayments();
     }
 
     public void savePayment(Payments payment) {
-        paymentsDao.save(payment);
+        paymentsMapper.save(payment);
     }
 
     public void updatePayment(Payments payment) {
-        paymentsDao.update(payment);
+        paymentsMapper.update(payment);
     }
 
     public void deletePayment(Payments payment) {
-        paymentsDao.delete(payment);
+        paymentsMapper.delete(payment);
     }
 }
