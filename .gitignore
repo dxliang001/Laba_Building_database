@@ -9,5 +9,4 @@ application.log
 src/main/resources/database.properties
 *.properties
 
-src/main/resources/mybatis-config.xml
-src/main/resources/mybatis-config.xml
+
