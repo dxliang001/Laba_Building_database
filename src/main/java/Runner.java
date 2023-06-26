@@ -97,15 +97,15 @@ public class Runner {
             BusinessLogicFacade facade = new BusinessLogicFacade(mapper, employeesMapper);
 
 // Test facade methods
-            System.out.println("---- Clients ----");
+            logger.info("---- Clients ----");
             List<Clients> allClients = facade.getAllClients();
-            allClients.forEach(c -> System.out.println("Client: " + c));
+            allClients.forEach(c -> logger.info("Client: " + c));
 
             Clients client = facade.getClientById(1);
             if (client != null) {
-                System.out.println("Client 1: " + client);
+                logger.info("Client 1: " + client);
             } else {
-                System.out.println("Client with id 1 not found.");
+                logger.info("Client with id 1 not found.");
             }
 
             Clients newClient = new Clients();
@@ -116,20 +116,20 @@ public class Runner {
             newClient.setClientEmail("newclient@example.com");
             newClient.setClientPhone("123-456-7890");
             facade.saveClient(newClient);
-            System.out.println("New client saved.");
+            logger.info("New client saved.");
 
             allClients = facade.getAllClients();
-            allClients.forEach(c -> System.out.println("Client: " + c));
+            allClients.forEach(c -> logger.info("Client: " + c));
 
             facade.deleteClient(newClient);
-            System.out.println("New client deleted.");
+            logger.info("New client deleted.");
 
             allClients = facade.getAllClients();
-            allClients.forEach(c -> System.out.println("Client: " + c));
+            allClients.forEach(c -> logger.info("Client: " + c));
 
-            System.out.println("---- Employees ----");
+            logger.info("---- Employees ----");
             List<Employees> allEmployees = facade.getAllEmployees();
-            allEmployees.forEach(e -> System.out.println("Employee: " + e));
+            allEmployees.forEach(e -> logger.info("Employee: " + e));
 
 
             Employees newEmployee = new Employees();
@@ -140,7 +140,7 @@ public class Runner {
             if (role != null) {
                 newEmployee.setRole(role);
             } else {
-                System.out.println("Role with id not found.");
+                logger.info("Role with id not found.");
             }
 
 // Fetch the department with id 1 and set it to the new employee
@@ -148,27 +148,27 @@ public class Runner {
             if (department != null) {
                 newEmployee.setDepartment(department);
             } else {
-                System.out.println("Department with id not found.");
+                logger.info("Department with id not found.");
             }
             newEmployee.setHireDate(Date.valueOf(LocalDate.of(2023, 6, 26)));
             newEmployee.setEmail("newemployee@example.com");
             newEmployee.setPhoneNumber("987-654-3210");
 
             if (newEmployee.getRole() == null || newEmployee.getDepartment() == null || newEmployee.getHireDate() == null) {
-                System.out.println("Invalid employee data. Role, Department and HireDate cannot be null.");
+                logger.info("Invalid employee data. Role, Department and HireDate cannot be null.");
             } else {
                 facade.saveEmployee(newEmployee);
-                System.out.println("New employee saved.");
+                logger.info("New employee saved.");
             }
 
             allEmployees = facade.getAllEmployees();
-            allEmployees.forEach(e -> System.out.println("Employee: " + e));
+            allEmployees.forEach(e -> logger.info("Employee: " + e));
 
             facade.deleteEmployee(newEmployee);
-            System.out.println("New employee deleted.");
+            logger.info("New employee deleted.");
 
             allEmployees = facade.getAllEmployees();
-            allEmployees.forEach(e -> System.out.println("Employee: " + e));
+            allEmployees.forEach(e -> logger.info("Employee: " + e));
         } catch (IOException e) {
             e.printStackTrace();
         } finally {
