@@ -118,6 +118,14 @@ public class Employees {
         this.phoneNumber = phoneNumber;
     }
 
+    public int getRoleId() {
+        return this.role.getRoleId();
+    }
+
+    public int getDepartmentId() {
+        return this.department.getDepartmentId();
+    }
+
     @Override
     public String toString() {
         return "EmployeeDetails{" +
