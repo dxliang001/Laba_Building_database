@@ -10,3 +10,4 @@ src/main/resources/database.properties
 *.properties
 
 
+application.log
