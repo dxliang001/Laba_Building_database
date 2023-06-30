@@ -1,4 +1,9 @@
+import Menu.BusinessLogicFacade;
 import dao.interfaces.*;
+import models.Clients;
+import models.Departments;
+import models.Employees;
+import models.Roles;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
@@ -8,6 +13,9 @@ import org.apache.logging.log4j.Logger;
 
 import java.io.IOException;
 import java.io.Reader;
+import java.sql.Date;
+import java.time.LocalDate;
+import java.util.List;
 
 public class Runner {
 
@@ -24,7 +32,10 @@ public class Runner {
             ProjectsMapper projectsMapper = session.getMapper(ProjectsMapper.class);
             InvoicesMapper invoicesMapper = session.getMapper(InvoicesMapper.class);
             PaymentsMapper paymentsMapper = session.getMapper(PaymentsMapper.class);
+            RolesMapper rolesMapper = session.getMapper(RolesMapper.class);
+            DepartmentsMapper departmentsMapper = session.getMapper(DepartmentsMapper.class);
             //BuildingCostCalculatorApp.run();
+
 
 //
 //            Clients newClient = new Clients();
@@ -82,8 +93,82 @@ public class Runner {
 //            for (Payments payment : payments) {
 //                logger.info(payment);
 //            }
+// Create a BusinessLogicFacade
+            BusinessLogicFacade facade = new BusinessLogicFacade(mapper, employeesMapper);
+
+// Test facade methods
+            logger.info("---- Clients ----");
+            List<Clients> allClients = facade.getAllClients();
+            allClients.forEach(c -> logger.info("Client: " + c));
+
+            Clients client = facade.getClientById(1);
+            if (client != null) {
+                logger.info("Client 1: " + client);
+            } else {
+                logger.info("Client with id 1 not found.");
+            }
+
+            Clients newClient = new Clients();
+            newClient.setClientId(10);
+            newClient.setClientName("New Client");
+            newClient.setContactName("New Contact");
+            newClient.setClientAddress("New Address");
+            newClient.setClientEmail("newclient@example.com");
+            newClient.setClientPhone("123-456-7890");
+            facade.saveClient(newClient);
+            logger.info("New client saved.");
+
+            allClients = facade.getAllClients();
+            allClients.forEach(c -> logger.info("Client: " + c));
+
+            facade.deleteClient(newClient);
+            logger.info("New client deleted.");
+
+            allClients = facade.getAllClients();
+            allClients.forEach(c -> logger.info("Client: " + c));
+
+            logger.info("---- Employees ----");
+            List<Employees> allEmployees = facade.getAllEmployees();
+            allEmployees.forEach(e -> logger.info("Employee: " + e));
 
 
+            Employees newEmployee = new Employees();
+            newEmployee.setEmpId(10);
+            newEmployee.setFirstName("New");
+            newEmployee.setLastName("Employee");
+            Roles role = rolesMapper.getRoleById(1);
+            if (role != null) {
+                newEmployee.setRole(role);
+            } else {
+                logger.info("Role with id not found.");
+            }
+
+// Fetch the department with id 1 and set it to the new employee
+            Departments department = departmentsMapper.getDepartmentById(1);
+            if (department != null) {
+                newEmployee.setDepartment(department);
+            } else {
+                logger.info("Department with id not found.");
+            }
+            newEmployee.setHireDate(Date.valueOf(LocalDate.of(2023, 6, 26)));
+            newEmployee.setEmail("newemployee@example.com");
+            newEmployee.setPhoneNumber("987-654-3210");
+
+            if (newEmployee.getRole() == null || newEmployee.getDepartment() == null || newEmployee.getHireDate() == null) {
+                logger.info("Invalid employee data. Role, Department and HireDate cannot be null.");
+            } else {
+                facade.saveEmployee(newEmployee);
+                logger.info("New employee saved.");
+            }
+
+            allEmployees = facade.getAllEmployees();
+            allEmployees.forEach(e -> logger.info("Employee: " + e));
+
+            facade.deleteEmployee(newEmployee);
+            logger.info("New employee deleted.");
+
+            allEmployees = facade.getAllEmployees();
+            allEmployees.forEach(e -> logger.info("Employee: " + e));
         } catch (IOException e) {
             e.printStackTrace();
         } finally {
@@ -93,4 +178,3 @@ public class Runner {
         }
     }
 }
-

@@ -15,8 +15,9 @@
 
 
     <select id="getDepartmentById" parameterType="int" resultMap="DepartmentResult">
-        SELECT * Alex_building_laba.departments department_id = #{departmentId}
+        SELECT * FROM Alex_building_laba.departments WHERE department_id = #{departmentId}
     </select>
+
 
     <insert id="save" parameterType="models.Departments">
         INSERT INTO Alex_building_laba.departments

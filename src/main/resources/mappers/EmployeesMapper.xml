@@ -45,7 +45,7 @@
         INSERT INTO Alex_building_laba.employees
         (emp_id, first_name, last_name, role_id, department_id, hire_date, email, phone_number)
         VALUES
-        (#{empId}, #{firstName}, #{lastName}, #{roleId.roleId}, #{departmentId.departmentId}, #{hireDate}, #{email}, #{phoneNumber})
+        (#{empId}, #{firstName}, #{lastName}, #{role.roleId}, #{department.departmentId}, #{hireDate}, #{email}, #{phoneNumber})
     </insert>
 
     <update id="update" parameterType="models.Employees">
@@ -53,13 +53,14 @@
         SET
         first_name = #{firstName},
         last_name = #{lastName},
-        role_id = #{roleId.roleId},
-        department_id = #{departmentId.departmentId},
+        role_id = #{role.roleId},
+        department_id = #{department.departmentId},
         hire_date = #{hireDate},
         email = #{email},
         phone_number = #{phoneNumber}
         WHERE emp_id = #{empId}
     </update>
+
 
     <delete id="delete" parameterType="models.Employees">
         DELETE FROM Alex_building_laba.employees WHERE emp_id = #{empId}

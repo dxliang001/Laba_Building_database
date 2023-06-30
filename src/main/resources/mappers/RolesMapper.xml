@@ -9,7 +9,7 @@
         <result property="roleDescription" column="role_description"/>
     </resultMap>
 
-    <select id="selectRoleById" parameterType="int" resultMap="RoleResult">
+    <select id="getRoleById" parameterType="int" resultMap="RoleResult">
         SELECT * FROM Alex_building_laba.roles WHERE role_id = #{roleId}
     </select>
 
